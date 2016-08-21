@@ -3,3 +3,19 @@
 // Import Bourbon and Neat
 @import "bourbon/bourbon";
 @import "neat/neat";
+
+body {
+   font-family: 'Scope One', serif;
+}
+
+h1 {
+   font-size: 80px;
+}
+
+p {
+   font-size: 24px;
+}
+
+ul {
+   font-size: 18px;
+}
