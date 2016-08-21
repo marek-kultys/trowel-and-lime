@@ -4,6 +4,22 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
+// Declare breakpoints
+$S: new-breakpoint(max-width 480px);
+$M: new-breakpoint(max-width 768px);
+
+// Globals
+html {
+    overflow-y: scroll; // Fixing jumping scroll bar when page overflows
+	 overflow-x: ignore;
+    position: relative;
+    min-height: 100%;
+}
+
+@-ms-viewport {
+  width: device-width; // Fixing MS viewport
+}
+
 body {
    font-family: 'Scope One', serif;
 }
@@ -18,4 +34,16 @@ p {
 
 ul {
    font-size: 18px;
+}
+
+.container {
+
+   @include outer-container;
+   .box {
+      border: 1px solid gray;
+      @include span-columns(4);
+      @include media($M) {
+         @include span-columns(12);
+      }
+   }
 }
