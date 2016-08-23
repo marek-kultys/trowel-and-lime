@@ -8,10 +8,14 @@
 $S: new-breakpoint(max-width 480px);
 $M: new-breakpoint(max-width 768px);
 
+// Link font
+@import 'https://fonts.googleapis.com/css?family=Scope+One&subset=latin-ext';
+
+
 // Globals
 html {
     overflow-y: scroll; // Fixing jumping scroll bar when page overflows
-	 overflow-x: ignore;
+	 overflow-x: hidden;;
     position: relative;
     min-height: 100%;
 }
@@ -25,25 +29,55 @@ body {
 }
 
 h1 {
-   font-size: 80px;
+   font-size: 64px;
+   text-align: center;
+}
+
+h3 {
+   font-size: 28px;
+   text-align: center;
 }
 
 p {
    font-size: 24px;
 }
 
-ul {
-   font-size: 18px;
+main {
+   @include outer-container;
+   @include media($M) {
+      margin-left: 15px;
+      margin-right: 15px;
+   }
 }
 
-.container {
+section {
+   border: 1px solid red;
+   @include span-columns(10);
+   @include shift(1);
+   margin-top: 2em;
+   margin-bottom: 2em;
+   @include media($M) {
+      @include span-columns(12);
+      @include shift(0);
+   }
+}
 
-   @include outer-container;
-   .box {
-      border: 1px solid gray;
-      @include span-columns(4);
-      @include media($M) {
-         @include span-columns(12);
-      }
+ul {
+   padding: 0px;
+   font-size: 18px;
+   text-align: center;
+   margin-top: 1em;
+   margin-bottom: 3em;
+}
+ul:last-child {
+   margin-bottom: 1em;
+}
+
+li {
+   border: 1px solid blue;
+   @include span-columns(3, block-collapse);
+   @include media($M) {
+      @include span-columns(12, block-collapse);
+      max-width: 100%;
    }
 }

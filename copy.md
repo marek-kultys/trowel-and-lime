@@ -1,11 +1,12 @@
 # I design and create sgraffito wall artworks
 
 
-- Our sgraffitos are works of art for both interiors and exteriors
+- Our sgraffitos are unique works of art in your home
+- We create sgraffitos in interior and exterior spaces
 - Together with you we create unique sgraffito designs tailored for your space
 - We use traditional techniques of old masters
 - Sgraffitos are done entirely by hand and you can witness the whole process
-- Our sgraffiots are safe — we only use non-toxic, natural materials
+- Our sgraffiots are safe. We only use non-toxic, natural materials
 - We use high-quality natural, durable, and stable pigments
 - Sgraffitos last for decades (and even longer!)
 
