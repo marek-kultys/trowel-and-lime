@@ -26,6 +26,7 @@ html {
 
 body {
    font-family: 'Scope One', serif;
+   margin: 0px;
 }
 
 h1 {
@@ -38,11 +39,23 @@ h3 {
    text-align: center;
 }
 
+h4 {
+   font-size: 28px;
+   text-align: left;
+}
+
+h6 {
+   font-size: 16px;
+   text-align: left;
+   margin-top: 1em;
+   margin-bottom: 0px;
+}
+
 p {
    font-size: 24px;
 }
 
-main {
+main, footer {
    @include outer-container;
    @include media($M) {
       margin-left: 15px;
@@ -50,12 +63,14 @@ main {
    }
 }
 
+footer {
+   padding-bottom: 2em;
+}
+
 section {
-   border: 1px solid red;
    @include span-columns(10);
    @include shift(1);
-   margin-top: 2em;
-   margin-bottom: 2em;
+   margin-bottom: 3em;
    @include media($M) {
       @include span-columns(12);
       @include shift(0);
@@ -74,10 +89,27 @@ ul:last-child {
 }
 
 li {
-   border: 1px solid blue;
    @include span-columns(3, block-collapse);
    @include media($M) {
       @include span-columns(12, block-collapse);
       max-width: 100%;
    }
+}
+
+.footer-box {
+   @include span-columns(5);
+   @include media($M) {
+      @include span-columns(12);
+   }
+}
+.footer-box:first-of-type {
+   @include shift(1);
+   @include media($M) {
+      @include shift(0);
+   }
+}
+
+.tagline {
+   padding-left: 10%;
+   padding-right: 10%;
 }

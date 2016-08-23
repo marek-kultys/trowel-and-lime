@@ -8,7 +8,12 @@
 	</head>
 
 	<body>
-      {{ content }}
+		<main>
+      	{{ content }}
+		</main>
+		<footer>
+			{% include footer.html %}
+		</footer>
       {% include scripts.html %}
 	</body>
 </html>
