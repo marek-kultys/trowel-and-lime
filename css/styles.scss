@@ -32,11 +32,19 @@ body {
 h1 {
    font-size: 64px;
    text-align: center;
+   @include media($S) {
+      font-size: 48px;
+      line-height: 56px;
+   }
 }
 
-h3 {
+h2 {
    font-size: 28px;
    text-align: center;
+   @include media($S) {
+      font-size: 24px;
+      line-height: 32px;
+   }
 }
 
 h4 {
@@ -55,16 +63,22 @@ p {
    font-size: 24px;
 }
 
-main, footer {
-   @include outer-container;
+main, footer, nav {
+   @include outer-container(100%);
+   border: 1px solid red;
    @include media($M) {
       margin-left: 15px;
       margin-right: 15px;
    }
 }
 
-footer {
+footer, nav {
+   background-color: #f2f2f2;
    padding-bottom: 2em;
+}
+
+article {
+   @include outer-container;
 }
 
 section {
@@ -96,17 +110,25 @@ li {
    }
 }
 
-.footer-box {
+.container {
+   @include outer-container;
+   border: 1px solid blue;
+}
+
+.container-box {
    @include span-columns(5);
    @include media($M) {
       @include span-columns(12);
    }
 }
-.footer-box:first-of-type {
+.container-box:first-of-type {
    @include shift(1);
    @include media($M) {
       @include shift(0);
    }
+}
+.menu-box {
+   @include 
 }
 
 .tagline {
