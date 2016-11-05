@@ -1,0 +1,18 @@
+.navbar {
+   .menu-box {
+      @include outer-container(100%);
+   }
+   ul {
+      margin: 0px;
+      padding: 0px;
+   }
+   li {
+      @include span-columns(2.4, table);
+      &:hover {
+         cursor: pointer;
+         background-color: #cdcdcd;
+         transition: $transition;
+         color: red;
+      }
+   }
+}

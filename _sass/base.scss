@@ -1,0 +1,139 @@
+// Declare breakpoints
+$small: new-breakpoint(max-width 480px);
+$medium: new-breakpoint(max-width 768px);
+
+$transition: 0.2s;
+
+// Link font
+@import 'https://fonts.googleapis.com/css?family=Scope+One&subset=latin-ext';
+
+
+// Globals
+html {
+    overflow-y: scroll; // Fixing jumping scroll bar when page overflows
+	 overflow-x: hidden;;
+    position: relative;
+    min-height: 100%;
+}
+
+@-ms-viewport {
+  width: device-width; // Fixing MS viewport
+}
+
+body {
+   font-family: 'Scope One', serif;
+   margin: 0px;
+}
+
+a {
+   &:hover {
+      transition: $transition;
+   }
+}
+
+h1 {
+   font-size: 64px;
+   text-align: center;
+   @include media($small) {
+      font-size: 48px;
+      line-height: 56px;
+   }
+}
+
+h2 {
+   font-size: 28px;
+   text-align: center;
+   @include media($small) {
+      font-size: 24px;
+      line-height: 32px;
+   }
+}
+
+h3 {
+}
+
+h4 {
+   font-size: 28px;
+   text-align: left;
+}
+
+h5 {
+   font-size: 18px;
+}
+
+h6 {
+   font-size: 16px;
+   text-align: left;
+   margin-top: 1em;
+   margin-bottom: 0px;
+}
+
+p {
+   font-size: 24px;
+}
+
+main, footer, nav {
+   @include outer-container(100%);
+   @include media($medium) {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+}
+
+footer, nav {
+   background-color: #f2f2f2;
+   overflow: hidden;
+}
+nav {
+   max-height: 60px;
+}
+
+article {
+   @include outer-container;
+}
+
+section {
+   @include span-columns(10);
+   @include shift(1);
+   margin-bottom: 3em;
+   @include media($medium) {
+      @include span-columns(12);
+      @include shift(0);
+   }
+}
+
+ul {
+   padding: 0px;
+   font-size: 18px;
+   text-align: center;
+   margin-top: 1em;
+   margin-bottom: 3em;
+}
+ul:last-child {
+   margin-bottom: 1em;
+}
+
+li {
+   @include span-columns(3, block-collapse);
+   @include media($medium) {
+      @include span-columns(12, block-collapse);
+      max-width: 100%;
+   }
+}
+
+.container {
+   @include outer-container;
+}
+
+.container-box {
+   @include span-columns(5);
+   @include media($medium) {
+      @include span-columns(12);
+   }
+}
+.container-box:first-of-type {
+   @include shift(1);
+   @include media($medium) {
+      @include shift(0);
+   }
+}
