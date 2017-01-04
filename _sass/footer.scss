@@ -1,3 +1,26 @@
-.footer {
-   padding-bottom: 2em;
+footer {
+   background-color: #ccaa22;
+   overflow: hidden;
+   @include outer-container(100%);
+   @include media($medium) {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+
+   .footer {
+      padding-bottom: 2em;
+   }
+
+   .container-box {
+      @include span-columns(5);
+      @include media($medium) {
+         @include span-columns(12);
+      }
+   }
+   .container-box:first-of-type {
+      @include shift(1);
+      @include media($medium) {
+         @include shift(0);
+      }
+   }
 }

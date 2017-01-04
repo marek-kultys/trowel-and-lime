@@ -1,1 +1,2 @@
 exclude: [README.md]
+host: 0.0.0.0

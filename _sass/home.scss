@@ -1,4 +1,63 @@
-.tagline {
-   padding-left: 10%;
-   padding-right: 10%;
+article {
+   ul {
+      padding: 0px;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 1em;
+      margin-bottom: 3em;
+   }
+   ul:last-child {
+      margin-bottom: 1em;
+   }
+
+   li {
+      @include span-columns(3, block-collapse);
+      @include media($medium) {
+         @include span-columns(12, block-collapse);
+         max-width: 100%;
+      }
+   }
+
+   section {
+      background-color: white;
+      border: 1px solid red;
+      padding-top: 2em;
+      padding-bottom: 2em;
+   }
+
+   .outer-section {
+      @include outer-container;
+      border: 1px solid green;
+   }
+
+   .inner-section {
+      @include span-columns(10);
+      @include shift(1);
+      border: 1px solid orange;
+   }
+
+   .container {
+      @include outer-container;
+   }
+
+   .tagline {
+      padding-left: 10%;
+      padding-right: 10%;
+   }
+
+   #contact {
+      background-color: #f2f499;
+   }
+   #artist {
+      background-color: #9922bb;
+   }
+   #gallery {
+      background-color: #3166ff;
+   }
+   #offer {
+      background-color: #99ddee;
+   }
+   #technique {
+      background-color: #bbddaa;
+   }
 }
