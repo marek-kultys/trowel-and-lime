@@ -20,20 +20,20 @@ article {
 
    section {
       background-color: white;
-      border: 1px solid red;
+      //border: 1px solid red;
       padding-top: 2em;
       padding-bottom: 2em;
    }
 
    .outer-section {
       @include outer-container;
-      border: 1px solid green;
+      //border: 1px solid green;
    }
 
    .inner-section {
       @include span-columns(10);
       @include shift(1);
-      border: 1px solid orange;
+      //border: 1px solid orange;
    }
 
    .container {
@@ -43,21 +43,5 @@ article {
    .tagline {
       padding-left: 10%;
       padding-right: 10%;
-   }
-
-   #contact {
-      background-color: #f2f499;
-   }
-   #artist {
-      background-color: #9922bb;
-   }
-   #gallery {
-      background-color: #3166ff;
-   }
-   #offer {
-      background-color: #99ddee;
-   }
-   #technique {
-      background-color: #bbddaa;
    }
 }

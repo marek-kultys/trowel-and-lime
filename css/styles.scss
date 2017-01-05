@@ -4,7 +4,15 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
+@import "about";
 @import "base";
-@import "navbar";
-@import "home";
+@import "contact";
 @import "footer";
+@import "gallery";
+@import "header";
+@import "home";
+@import "offer";
+@import "technique";
+
+// Import Google Font
+@import url('https://fonts.googleapis.com/css?family=Scope+One&subset=latin-ext');

@@ -1,5 +1,4 @@
 footer {
-   background-color: #ccaa22;
    overflow: hidden;
    @include outer-container(100%);
    @include media($medium) {

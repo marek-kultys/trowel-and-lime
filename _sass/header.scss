@@ -1,0 +1,80 @@
+header {
+   @include outer-container;
+   color: white;
+   max-height: 75px;
+   @include media($full) {
+      margin-left: 15px;
+      margin-right: 15px;
+   }
+
+   .header-name {
+      @include span-columns(3);
+      // border: 1px solid red;
+      padding-top: 0.66em;
+      padding-bottom: 0.33em;
+      @include media($medium) {
+         @include span-columns(6);
+      }
+   }
+
+   .header-menu {
+      @include span-columns(9);
+      // border: 1px solid orange;
+      padding-top: 2em;
+      padding-bottom: 0.33em;
+      @include media($medium) {
+         @include span-columns(6);
+         /*Display 'show menu' link*/
+            .show-menu {
+               display:block;
+            }
+         }
+
+      ul {
+         margin: 0px;
+         padding: 0px;
+         list-style: none;
+         float: right;
+         @include media($medium) {
+            float: none;
+            text-align: right;
+            padding-right: 15px;
+            position: static;
+		      display: none;
+            background-color: $dark;
+         }
+      }
+      li {
+         margin-left: 2em;
+         float: left;
+         cursor: pointer;
+         @include media($medium) {
+            float: none;
+            padding-bottom: 0.66em;
+         }
+      }
+   }
+
+
+
+
+
+   /*Style 'show menu' label button and hide it by default*/
+   .show-menu {
+   	color: #fff;
+   	text-align: right;
+      padding-right: 15px;
+      padding-bottom: 1em;
+   	display: none;
+   }
+
+   /*Hide checkbox*/
+   input[type=checkbox]{
+       display: none;
+   }
+
+   /*Show menu when invisible checkbox is checked*/
+   input[type=checkbox]:checked ~ #menu{
+       display: block;
+   }
+}
