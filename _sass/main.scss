@@ -1,9 +1,13 @@
 main {
    width: 100%;
+   position: absolute;
+   top: 75px;
+   z-index: 1;
 
    section {
       background-color: white;
-      border: 1px solid red;
+      padding: 0px;
+      margin: 0px;
    }
 
    ul {
@@ -34,5 +38,21 @@ main {
       @include span-columns(10);
       @include shift(1);
       border: 1px solid orange;
+   }
+
+   .home-gallery-hero {
+      background-image: url("/img/test.jpg");
+      background-size: cover;
+      padding-bottom: 0px;
+      background-position: center top;
+      background-repeat: no-repeat;
+      height: 0;
+      padding-top: 40%;
+      @include media($medium) {
+         background-size: cover;
+         background-position: 12% 0px;
+         padding-top: 50%;
+         height: 50vh;
+      }
    }
 }
