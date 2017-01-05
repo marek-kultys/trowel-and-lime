@@ -7,3 +7,4 @@ _sketch
 *.JPG
 *.png
 *.PNG
+!img/test.jpg

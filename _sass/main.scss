@@ -1,6 +1,11 @@
 main {
    width: 100%;
-   
+
+   section {
+      background-color: white;
+      border: 1px solid red;
+   }
+
    ul {
       padding: 0px;
       font-size: 18px;
@@ -22,21 +27,12 @@ main {
 
    .outer-section {
       @include outer-container;
-      //border: 1px solid green;
+      border: 1px solid green;
    }
 
    .inner-section {
       @include span-columns(10);
       @include shift(1);
-      //border: 1px solid orange;
-   }
-
-   .container {
-      @include outer-container;
-   }
-
-   .tagline {
-      padding-left: 10%;
-      padding-right: 10%;
+      border: 1px solid orange;
    }
 }
