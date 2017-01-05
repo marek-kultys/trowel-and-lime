@@ -1,4 +1,6 @@
-article {
+main {
+   width: 100%;
+   
    ul {
       padding: 0px;
       font-size: 18px;
@@ -16,13 +18,6 @@ article {
          @include span-columns(12, block-collapse);
          max-width: 100%;
       }
-   }
-
-   section {
-      background-color: white;
-      //border: 1px solid red;
-      padding-top: 2em;
-      padding-bottom: 2em;
    }
 
    .outer-section {

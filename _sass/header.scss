@@ -61,11 +61,15 @@ header {
 
    /*Style 'show menu' label button and hide it by default*/
    .show-menu {
-   	color: #fff;
    	text-align: right;
       padding-right: 15px;
       padding-bottom: 1em;
    	display: none;
+      cursor: pointer;
+      // &:hover {
+      //    color: $main;
+      //    transition: $transition;
+      // }
    }
 
    /*Hide checkbox*/
