@@ -3,15 +3,21 @@ footer {
    margin: 0;
    left: 0;
    bottom: 0;
-   height: 120px;
+   height: 120px; /* height value = footer height; linked to bottom margin value in body.scss */
    width: 100%;
    background-color: $black;
    @include media($medium) {
       height: 200px;
    }
+   h6 {
+      color: $white-hover;
+   }
+   a:hover {
+      opacity: 0.7;
+   }
 
    .footer-unit {
-      padding-top: 1em;
+      padding-top: 1.33em;
       @include span-columns(5);
       &:first-of-type {
          @include shift(1);
@@ -19,6 +25,9 @@ footer {
       @include media($medium) {
          @include span-columns(10);
          @include shift(1);
+         &:last-of-type {
+            padding-top: 0.66em;
+         }
       }
    }
 }

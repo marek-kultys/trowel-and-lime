@@ -33,7 +33,7 @@ html {
 }
 
 body {
-   margin: 0 0 140px; /* bottom = footer height */
+   margin: 0 0 120px; /* bottom margin value = footer height; linked to height value in footer.scss */
    background-color: $black;
 }
 
@@ -88,7 +88,8 @@ h5 {
 }
 
 h6 {
-   font-size: 1em;
+   font-size: 0.9em;
+   line-height: 1.66em;
 }
 
 
