@@ -70,15 +70,11 @@ header {
       padding-bottom: 1em;
    	display: none;
       cursor: pointer;
-      // &:hover {
-      //    color: $main;
-      //    transition: $transition;
-      // }
    }
 
    /*Hide checkbox*/
    input[type=checkbox]{
-       display: none;
+      display: none;
    }
 
    /*Show menu when invisible checkbox is checked*/

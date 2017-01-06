@@ -31,17 +31,16 @@ main {
 
    .outer-section {
       @include outer-container;
-      border: 1px solid green;
    }
 
    .inner-section {
       @include span-columns(10);
       @include shift(1);
-      border: 1px solid orange;
    }
 
-   .home-gallery-hero {
+   .hero-image {
       background-image: url("/img/test.jpg");
+      opacity: 0.9;
       background-size: cover;
       padding-bottom: 0px;
       background-position: center top;
@@ -51,8 +50,29 @@ main {
       @include media($medium) {
          background-size: cover;
          background-position: 12% 0px;
-         padding-top: 50%;
-         height: 50vh;
+         padding-top: 55%;
+         height: 55vh;
+      }
+   }
+
+   #home-gallery {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: $black;
+   }
+
+   .hero-container {
+      position: absolute;
+      @include span-columns(8);
+      @include shift(2);
+      @include media($large) {
+         @include span-columns(10);
+         @include shift(1);
+      }
+
+      .hero-text {
+         text-align: center;
       }
    }
 }
