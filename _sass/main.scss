@@ -10,6 +10,21 @@ main {
       background-color: white;
    }
 
+   .section-block {
+      text-align: center;
+      padding: 3em 0em;
+      @include span-columns(6);
+      @include shift(3);
+      @include media($large) {
+         @include span-columns(8);
+         @include shift(2);
+      }
+      @include media($medium) {
+         @include span-columns(10);
+         @include shift(1);
+      }
+   }
+
    .image {
       background-size: cover;
       padding-bottom: 0px;
@@ -23,13 +38,6 @@ main {
          padding-top: 50%;
          height: 50vh;
       }
-   }
-   #home-hero-image {
-      background-image: url("/img/test.jpg");
-      opacity: 0.9;
-   }
-   #home-banner-1 {
-      background-image: url("/img/test2.jpg");
    }
 
    .button {
@@ -49,7 +57,8 @@ main {
          padding-top: 6px;
       }
    }
-   #hero-button {
+
+   .hero-button {
       background-color: $black;
       border-radius: 26px;
       height: 52px;
@@ -85,14 +94,27 @@ main {
       }
    }
 
-   .section-block {
-      text-align: center;
-      padding: 3em 0em;
-      @include span-columns(8);
-      @include shift(2);
-      @include media($medium) {
-         @include span-columns(10);
-         @include shift(1);
-      }
+
+
+   // IMAGES
+   #home-hero-image {
+      background-image: url("/img/test.jpg");
+      opacity: 0.9;
+   }
+
+   #home-banner-1 {
+      background-image: url("/img/test2.jpg");
+   }
+
+   #home-banner-2 {
+      background-image: url("/img/test3.jpg");
+   }
+
+   #home-banner-3 {
+      background-image: url("/img/test2.jpg");
+   }
+
+   #home-banner-4 {
+      background-image: url("/img/test3.jpg");
    }
 }
