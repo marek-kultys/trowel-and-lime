@@ -1,25 +1,24 @@
 footer {
-   overflow: hidden;
-   @include outer-container(100%);
+   position: absolute;
+   margin: 0;
+   left: 0;
+   bottom: 0;
+   height: 120px;
+   width: 100%;
+   background-color: $black;
    @include media($medium) {
-      padding-left: 15px;
-      padding-right: 15px;
+      height: 200px;
    }
 
-   .footer {
-      padding-bottom: 2em;
-   }
-
-   .container-box {
+   .footer-unit {
+      padding-top: 1em;
       @include span-columns(5);
-      @include media($medium) {
-         @include span-columns(12);
+      &:first-of-type {
+         @include shift(1);
       }
-   }
-   .container-box:first-of-type {
-      @include shift(1);
       @include media($medium) {
-         @include shift(0);
+         @include span-columns(10);
+         @include shift(1);
       }
    }
 }

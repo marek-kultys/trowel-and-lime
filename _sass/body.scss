@@ -33,7 +33,7 @@ html {
 }
 
 body {
-   margin: 0px;
+   margin: 0 0 140px; /* bottom = footer height */
    background-color: $black;
 }
 
