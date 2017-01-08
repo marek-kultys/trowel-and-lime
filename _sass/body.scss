@@ -24,9 +24,8 @@ $hero-hover: rgba(33, 33, 33, 0.8);
 // GLOBALS
 html {
    overflow-y: scroll; // Fixing jumping scroll bar when page overflows
-   overflow-x: hidden;;
-   position: relative;
-   min-height: 100%;
+   overflow-x: hidden;
+
 }
 
 @-ms-viewport {
@@ -34,8 +33,10 @@ html {
 }
 
 body {
-   margin: 0 0 120px; /* bottom margin value = footer height; linked to height value in footer.scss */
+   margin: 0px;
    background-color: $black;
+   min-height: 100%;
+   // position: relative;
 }
 
 

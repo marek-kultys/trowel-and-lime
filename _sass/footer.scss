@@ -1,11 +1,8 @@
 footer {
-   position: relative;
    margin: 0;
-   left: 0;
-   bottom: 0;
-   height: 120px; /* height value = footer height; linked to bottom margin value in body.scss */
+   height: 120px;
    width: 100%;
-   background-color: $black;
+   background-color: orange;
    @include media($medium) {
       height: 200px;
    }
