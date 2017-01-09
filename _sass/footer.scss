@@ -1,30 +1,63 @@
 footer {
-   margin: 0;
-   height: 120px;
-   width: 100%;
-   background-color: orange;
+   @include outer-container;
+   height: 180px;
+   padding-top: 0.66em;
+   background-color: $black;
+   @include media($full) {
+      margin-left: 30px;
+      margin-right: 15px;
+   }
    @include media($medium) {
-      height: 200px;
+      height: 240px;
    }
    h6 {
-      color: $white-hover;
+      color: $white;
    }
    a:hover {
-      opacity: 0.7;
+      color: $white-hover;
+      cursor: pointer;
    }
 
    .footer-unit {
       padding-top: 1.33em;
-      @include span-columns(5);
-      &:first-of-type {
-         @include shift(1);
-      }
+      @include span-columns(4);
       @include media($medium) {
-         @include span-columns(10);
-         @include shift(1);
-         &:last-of-type {
-            padding-top: 0.66em;
-         }
+         @include span-columns(12);
       }
    }
+   .footer-halfunit {
+      padding-top: 1.33em;
+      @include span-columns(2);
+   }
+
+   ul {
+      margin: 0 0 0.33em 0;
+      padding: 0px;
+      list-style: none;
+      @include media($medium) {
+         float: none;
+      }
+   }
+   li {
+      // margin-right: 2em;
+      @include media($medium) {
+         margin: 0;
+         float: none;
+      }
+   }
+
+   h4{
+      color: white;
+   }
+
+   #sitemap {
+      @include media($medium) {
+         display: none;
+      }
+   }
+
+   #sitemap-home {
+      text-align: right;
+   }
 }
+

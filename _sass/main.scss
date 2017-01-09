@@ -1,8 +1,8 @@
 main {
    width: 100%;
-   min-height: calc(100vh - 70px - 120px); /* calculate: 100% vertical height - 70px approx. header height - 120px footer height */
+   min-height: calc(100vh - 70px - 180px); /* calculate: 100% vertical height - 70px approx. header height - 120px footer height */
    @include media($medium) {
-      min-height: calc(100vh - 70px - 200px); /* adjust for footer height below medium break-point */
+      min-height: calc(100vh - 70px - 240px); /* adjust for footer height below medium break-point */
    }
 
    section {
