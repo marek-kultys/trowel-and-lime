@@ -51,7 +51,7 @@ a {
    }
 }
 
-p { //body text
+p { // body text
    font-family: 'Scope One', serif;
    font-weight: 400;
    font-size: 1.2em;
@@ -63,11 +63,11 @@ h1, h2, h3, h4, h5, h6 {
    margin: 0px;
 }
 
-h1 { //logotype
+h1 { // logotype
    font-size: 2.6em;
 }
 
-h2 { //page title, hero text
+h2 { // page title, hero text
    font-size: 2.2em;
    @include media($large) {
       font-size: 1.9em;
@@ -77,19 +77,19 @@ h2 { //page title, hero text
    }
 }
 
-h3 { //buttons
+h3 { // buttons
    font-size: 1.6em;
 }
 
-h4 { //home page paragraphs, gallery title
+h4 { // home page paragraphs, gallery title
    font-size: 1.4em;
 }
 
-h5 { //navbar menu
+h5 { // navbar menu
    font-size: 1.2em;
 }
 
-h6 { //footer
+h6 { // footer
    font-size: 1em;
    line-height: 1.5em;
 }
