@@ -3,13 +3,14 @@
 $small: new-breakpoint(max-width 480px);
 $medium: new-breakpoint(max-width 768px);
 $large: new-breakpoint(max-width 1000px);
-$full: new-breakpoint(max-width 1230px);
+$wide: new-breakpoint(max-width 1230px);
+$full: new-breakpoint(min-width 1231px);
 
 // Declare transition
 $transition: 0.2s;
 
 // Declare colours
-// $main: rgba(171, 199, 230, 1);
+$main: rgba(171, 199, 230, 1);
 // $light: rgba(171, 199, 230, 0.5);
 // $vlight: rgba(171, 199, 230, 0.2);
 // $dark: rgba(0, 110, 151, 1);
