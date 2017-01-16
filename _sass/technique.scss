@@ -1,0 +1,88 @@
+.technique {
+
+   .nopadding {
+      padding-bottom: 0;
+   }
+
+   .paragraph {
+      text-align: left;
+   }
+
+   .section-materials {
+      @include span-columns(10);
+      @include shift(1);
+      @include media($large) {
+         @include span-columns(9);
+         @include shift(1.5);
+      }
+      @include media($medium) {
+         @include span-columns(11);
+         @include shift(0.5);
+      }
+      @include media($medium) {
+         @include span-columns(10);
+         @include shift(1);
+      }
+   }
+
+   .materials-unit {
+      text-align: center;
+      @include span-columns(3);
+      @include media($large) {
+         @include span-columns(5.5);
+         @include shift(0.33);
+         @include omega(2n);
+      }
+      @include media($small) {
+         @include span-columns(11.5);
+         @include shift(0.25);
+      }
+   }
+
+   .badge {
+      margin-top: 3em;
+      margin-bottom: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      height: 180px;
+      width: 180px;
+      padding: 0px;
+      border-radius: 100px;
+      border: 1px solid $black;
+      background-size: cover;
+   }
+
+   ul {
+      list-style: none;
+      padding-left: 0;
+      padding-top: 0.33em;
+      p {
+         padding-top: 0.33em;
+      }
+      li:before {
+         font-family: 'Scope One', serif;
+         font-weight: 400;
+         font-size: 2em;
+         color: $main;
+         content: "✔";
+         display: block;
+         float: left;
+         width: 1.66em;
+         padding-left: 0.1em;
+      }
+   }
+
+   // IMAGES
+   #technique-hero {
+      background-image: url("/img/test2.jpg");
+   }
+
+   #technique-banner-1 {
+      background-image: url("/img/test3.jpg");
+   }
+
+   #badge-1, #badge-2, #badge-3, #badge-4 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+
+}

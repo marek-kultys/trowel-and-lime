@@ -26,7 +26,7 @@ main {
       }
    }
 
-   .image {
+   .block-image {
       background-size: cover;
       padding-bottom: 0px;
       background-position: center top;
@@ -74,7 +74,8 @@ main {
       }
    }
 
-   #home-gallery {
+   #home-gallery,
+   #technique, #artist, #offer /* this for other pages: */ {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -92,6 +93,9 @@ main {
       }
       .hero-text {
          text-align: center;
+      }
+      .lower {
+         margin-top: 20vmax;
       }
    }
 
