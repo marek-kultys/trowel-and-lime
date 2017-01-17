@@ -1,13 +1,5 @@
 .technique {
 
-   .nopadding {
-      padding-bottom: 0;
-   }
-
-   .paragraph {
-      text-align: left;
-   }
-
    .section-materials {
       @include span-columns(10);
       @include shift(1);

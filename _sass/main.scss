@@ -26,6 +26,18 @@ main {
       }
    }
 
+   .no-padding-bottom {
+      padding-bottom: 0;
+   }
+
+   .less-padding-top {
+      padding-top: 2em;
+   }
+
+   .paragraph {
+      text-align: left;
+   }
+
    .block-image {
       background-size: cover;
       padding-bottom: 0px;
