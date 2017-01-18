@@ -1,0 +1,21 @@
+.artist {
+
+   .credit-container {
+      text-align: right;
+      margin-top: 0em;
+      margin-bottom: 0em;
+      padding-top: 0em;
+      padding-bottom: 0em;
+      @include span-columns(10);
+      @include shift(1);
+   }
+
+   // IMAGES
+   #artist-hero {
+      background-image: url("/img/artist/test3.jpg");
+   }
+
+   #artist-end-hero {
+      background-image: url("/img/artist/test2.jpg");
+   }
+}

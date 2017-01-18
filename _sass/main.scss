@@ -38,6 +38,14 @@ main {
       text-align: left;
    }
 
+   .quote {
+      text-align: center;
+      p {
+         margin-top: 2em;
+         margin-bottom: 0.5em;
+      }
+   }
+
    .block-image {
       background-size: cover;
       padding-bottom: 0px;
@@ -108,6 +116,14 @@ main {
       }
       .lower {
          margin-top: 20vmax;
+      }
+   }
+
+   .body-text-link {
+      color: inherit;
+      border-bottom: 1px dotted $black;
+      &:hover {
+         opacity: 0.5;
       }
    }
 
