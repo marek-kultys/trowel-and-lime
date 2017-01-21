@@ -27,12 +27,19 @@
       background-color: $black-hover;
       border-radius: 2px;
       padding: 1em;
+      outline: none;
       font-family: 'Scope One', serif;
       font-weight: 400;
       font-size: 1.2em;
       &[type="submit"] {
          font-size: 1.6em;
          padding-bottom: 1em !important;
+      }
+      &[type="radio"] {
+         height: auto;
+         float: left;
+         margin-left: 8px;
+         width: 24px;
       }
       &.button {
          padding-top: 0.25em;
@@ -42,11 +49,17 @@
 
    textarea {
       height: 180px;
+      resize: vertical;
    }
 
-   .radio {
-      width: 100px;
+   input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+      box-shadow: 1px 1px 0 $hero-hover;
+   }
+
+   .radios {
+      width: 100%;
       color: grey;
+      margin-bottom: 2em;
    }
 
    .thank-you-seal {

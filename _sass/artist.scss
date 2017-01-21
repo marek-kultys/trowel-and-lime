@@ -2,12 +2,16 @@
 
    .credit-container {
       text-align: right;
-      margin-top: 0em;
+      margin-top: 0.33em;
       margin-bottom: 0em;
       padding-top: 0em;
       padding-bottom: 0em;
       @include span-columns(10);
       @include shift(1);
+   }
+
+   h6 {
+      color: grey;
    }
 
    // IMAGES

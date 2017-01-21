@@ -22,26 +22,26 @@ label: contact
          <form action="https://formspree.io/mrklts@onet.eu" method="POST">
             <p>Name *</p>
             <div class="form-unit">
-               <input type="text" name="name-and-surname" placeholder="Your name and surname">
+               <input type="text" name="name-and-surname" placeholder="Your name and surname" required>
             </div>
-            <p>Company Name (optional)</p>
+            <p>Company Name</p>
             <div class="form-unit">
                <input type="text" name="company-name" placeholder="Name of your company">
             </div>
             <p>Email *</p>
             <div class="form-unit">
-               <input type="email" name="email-address" placeholder="Your email address">
+               <input type="email" name="email-address" placeholder="Your email address" required>
             </div>
-            <p>Phone Number *</p>
+            <p>Phone Number</p>
             <div class="form-unit">
                <input type="tel" name="telephone-number" placeholder="Your mobile or landline number">
             </div>
-            <p>Type of Service (optional)</p>
-            <div class="form-unit radio">
-               <input type="radio" name="type-of-service" value="Design and Make"><p>Design &amp; Make</p><br>
-               <input type="radio" name="type-of-service" value="Make Only"><p>Make Only</p>
+            <p>Type of Service</p>
+            <div class="form-unit radios">
+               <p><input type="radio" name="type-of-service" value="Design and Make">Design &amp; Make</p>
+               <P><input type="radio" name="type-of-service" value="Make Only">Make Only</p>
             </div>
-            <p>Project Details *</p>
+            <p>Project Details</p>
             <div class="form-unit">
                <textarea name="project-details" placeholder="More about your project..."></textarea>
             </div>
