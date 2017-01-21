@@ -11,10 +11,11 @@
          @include span-columns(11);
          @include shift(0.5);
       }
-      @include media($medium) {
+      @include media($small) {
          @include span-columns(10);
          @include shift(1);
       }
+      margin-bottom: 2em;
    }
 
    .materials-unit {
@@ -64,6 +65,44 @@
       }
    }
 
+   .section-examples {
+      @include span-columns(8);
+      @include shift(2);
+      @include media($medium) {
+         @include span-columns(10);
+         @include shift(1);
+      }
+      @include media($small) {
+         @include span-columns(8);
+         @include shift(2);
+      }
+      margin-bottom: 6em;
+   }
+
+   .examples-unit {
+      text-align: center;
+      @include span-columns(4);
+      @include omega(3n);
+      @include media($small) {
+         @include span-columns(12);
+      }
+      p {
+         margin-top: 0em;
+      }
+   }
+
+   .example {
+      margin-top: 3em;
+      margin-bottom: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      width: 100%;
+      padding: 0px;
+      border: 1px solid $black;
+      background-size: cover;
+   }
+
    // IMAGES
    #technique-hero {
       background-image: url("/img/test2.jpg");
@@ -73,7 +112,44 @@
       background-image: url("/img/test3.jpg");
    }
 
-   #badge-1, #badge-2, #badge-3, #badge-4 {
+   #badge-1 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #badge-2 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #badge-3 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #badge-4 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+
+   #example-1 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #example-2 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #example-3 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #example-4 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #example-5 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #example-6 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #example-7 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #example-8 {
+      background-image: url("/img/technique/test4.jpg");
+   }
+   #example-9 {
       background-image: url("/img/technique/test4.jpg");
    }
 
