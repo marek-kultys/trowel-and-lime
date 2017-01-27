@@ -51,7 +51,51 @@
 
 
 // MODAL
+   // .modal {
+   //    display: none;
+   //    position: fixed;
+   //    z-index: 1;
+   //    left: 0;
+   //    top: 0;
+   //    width: 100%;
+   //    height: 100%;
+   //    overflow: auto;
+   //    background-color: $black;
+   //    background-color: $hero-hover;
+   // }
+   //
+   // .modal-content {
+   //    background-color: $white;
+   //    margin-top: 10vmax;
+   //    padding: 20px;
+   //    @include span-columns(9);
+   //    @include shift(1.5);
+   //    @include media($medium) {
+   //       @include span-columns(11);
+   //       @include shift(0.5);
+   //       margin-top: 20vmax;
+   //    }
+   // }
+   //
+   // .close {
+   //    color: $hero-hover;
+   //    float: right;
+   //    font-size: 28px;
+   //    font-weight: bold;
+   // }
+   // .close:hover, .close:focus {
+   //    color: $black;
+   //    text-decoration: none;
+   //    cursor: pointer;
+   // }
+
+
+
+
+
+   // MODAL
    .modal {
+<<<<<<< HEAD
       display: none;
       position: fixed;
       z-index: 1;
@@ -88,4 +132,78 @@
       text-decoration: none;
       cursor: pointer;
    }
+=======
+  $medium-screen: 30em !default;
+  $large-screen: 50em !default;
+
+  label {
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+
+  .modal-state {
+    display: none;
+  }
+
+  .modal-fade-screen { // overlay
+    @include position(fixed, 0 0 0 0);
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    visibility: hidden;
+    z-index: 99999;
+
+    @include media($large-screen) {
+      padding-top: 10em;
+    }
+  }
+
+  .modal-bg {
+    @include position(absolute, 0 0 0 0);
+    cursor: pointer;
+  }
+
+  .modal-close {
+    cursor: pointer;
+  }
+
+  .modal-inner {
+    background-color: #fff;
+    margin: auto;
+    max-height: 95%;
+    overflow: auto;
+    position: relative;
+    top: 0.5em;
+    transition: opacity 0.25s ease;
+    width: 95%;
+
+    @include media($medium-screen) {
+      max-height: 70%;
+      width: 60%;
+    }
+
+    @include media($large-screen) {
+      width: 50%;
+    }
+  }
+
+  .modal-state:checked + .modal-fade-screen {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-closed {
+  overflow: auto;
+}
+
+// Based on code by Kasper Mikiewicz
+
+
+>>>>>>> parent of 029e3a0... going back…
 }
