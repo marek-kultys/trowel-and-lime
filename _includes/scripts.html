@@ -4,6 +4,7 @@
 
 
    // Modal
+<<<<<<< HEAD
    /* http://www.w3schools.com/howto/howto_css_modals.asp */
    var modal = document.getElementById('modal-box-1');
    var btn = document.getElementById("modal-trigger-1");
@@ -11,6 +12,36 @@
    btn.onclick = function() { modal.style.display = "block"; }
    span.onclick = function() { modal.style.display = "none"; }
    window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+=======
+   // http://www.w3schools.com/howto/howto_css_modals.asp
+   // var modal = document.getElementById('modal-box-1');
+   // var btn = document.getElementById("modal-trigger-1");
+   // var span = document.getElementsByClassName("close")[0];
+   // btn.onclick = function() { modal.style.display = "block"; }
+   // span.onclick = function() { modal.style.display = "none"; }
+   // window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } }
+
+
+   // MODAL
+   $(function() {
+      $("#modal-1").on("change", function() {
+         if ($(this).is(":checked")) {
+            $("body").addClass("modal-open");
+         } else {
+            $("body").removeClass("modal-open");
+         }
+      });
+
+      $(".modal-fade-screen, .modal-close").on("click", function() {
+         $(".modal-state:checked").prop("checked", false).change();
+      });
+
+      $(".modal-inner").on("click", function(e) {
+         e.stopPropagation();
+      });
+   });
+
+>>>>>>> parent of 029e3a0... going back…
 
 
    // Google Analytics
