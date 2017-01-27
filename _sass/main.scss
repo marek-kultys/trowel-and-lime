@@ -13,7 +13,7 @@ main {
 
    .section-block {
       text-align: center;
-      padding: 4em 0em;
+      padding: 3em 0em;
       @include span-columns(6);
       @include shift(3);
       @include media($wide) {
@@ -36,7 +36,6 @@ main {
 
    .paragraph {
       text-align: left;
-      padding-top: 2em;
    }
 
    .quote {
@@ -114,6 +113,9 @@ main {
       }
       .hero-text {
          text-align: center;
+      }
+      .lower {
+         margin-top: 20vmax;
       }
    }
 
