@@ -28,19 +28,32 @@ label: gallery
    <section>
       <div class="section-block gallery">
          <div class="gallery-photos view-image">
-            <a id="modal-trigger-1"><img src="/img/gallery/test.jpg"></a>
-            <div id="modal-box-1" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal 1..</p>
-              </div>
+            <div class="modal">
+               <label for="modal-1">
+                  <a class="btn js-btn"><img src="/img/gallery/test.jpg"></a>
+               </label>
+
+               <input class="modal-state" id="modal-1" type="checkbox" />
+               <div class="modal-window">
+                 <div class="modal-inner">
+                   <label class="modal-close" for="modal-1"><img class="zoom-in"src="/img/gallery/test.jpg"></label>
+
+                 </div>
+               </div>
             </div>
-            <a id="modal-trigger-2"><img src="/img/gallery/test2.jpg"></a>
-            <div id="modal-box-2" class="modal">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>Some text in the Modal 2..</p>
-              </div>
+
+            <div class="modal">
+               <label for="modal-2">
+                  <a class="btn js-btn"><img src="/img/gallery/test2.jpg"></a>
+               </label>
+
+               <input class="modal-state" id="modal-2" type="checkbox" />
+               <div class="modal-window">
+                 <div class="modal-inner">
+                   <label class="modal-close" for="modal-2">Close</label>
+                   <p>xxx</p>
+                 </div>
+               </div>
             </div>
          </div>
          <div class="gallery-photos view-image">
@@ -48,7 +61,7 @@ label: gallery
             <a href="#"><img src="/img/gallery/test.jpg"></a>
          </div>
       </div>
-   </section> 
+   </section>
 
    <section>
       <div class="section-block info">
