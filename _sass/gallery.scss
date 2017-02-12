@@ -47,58 +47,8 @@
       @include media($medium) {
          @include span-columns(12);
       }
-   }
-
-
-// MODAL
-   .modal {
-      $modal-padding: 3em;
-      $modal-background: #66dd11;
-
-      label {
-         cursor: pointer;
-         margin-bottom: 0;
-      }
-
-      input[type="checkbox"] {
-         display: none;
-      }
-
-      .modal-open {
-         overflow: hidden;
-      }
-
-      .modal-window { // overlay
-         @include position(fixed, 0px 0px 0px 0px);
-         background: $hero-hover;
-         opacity: 0;
-         visibility: hidden;
-         z-index: 99999999999;
-      }
-
-      .modal-inner {
-         border-radius: 2px;
-         margin: auto;
-         margin-top: 8vh;
-         margin-bottom: 8vh;
-      }
-
-      .enlarged-img {
-         max-height: 90vh;
-         max-width: 90vw;
-         width: auto;
-      }
-
-      .modal-state:checked + .modal-window {
-         opacity: 1;
-         visibility: visible;
-      }
-
-      .modal-state:checked + .modal-window .modal-inner {
-         top: 0;
+      img {
+         display: block;
       }
    }
-
-// Based on code by Kasper Mikiewicz
-
 }
