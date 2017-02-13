@@ -53,16 +53,21 @@ a {
    }
 }
 
-p { // body text
-   font-family: 'Scope One', serif;
-   font-weight: 400;
-   font-size: 1.2em;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5 {
    font-family: 'Scope One', serif;
    font-weight: 400;
    margin: 0px;
+}
+
+p, h4, h6 {
+   font-family: 'Roboto', sans-serif;;
+   font-weight: 300;
+   margin: 0.5em 0;
+}
+
+p { // body text
+   font-size: 1.2em;
+   line-height: 1.6em;
 }
 
 h1 { // logotype
@@ -85,6 +90,7 @@ h3 { // buttons
 
 h4 { // home page paragraphs, gallery title
    font-size: 1.4em;
+   line-height: 1.6em;
 }
 
 h5 { // navbar menu

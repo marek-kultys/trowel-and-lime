@@ -1,6 +1,6 @@
 footer {
    @include outer-container;
-   height: 180px;
+   height: 240px;
    padding-top: 0.66em;
    background-color: $black;
    @include media($wide) {
@@ -8,7 +8,7 @@ footer {
       margin-right: 15px;
    }
    @include media($medium) {
-      height: 240px;
+      height: 320px;
    }
    h6 {
       color: $white;
@@ -44,10 +44,6 @@ footer {
          margin: 0;
          float: none;
       }
-   }
-
-   h4{
-      color: white;
    }
 
    #sitemap {

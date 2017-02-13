@@ -154,13 +154,13 @@ main {
 
 
 // MODAL
-// Derived from code by Kasper Mikiewicz
+// Based on code by Kasper Mikiewicz
    .modal {
       $modal-padding: 3em;
       $modal-background: #66dd11;
 
       label {
-         cursor: pointer;
+         // cursor: pointer;
          margin-bottom: 0;
       }
 
@@ -184,15 +184,37 @@ main {
          border-radius: 2px;
          margin: auto;
          margin-top: 5vh;
-         margin-bottom: 5vh;
+         margin-bottom: 15vh;
+      }
+
+      .modal-container {
+         position: relative;
+      }
+
+      .close-button {
+         width: 100px;
+         border: 1px solid red;
+         h3 {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            &:hover {
+               color: $white;
+            }
+         }
       }
 
       .enlarged-img {
-         max-height: 90vh;
+         max-height: 80vh;
          max-width: 95vw;
+         cursor: pointer;
          width: auto;
+         height: auto;
          margin-left: auto;
          margin-right: auto;
+         border: 1px solid $black;
+         border-radius: 2px;
       }
 
       .modal-state:checked + .modal-window {
