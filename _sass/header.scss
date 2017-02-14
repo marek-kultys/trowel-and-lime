@@ -31,6 +31,20 @@ header {
             }
          }
 
+      .mobile {
+         display: none;
+         @include media($medium) {
+            display: list-item;
+         }
+      }
+
+      .desktop {
+         display: list-item;
+         @include media($medium) {
+            display: none;
+         }
+      }
+
       ul {
          margin: 0px;
          padding: 0px;
