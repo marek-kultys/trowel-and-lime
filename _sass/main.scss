@@ -52,12 +52,16 @@ main {
       padding-bottom: 0px;
       background-position: center top;
       background-repeat: no-repeat;
-      height: 80vh;
+      height: 70vh;
       min-height: 400px;
       @include media($medium) {
          background-size: cover;
          background-position: 12% 0px;
       }
+   }
+
+   .hero {
+      height: 80vh;
    }
 
    .hero-container {
