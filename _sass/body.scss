@@ -24,7 +24,6 @@ $hero-hover: rgba(33, 33, 33, 0.8);
 html {
    overflow-y: scroll; // Fixing jumping scroll bar when page overflows
    overflow-x: hidden;
-
 }
 
 @-ms-viewport {
@@ -49,21 +48,22 @@ a {
    }
 }
 
-h1, h2, h3, h5 {
+h1, h2, h3 {
    font-family: 'Scope One', serif;
    font-weight: 400;
    margin: 0px;
 }
 
-p, h4, h6 {
+p, h4, h5, h6 {
    font-family: 'Roboto', sans-serif;;
    font-weight: 300;
-   margin: 0.5em 0;
+   margin: 0px;
 }
 
 p { // body text
    font-size: 1.2em;
    line-height: 1.6em;
+   margin: 0.5em 0;
 }
 
 h1 { // logotype
@@ -87,19 +87,30 @@ h2 { // page title, hero text
 }
 
 h3 { // buttons
-   font-size: 1.6em;
+   // margin-top: 1px;
+   font-size: 1.6em; // alternatively 1.5em
 }
 
 h4 { // home page paragraphs, gallery title
    font-size: 1.4em;
    line-height: 1.6em;
+   margin: 0.5em 0;
 }
 
 h5 { // navbar menu
    font-size: 1.2em;
+   padding-bottom: 0.66em;
+   position: relative;
+   bottom: 1px;
 }
 
 h6 { // footer
    font-size: 1em;
    line-height: 1.5em;
+   margin: 0.5em 0;
+}
+
+.superscript {
+   position: relative;
+   bottom: 3px;
 }
