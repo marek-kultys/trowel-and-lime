@@ -163,6 +163,37 @@ main {
    }
 
 
+// Round badge
+   .badge {
+      margin-top: 3em;
+      margin-bottom: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      height: 230px;
+      width: 230px;
+      padding: 0px;
+      border-radius: 50%;
+      border: 1px solid $black;
+      background-size: cover;
+      @include media($wide) {
+         height: 190px;
+         width: 190px;
+      }
+      @include media($large) {
+         height: 210px;
+         width: 210px;
+      }
+      @include media($medium) {
+         height: 190px;
+         width: 190px;
+      }
+      @include media($small) {
+         height: 210px;
+         width: 210px;
+      }
+   }
+
+
 // MODAL
 // Based on code by Kasper Mikiewicz
    .modal {
@@ -224,22 +255,22 @@ main {
 
    // IMAGES
    #home-hero-image {
-      background-image: url("/img/test.jpg");
+      background-image: url("/img/white-forest-3-banner.jpg");
    }
 
    #home-banner-1 {
-      background-image: url("/img/test2.jpg");
+      background-image: url("/img/summer-meadow-1-banner.jpg");
    }
 
    #home-banner-2 {
-      background-image: url("/img/test3.jpg");
+      background-image: url("/img/bathroom-pond-1-banner.jpg");
    }
 
    #home-banner-3 {
-      background-image: url("/img/test2.jpg");
+      background-image: url("/img/white-forest-1-banner.jpg");
    }
 
    #home-banner-4 {
-      background-image: url("/img/test3.jpg");
+      background-image: url("/img/summer-meadow-2-banner.jpg");
    }
 }
