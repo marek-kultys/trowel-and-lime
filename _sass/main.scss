@@ -50,13 +50,13 @@ main {
    .block-image {
       background-size: cover;
       padding-bottom: 0px;
-      background-position: center top;
+      background-position: center 50%; // crops image top and bottom and keeps full width to fit in a horizontal frame
       background-repeat: no-repeat;
       height: 70vh;
       min-height: 400px;
       @include media($medium) {
          background-size: cover;
-         background-position: 12% 0px;
+         background-position: center 0px; // crops image left and right and keeps full height to fit in a vertical frame
       }
    }
 
@@ -198,7 +198,7 @@ main {
          margin-left: auto;
          margin-right: auto;
          max-width: 100vw;
-         max-height: 80vh;
+         max-height: 90vh;
          border: 1px solid $black;
          border-radius: 2px;
          @include media ($small) {
