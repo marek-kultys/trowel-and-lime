@@ -3,8 +3,7 @@
 .sass-cache
 _site
 _sketch
-*.jpg
-*.JPG
-*.png
-*.PNG
+_copy
+_photo
+*.psd
 !img/test.jpg
