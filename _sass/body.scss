@@ -12,7 +12,7 @@ $transition: 0.2s;
 // Declare colours
 $main: rgba(171, 199, 230, 1);
 $white: rgba(255, 255, 255, 1);
-$white-hover: rgba(255, 255, 255, 0.6);
+$white-hover: rgba(255, 255, 255, 0.8);
 $black: rgba(33, 33, 33, 1);
 $grey: rgba(33, 33, 33, 0.25);
 $black-hover: rgba(33, 33, 33, 0.1);
@@ -62,12 +62,14 @@ p, h4, h5, h6 {
 
 p { // body text
    font-size: 1.2em;
-   line-height: 1.6em;
+   line-height: 1.7em;
+   color: $black;
    margin: 0.5em 0;
 }
 
 h1 { // logotype
    font-size: 2.6em;
+   color: $white;
 }
 
 h2 { // page title, hero text
@@ -84,17 +86,20 @@ h2 { // page title, hero text
    @include media($medium) {
       font-size: 1.6em;
    }
+   color: $black;
 }
 
 h3 { // buttons
    // margin-top: 1px;
    font-size: 1.6em; // alternatively 1.5em
+   color: $black;
 }
 
 h4 { // home page paragraphs, gallery title
    font-size: 1.4em;
    line-height: 1.6em;
    margin: 0.5em 0;
+   color: $black;
 }
 
 h5 { // navbar menu
@@ -102,12 +107,14 @@ h5 { // navbar menu
    padding-bottom: 0.66em;
    position: relative;
    bottom: 1px;
+   color: $white;
 }
 
 h6 { // footer
    font-size: 1em;
    line-height: 1.5em;
    margin: 0.5em 0;
+   color: $white;
 }
 
 .superscript {
