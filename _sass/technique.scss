@@ -32,23 +32,33 @@
       }
    }
 
+   .list {
+      margin-top: 2em;
+   }
+
    ul {
+      display: block;
       list-style: none;
+      margin: auto;
       padding-left: 0;
       padding-top: 0.33em;
       p {
          padding-top: 0.33em;
+      }
+      li {
+         margin-bottom: 2em;
       }
       li:before {
          font-family: 'Scope One', serif;
          font-weight: 400;
          font-size: 2em;
          color: $main;
-         content: "✔";
+         content: url("/technique/img/check.svg");
          display: block;
          float: left;
-         width: 1.66em;
-         padding-left: 0.1em;
+         width: 1.5em;
+         margin-left: 0.1em;
+         margin-right: 0.33em;
       }
    }
 
