@@ -6,4 +6,5 @@ _sketch
 _copy
 _photo
 *.psd
+*.ai
 !img/test.jpg
