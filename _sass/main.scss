@@ -52,16 +52,12 @@ main {
       padding-bottom: 0px;
       background-position: center 50%; // crops image top and bottom and keeps full width to fit in a horizontal frame
       background-repeat: no-repeat;
-      height: 70vh;
+      height: 60vh;
       min-height: 400px;
       @include media($medium) {
          background-size: cover;
          background-position: center 0px; // crops image left and right and keeps full height to fit in a vertical frame
       }
-   }
-
-   .hero {
-      height: 80vh;
    }
 
    .hero-container {
