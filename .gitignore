@@ -1,10 +1,11 @@
 .DS_Store
 /_site
 .sass-cache
-_site
-_sketch
 _copy
 _photo
+_reviews
+_site
+_sketch
 *.psd
 *.ai
 !img/test.jpg
