@@ -19,6 +19,16 @@ $black-hover: rgba(33, 33, 33, 0.1);
 $hero-hover: rgba(33, 33, 33, 0.8);
 
 
+// HOLDER
+.holder {
+   @include outer-container;
+   margin-top: 25vh;
+   text-align: center;
+   p {
+      color: $white;
+   }
+}
+
 
 // GLOBALS
 html {
