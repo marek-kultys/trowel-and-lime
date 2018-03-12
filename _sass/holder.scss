@@ -4,15 +4,18 @@
    display: block;
 
    .holder-text {
-      position: relative;
+      position:absolute;
+      top:50%;
+      left:50%;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+
       z-index: 999;
-      @include span-columns(8);
-      @include shift(2);
-      margin-top: 33vh;
       text-align: center;
+      @include span-columns(8);
       @include media ($medium) {
-         @include span-columns(10);
-         @include shift(1);
+         @include span-columns(11);
       }
       p {
          color: $white;
