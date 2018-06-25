@@ -1,6 +1,6 @@
 header {
    @include outer-container;
-   color: $white;
+   color: $black;
    margin-bottom: 0.33em;
    // height: 70px;
    @include media($wide) {
@@ -55,7 +55,7 @@ header {
             float: none;
             text-align: right;
 		      display: none;
-            background-color: $black;
+            background-color: $white;
             // position: relative;
             // z-index: 2;
          }
