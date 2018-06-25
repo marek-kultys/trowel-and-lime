@@ -1,7 +1,7 @@
 main {
    width: 100%;
    min-height: calc(100vh - 70px - 180px); /* calculate: 100% vertical height - 70px approx. header height - 120px footer height */
-   @include media($medium) {
+   @include media($for-phone-only) {
       min-height: calc(100vh - 70px - 240px); /* adjust for footer height below medium break-point */
    }
 
@@ -16,11 +16,11 @@ main {
       padding: 4em 0em;
       @include span-columns(6);
       @include shift(3);
-      @include media($wide) {
+      @include media($for-desktop-up) {
          @include span-columns(8);
          @include shift(2);
       }
-      @include media($medium) {
+      @include media($for-tablet-up) {
          @include span-columns(10);
          @include shift(1);
       }
@@ -54,7 +54,7 @@ main {
       background-repeat: no-repeat;
       height: 60vh;
       min-height: 400px;
-      @include media($medium) {
+      @include media($for-tablet-up) {
          background-size: cover;
          background-position: center 0px; // crops image left and right and keeps full height to fit in a vertical frame
       }
@@ -64,13 +64,9 @@ main {
       padding-top: 3em;
       @include span-columns(8);
       @include shift(2);
-      @include media($large) {
+      @include media($for-desktop-up) {
          @include span-columns(10);
          @include shift(1);
-      }
-      @include media($full) {
-         @include span-columns(6);
-         @include shift(3);
       }
    }
 
@@ -171,19 +167,19 @@ main {
       border-radius: 50%;
       border: 1px solid $black;
       background-size: cover;
-      @include media($wide) {
+      @include media($for-desktop-up) {
          height: 190px;
          width: 190px;
       }
-      @include media($large) {
+      @include media($for-desktop-up) {
          height: 210px;
          width: 210px;
       }
-      @include media($medium) {
+      @include media($for-tablet-up) {
          height: 190px;
          width: 190px;
       }
-      @include media($small) {
+      @include media($for-phone-only) {
          height: 210px;
          width: 210px;
       }
@@ -228,7 +224,7 @@ main {
          max-height: 80vh;
          border: 1px solid $black;
          border-radius: 2px;
-         @include media ($medium) {
+         @include media ($for-tablet-up) {
             border-left: none;
             border-right: none;
             border-radius: 0px;

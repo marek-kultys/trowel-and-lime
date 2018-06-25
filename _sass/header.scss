@@ -2,29 +2,20 @@ header {
    @include outer-container;
    color: $black;
    margin-bottom: 0.33em;
-   // height: 70px;
-   @include media($wide) {
-      margin-left: 25px;
-      margin-right: 15px;
+   @include media($for-tablet-up) {
+      padding-left: 25px;
+      padding-right: 15px;
    }
 
    .header-name {
-      @include span-columns(3);
-      // border: 1px solid red;
+      float: left;
       padding-top: 0.66em;
-      //padding-bottom: 0.33em;
-      @include media($medium) {
-         @include span-columns(6);
-      }
    }
 
    .header-menu {
-      @include span-columns(9);
-      // border: 1px solid orange;
+      float: right;
       padding-top: 2em;
-      //padding-bottom: 0.33em;
-      @include media($medium) {
-         @include span-columns(6);
+      @include media($for-phone-only) {
          /*Display 'show menu' link*/
             .show-menu {
                display:block;
@@ -33,14 +24,14 @@ header {
 
       .mobile {
          display: none;
-         @include media($medium) {
+         @include media($for-phone-only) {
             display: list-item;
          }
       }
 
       .desktop {
          display: list-item;
-         @include media($medium) {
+         @include media($for-phone-only) {
             display: none;
          }
       }
@@ -51,11 +42,11 @@ header {
          list-style: none;
          float: right;
          padding-right: 15px;
-         @include media($medium) {
+         @include media($for-phone-only) {
             float: none;
             text-align: right;
 		      display: none;
-            background-color: $white;
+            background-color: $yellow;
             // position: relative;
             // z-index: 2;
          }
@@ -64,7 +55,7 @@ header {
          margin-left: 2em;
          float: left;
          cursor: pointer;
-         @include media($medium) {
+         @include media($for-phone-only) {
             float: none;
             padding-bottom: 1em;
             &:first-of-type {

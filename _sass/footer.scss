@@ -2,17 +2,17 @@ footer {
    @include outer-container;
    height: 240px;
    padding-top: 0.66em;
-   background-color: $black;
-   @include media($wide) {
+   @include media($for-tablet-up) {
       margin-left: 30px;
       margin-right: 15px;
    }
-   @include media($medium) {
+   @include media($for-desktop-up) {
+      margin: auto;
+   }
+   @include media($for-phone-only) {
       height: 320px;
    }
-   h6 {
-      color: $white;
-   }
+
    a:hover {
       color: $white-hover;
       cursor: pointer;
@@ -21,33 +21,34 @@ footer {
    .footer-unit {
       padding-top: 1.33em;
       @include span-columns(4);
-      @include media($medium) {
-         @include span-columns(12);
+      @include media($for-phone-only) {
+         @include span-columns(10);
+         @include shift(1);
       }
    }
    .footer-halfunit {
-      padding-top: 1.33em;
-      @include span-columns(2);
+      // padding-top: 1.33em;
+      @include span-columns(6);
    }
 
    ul {
       margin: 0 0 0.33em 0;
       padding: 0px;
       list-style: none;
-      @include media($medium) {
+      @include media($for-phone-only) {
          float: none;
       }
    }
    li {
       // margin-right: 2em;
-      @include media($medium) {
+      @include media($for-phone-only) {
          margin: 0;
          float: none;
       }
    }
 
    #sitemap {
-      @include media($medium) {
+      @include media($for-phone-only) {
          display: none;
       }
    }

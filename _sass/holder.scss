@@ -14,7 +14,7 @@
       z-index: 999;
       text-align: center;
       @include span-columns(8);
-      @include media ($medium) {
+      @include media ($for-tablet-up) {
          @include span-columns(11);
       }
       p {
