@@ -1,13 +1,22 @@
 name: Trowel & Lime
-taglines:
-   main: I design and make sgraffito murals. It’s a traditional type of decorative art that makes spaces unique.
-   technique: Sgraffito is a type of mural painting. It is made by applying and removing layers of coloured mortar, thereby revealing an image.
-   offer: Private residence? Hotel or restaurant rooms? Garden areas? I work with individual clients, interior designers, and architects to design and make bespoke sgraffito murals.
-   artist: My name is Mela Yerka. I am a professional fine artist specialising in sgraffito, mural, and canvas painting.
-   contact: If you wish to discuss your idea for a sgraffito project, receive a quote, or simply know more about my work, please get in touch.
+company: Trowel and Lime
 author: Mela Yerka
-address: Studio 8, 42/44 Copperfield Road<br>E3 4RR, London
-telephone: (+44) 797 22 96 732
-email: hello@sgraffito.com
-twitter: sgraffito
-facebook: Sgraffito
+
+address:
+   studio:
+      flat: Studio 8
+      street: 42/44 Copperfield Road
+      postcode: E3 4RR
+   home:
+      flat: Flat 3
+      street: 224 Stepney Way
+      postcode: E1 3EZ
+   city: London
+   country: United Kingdom
+
+telephone: (+44)797 22 96 732
+url: trowelandlime.com
+email: hello@trowelandlime.com
+twitter: trowel-and-lime
+facebook: trowel-and-lime
+instagram: trowel-and-lime

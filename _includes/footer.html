@@ -1,18 +1,3 @@
-<div id="links" class="footer-unit">
-   <ul>
-      <li><h6>Email: <a href="mailto:{{ site.data.sgraffito.email }}">{{ site.data.sgraffito.email }}</a></h6></li>
-      <li><h6>Twitter: <a href="http://twitter.com/{{ site.data.sgraffito.twitter }}">@{{ site.data.sgraffito.twitter }}</a></h6></li>
-      <li><h6>Facebook: <a href="http://facebook.com/{{ site.data.sgraffito.facebook }}">{{ site.data.sgraffito.facebook }}</a></h6></li>
-   </ul>
-</div>
-
-<div class="footer-unit">
-   <ul>
-      <li><h6>{{ site.data.sgraffito.address }}</h6></li>
-      <li><h6>All content &copy; {{ 'now' | date: "%Y" }} {{ site.data.sgraffito.author }}</h6></li>
-   </ul>
-</div>
-
 <div id="sitemap" class="footer-unit">
    <div class="footer-halfunit">
       <ul id="sitemap-home">
@@ -24,8 +9,24 @@
          <li><h6><a href="/gallery">Gallery</a></h6></li>
          <li><h6><a href="/technique">Technique</a></h6></li>
          <li><h6><a href="/offer">Offer</a></h6></li>
-         <li><h6><a href="/artist">Artist</a></h6></li>
+         <li><h6><a href="/blog">Blog</a></h6></li>
          <li><h6><a href="/contact">Contact</a></h6></li>
       </ul>
    </div>
+</div>
+
+<div id="links" class="footer-unit">
+   <ul>
+      <li><h6>Email: <a href="mailto:{{ site.data.sgraffito.email }}">{{ site.data.sgraffito.email }}</a></h6></li>
+      <li><h6>Twitter: <a href="http://twitter.com/{{ site.data.sgraffito.twitter }}">@{{ site.data.sgraffito.twitter }}</a></h6></li>
+      <li><h6>Instagram: <a href="http://instagram.com/{{ site.data.sgraffito.instagram }}">{{ site.data.sgraffito.instagram }}</a></h6></li>
+   </ul>
+</div>
+
+<div class="footer-unit">
+   <ul>
+      <li><h6>{{ site.data.sgraffito.address.studio.flat }}, {{ site.data.sgraffito.address.studio.street }}</h6></li>
+      <li><h6>{{ site.data.sgraffito.address.studio.postcode }}, {{ site.data.sgraffito.address.city }}</h6></li>
+      <li><h6>All content &copy; {{ 'now' | date: "%Y" }} {{ site.data.sgraffito.author }}</h6></li>
+   </ul>
 </div>
