@@ -122,7 +122,6 @@ h6 { // footer
 }
 
 .block {
-   border: 1px solid blue;
    @include span-columns($grid-phone);
    @include shift($margin-phone);
    @include media($for-tablet-up) {

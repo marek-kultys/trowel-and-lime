@@ -6,7 +6,6 @@ main {
    }
 
    section {
-      border: 1px solid red;
       @include outer-container(100%);
       display: block;
       background-color: $white;

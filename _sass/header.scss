@@ -1,7 +1,5 @@
 header {
    @include outer-container(100%);
-   color: $black;
-   border: 1px solid red;
 
    .header-name {
       padding-top: 0.66em;

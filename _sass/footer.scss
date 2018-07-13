@@ -1,6 +1,5 @@
 footer {
    @include outer-container(100%);
-   border: 1px solid red;
 
    a:hover {
       color: $white-hover;
@@ -8,7 +7,6 @@ footer {
    }
 
    .footer-unit {
-      border: 1px solid green;
       padding-top: 1.33em;
       @include span-columns(4);
       @include media($for-phone-only) {
