@@ -1,52 +1,61 @@
-<div class="header-name">
-   <a href="/">
-      <h1>
-         Trowel & Lime
-      </h1>
+<div class="header-unit">
+   <div class="header-name">
+      <a href="/">
+         <h1>
+            Trowel & Lime
+         </h1>
+      </a>
+   </div>
+</div>
+
+<div class="header-unit">
+   <div class="header-tagline">
       <h6>
          The rare art of sgraffito
       </h6>
-   </a>
-</div>
+   </div>
 
-<nav class="header-menu">
-   <label for="show-menu" class="show-menu">
-      <h5>
-         <a>Menu</a>
-      </h5>
-   </label>
-   <input type="checkbox" id="show-menu" role="button">
-   <ul id="menu">
-      <span class="mobile">
-         {% if page.label != "home" %}
-            <li><a href="/"><h5>Home</h5></a></li>
-         {% endif %}
-         {% if page.label != "gallery" %}
-            <li><a href="/gallery"><h5>Gallery</h5></a></li>
-         {% endif %}
-         {% if page.label != "technique" %}
-            <li><a href="/technique"><h5>Technique</h5></a></li>
-         {% endif %}
-         {% if page.label != "offer" %}
-            <li><a href="/offer"><h5>Offer</h5></a></li>
-         {% endif %}
-         <!-- {% if page.label != "artist" %}
-            <li><a href="/artist"><h5>Artist</h5></a></li>
-         {% endif %} -->
-         {% if page.label != "blog" %}
-            <li><a href="/blog"><h5>Blog</h5></a></li>
-         {% endif %}
-         {% if page.label != "contact" %}
-            <li><a href="/contact"><h5>Contact</h5></a></li>
-         {% endif %}
-      </span>
-      <span class="desktop">
-         <li><a href="/gallery"><h5>Gallery</h5></a></li>
-         <li><a href="/technique"><h5>Technique</h5></a></li>
-         <li><a href="/offer"><h5>Offer</h5></a></li>
-         <!-- <li><a href="/artist"><h5>Artist</h5></a></li> -->
-         <li><a href="/blog"><h5>Blog</h5></a></li>
-         <li><a href="/contact"><h5>Contact</h5></a></li>
-      </span>
-   </ul>
-</nav>
+   <nav>
+      <div class="header-menu">
+         <label for="show-menu" class="show-menu">
+            <h6>
+               <a>Menu</a>
+            </h6>
+         </label>
+         <input type="checkbox" id="show-menu" role="button">
+         <ul id="menu">
+            <span class="mobile">
+               {% if page.label != "home" %}
+                  <li><a href="/"><h6>Home</h6></a></li>
+               {% endif %}
+               {% if page.label != "gallery" %}
+                  <li><a href="/gallery"><h6>Gallery</h6></a></li>
+               {% endif %}
+               {% if page.label != "technique" %}
+                  <li><a href="/technique"><h6>Technique</h6></a></li>
+               {% endif %}
+               {% if page.label != "offer" %}
+                  <li><a href="/offer"><h6>Offer</h6></a></li>
+               {% endif %}
+               <!-- {% if page.label != "artist" %}
+                  <li><a href="/artist"><h6>Artist</h6></a></li>
+               {% endif %} -->
+               {% if page.label != "blog" %}
+                  <li><a href="/blog"><h6>Blog</h6></a></li>
+               {% endif %}
+               {% if page.label != "contact" %}
+                  <li><a href="/contact"><h6>Contact</h6></a></li>
+               {% endif %}
+            </span>
+            <span class="desktop">
+               <li><a href="/gallery"><h6>Gallery</h6></a></li>
+               <li><a href="/technique"><h6>Technique</h6></a></li>
+               <li><a href="/offer"><h6>Offer</h6></a></li>
+               <!-- <li><a href="/artist"><h6>Artist</h6></a></li> -->
+               <li><a href="/blog"><h6>Blog</h6></a></li>
+               <li><a href="/contact"><h6>Contact</h6></a></li>
+            </span>
+         </ul>
+      </div>
+   </nav>
+</div>
