@@ -13,15 +13,8 @@ main {
    }
 
    .section-block {
-      border: 1px solid blue;
       text-align: center;
       padding: 4em 0em;
-      @include span-columns($grid-phone);
-      @include shift($margin-phone);
-      @include media($for-tablet-up) {
-         @include span-columns($grid-desktop);
-         @include shift($margin-desktop);
-      }
    }
 
    .no-padding-bottom {

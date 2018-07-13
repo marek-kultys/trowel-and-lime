@@ -3,17 +3,6 @@ header {
    color: $black;
    border: 1px solid red;
 
-
-   .header-unit {
-      border: 1px solid blue;
-      @include span-columns($grid-phone);
-      @include shift($margin-phone);
-      @include media($for-tablet-up) {
-         @include span-columns($grid-desktop);
-         @include shift($margin-desktop);
-      }
-   }
-
    .header-name {
       padding-top: 0.66em;
    }

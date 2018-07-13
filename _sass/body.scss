@@ -120,3 +120,13 @@ h6 { // footer
    position: relative;
    bottom: 3px;
 }
+
+.block {
+   border: 1px solid blue;
+   @include span-columns($grid-phone);
+   @include shift($margin-phone);
+   @include media($for-tablet-up) {
+      @include span-columns($grid-desktop);
+      @include shift($margin-desktop);
+   }
+}

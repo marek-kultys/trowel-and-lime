@@ -2,17 +2,6 @@ footer {
    @include outer-container(100%);
    border: 1px solid red;
 
-   .footer-block {
-      border: 1px solid blue;
-      padding-bottom: 1.33em;
-      @include span-columns($grid-phone);
-      @include shift($margin-phone);
-      @include media($for-tablet-up) {
-         @include span-columns($grid-desktop);
-         @include shift($margin-desktop);
-      }
-   }
-
    a:hover {
       color: $white-hover;
       cursor: pointer;
