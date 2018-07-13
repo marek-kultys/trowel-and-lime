@@ -6,24 +6,21 @@ main {
    }
 
    section {
+      border: 1px solid red;
       @include outer-container(100%);
       display: block;
       background-color: $white;
-      border: 1px solid red;
    }
 
    .section-block {
+      border: 1px solid blue;
       text-align: center;
       padding: 4em 0em;
-      @include span-columns(6);
-      @include shift(3);
-      @include media($for-desktop-up) {
+      @include span-columns(11);
+      @include shift(0.5);
+      @include media($for-tablet-up) {
          @include span-columns(8);
          @include shift(2);
-      }
-      @include media($for-tablet-up) {
-         @include span-columns(10);
-         @include shift(1);
       }
    }
 

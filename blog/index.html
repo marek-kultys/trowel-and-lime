@@ -4,18 +4,32 @@ title: Trowel & Lime | Blog
 label: blog
 ---
 
-<!-- Post Styling -->
-{% for post in paginator.posts %}
-	<div class="blog-post">
-		<div class="blog-head">
+<article class="blog">
+
+	<section>
+      <div class="section-block">
+         <h2>Blog</h2>
+      </div>
+   </section>
+
+	<!-- Post Styling -->
+	{% for post in paginator.posts %}
+	<section>
+		<div class="section-block">
 			<h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
 			<p class="metadata">
 				{% include byline.html post=post %}
 			</p>
-		</div><!-- #blog-head -->
-		{{ post.content }}
-	</div><!-- #blog-post -->
-{% endfor %}
+			{{ post.excerpt }}
+		</div>
+	</section>
+	{% endfor %}
 
-{% include paginate.html %}
+	<section>
+		<div class="section-block">
+			{% include paginate.html %}
+		</div>
+	</section>
+
+</article>
 
