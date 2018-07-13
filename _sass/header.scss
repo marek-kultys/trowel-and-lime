@@ -1,22 +1,30 @@
 header {
-   @include outer-container;
+   @include outer-container(100%);
    color: $black;
-   margin-bottom: 0.33em;
-   @include media($for-tablet-up) {
-      padding-left: 25px;
-      padding-right: 15px;
+   border: 1px solid red;
+
+
+   .header-unit {
+      border: 1px solid blue;
+      @include span-columns($grid-phone);
+      @include shift($margin-phone);
+      @include media($for-tablet-up) {
+         @include span-columns($grid-desktop);
+         @include shift($margin-desktop);
+      }
    }
 
    .header-name {
-      float: left;
       padding-top: 0.66em;
    }
 
+   .header-tagline {
+      float: left;
+   }
+
    .header-menu {
-      float: right;
-      padding-top: 2em;
       @include media($for-phone-only) {
-         /*Display 'show menu' link*/
+         /*Display 'menu' link*/
             .show-menu {
                display:block;
             }
@@ -30,9 +38,9 @@ header {
       }
 
       .desktop {
-         display: list-item;
-         @include media($for-phone-only) {
-            display: none;
+         display: none;
+         @include media($for-tablet-up) {
+            display: list-item;
          }
       }
 
@@ -41,14 +49,11 @@ header {
          padding: 0px;
          list-style: none;
          float: right;
-         padding-right: 15px;
          @include media($for-phone-only) {
             float: none;
             text-align: right;
 		      display: none;
-            background-color: $yellow;
-            // position: relative;
-            // z-index: 2;
+            background-color: $white;
          }
       }
       li {
@@ -59,7 +64,7 @@ header {
             float: none;
             padding-bottom: 1em;
             &:first-of-type {
-               padding-top: 1.66em;
+               padding-top: 1em;
             }
          }
       }
@@ -68,8 +73,6 @@ header {
    /*Style 'show menu' label button and hide it by default*/
    .show-menu {
    	text-align: right;
-      padding-right: 15px;
-      // padding-bottom: 1em;
    	display: none;
       cursor: pointer;
    }

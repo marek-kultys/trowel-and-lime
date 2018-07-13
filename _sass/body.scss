@@ -4,6 +4,12 @@ $for-phone-only: new-breakpoint(max-width 767px);
 $for-tablet-up: new-breakpoint(min-width 768px);
 $for-desktop-up: new-breakpoint(min-width 992px);
 
+// Declare grid units
+$grid-phone: 11;
+$margin-phone: 0.5;
+$grid-desktop: 8;
+$margin-desktop: 2;
+
 // Declare transition
 $transition: 0.2s;
 

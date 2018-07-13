@@ -16,11 +16,11 @@ main {
       border: 1px solid blue;
       text-align: center;
       padding: 4em 0em;
-      @include span-columns(11);
-      @include shift(0.5);
+      @include span-columns($grid-phone);
+      @include shift($margin-phone);
       @include media($for-tablet-up) {
-         @include span-columns(8);
-         @include shift(2);
+         @include span-columns($grid-desktop);
+         @include shift($margin-desktop);
       }
    }
 

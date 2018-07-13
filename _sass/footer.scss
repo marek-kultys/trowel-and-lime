@@ -1,16 +1,16 @@
 footer {
-   @include outer-container;
-   height: 240px;
-   padding-top: 0.66em;
-   @include media($for-tablet-up) {
-      margin-left: 30px;
-      margin-right: 15px;
-   }
-   @include media($for-desktop-up) {
-      margin: auto;
-   }
-   @include media($for-phone-only) {
-      height: 320px;
+   @include outer-container(100%);
+   border: 1px solid red;
+
+   .footer-block {
+      border: 1px solid blue;
+      padding-bottom: 1.33em;
+      @include span-columns($grid-phone);
+      @include shift($margin-phone);
+      @include media($for-tablet-up) {
+         @include span-columns($grid-desktop);
+         @include shift($margin-desktop);
+      }
    }
 
    a:hover {
@@ -19,6 +19,7 @@ footer {
    }
 
    .footer-unit {
+      border: 1px solid green;
       padding-top: 1.33em;
       @include span-columns(4);
       @include media($for-phone-only) {
@@ -27,7 +28,6 @@ footer {
       }
    }
    .footer-halfunit {
-      // padding-top: 1.33em;
       @include span-columns(6);
    }
 
