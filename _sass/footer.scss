@@ -1,5 +1,9 @@
 footer {
    @include outer-container(100%);
+   background-color: $white;
+   position: relative;
+   z-index: 999;
+   padding-bottom: 1em;
 
    a:hover {
       color: $white-hover;

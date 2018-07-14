@@ -1,5 +1,9 @@
 header {
    @include outer-container(100%);
+   background-color: $white;
+   position: relative;
+   z-index: 999;
+   padding-bottom: 0.33em;
 
    .header-name {
       padding-top: 0.66em;
@@ -44,7 +48,7 @@ header {
          }
       }
       li {
-         margin-left: 2em;
+         margin-left: 1em;
          float: left;
          cursor: pointer;
          @include media($for-phone-only) {
