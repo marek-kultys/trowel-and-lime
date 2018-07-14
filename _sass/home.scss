@@ -1,0 +1,32 @@
+.home {
+   .hero-container {
+      @include outer-container(100%);
+      width: 100vw;
+      height: 90vh;
+      background-image: url("/img/banner-old-street-1.jpg");
+      background-size: cover;
+      background-position: 50% 0;
+   }
+
+   .hero-text {
+      height: 100%;
+      @include span-columns(5);
+      @include shift(3.5);
+      text-align: center;
+      display: flex;
+      align-items: center;
+
+      div {
+         margin-bottom: 10vh;
+
+         h3 {
+            color: $white;
+         }
+      }
+   }
+
+}
+
+
+
+
