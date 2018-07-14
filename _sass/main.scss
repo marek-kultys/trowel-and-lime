@@ -50,20 +50,6 @@ main {
       }
    }
 
-   .hero-container {
-      padding-top: 3em;
-      @include span-columns(8);
-      @include shift(2);
-      @include media($for-desktop-up) {
-         @include span-columns(10);
-         @include shift(1);
-      }
-   }
-
-   .hero-text {
-      text-align: center;
-   }
-
    .button {
       background-color: $white;
       max-width: 280px;
@@ -232,27 +218,4 @@ main {
       }
    }
 
-
-
-
-   // IMAGES
-   #home-hero-image {
-      background-image: url("/img/banner-white-forest-3.jpg");
-   }
-
-   #home-banner-1 {
-      background-image: url("/img/banner-summer-meadow-1.jpg");
-   }
-
-   #home-banner-2 {
-      background-image: url("/img/banner-bathroom-pond-1.jpg");
-   }
-
-   #home-banner-3 {
-      background-image: url("/img/banner-white-forest-1.jpg");
-   }
-
-   #home-banner-4 {
-      background-image: url("/img/banner-summer-meadow-2.jpg");
-   }
 }
