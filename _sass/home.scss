@@ -3,7 +3,7 @@
       @include outer-container(100%);
       width: 100vw;
       height: 90vh;
-      background-image: url("/img/banner-old-street-1.jpg");
+      background-image: url("/img/banner-old-street-2.jpg");
       background-size: cover;
       background-position: 50% 0;
    }
@@ -20,8 +20,8 @@
          display: flex;
       }
       @include media($for-desktop-up) {
-         @include span-columns(6);
-         @include shift(3);
+         @include span-columns(5.4);
+         @include shift(3.3);
          display: flex;
       }
 
@@ -37,7 +37,7 @@
          padding: 0.75em 3em;
       }
       @include media($for-desktop-up) {
-         padding: 1em 4.8em;
+         padding: 1em 4em;
       }
       background-color: $yellow-trans;
       border-radius: 8px;
