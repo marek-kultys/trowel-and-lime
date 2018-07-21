@@ -11,7 +11,7 @@ $grid-desktop: 8;
 $margin-desktop: 2;
 
 // Declare transition
-$transition: 0.2s;
+$transition: 0.12s;
 
 // Declare colours
 $main: rgba(171, 199, 230, 1);
@@ -22,7 +22,7 @@ $grey: rgba(33, 33, 33, 0.25);
 $black-hover: rgba(33, 33, 33, 0.33);
 $hero-hover: rgba(33, 33, 33, 0.8);
 $yellow: rgba(250, 199, 6, 1);
-$yellow-trans: rgba(250, 199, 6, 0.66);
+$yellow-trans: rgba(250, 199, 6, 0.6);
 
 
 
@@ -50,18 +50,19 @@ a {
    text-decoration: none;
    &:hover {
       transition: $transition;
-      color: $black-hover;
+      color: $yellow;
+      border-bottom: 1px dashed $yellow;
    }
 }
 
 h1, h2, h3 {
-   font-family: 'Playfair Display', serif;;
+   font-family: 'Playfair Display', serif;
    font-weight: 700;
    margin: 0px;
 }
 
 p, h4, h5, h6 {
-   font-family: 'Open+sans', sans-serif;;
+   font-family: 'Open Sans', sans-serif;
    font-weight: 300;
    margin: 0px;
 }
@@ -90,7 +91,6 @@ h2 { // page title, hero text
 }
 
 h3 { // buttons
-   // margin-top: 1px;
    font-size: 1.6em; // alternatively 1.5em
    color: $black;
 }
@@ -102,20 +102,16 @@ h4 { // home page paragraphs, gallery title
    color: $black;
 }
 
-h5 { // navbar menu
-   font-size: 1.2em;
-   padding-bottom: 0.66em;
-   position: relative;
-   bottom: 1px;
-   letter-spacing: 1px;
-}
-
-h6 { // footer
+h5, h6 { // basic navbar and footer style
    font-size: 1em;
    line-height: 1.5em;
    margin: 0.5em 0;
    color: $black;
 }
+
+
+
+
 
 .superscript {
    position: relative;

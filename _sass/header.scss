@@ -3,19 +3,25 @@ header {
    background-color: $white;
    position: relative;
    z-index: 999;
-   padding-bottom: 0.33em;
+   padding-bottom: 0.5em;
 
    .header-name {
-      padding-top: 0.66em;
+      padding-top: 0.5em;
    }
 
    .header-tagline {
       float: left;
    }
 
+   h5 { // additional navbar styles
+      position: relative;
+      bottom: 1px;
+      letter-spacing: 0.5px;
+   }
+
    .header-menu {
       @include media($for-phone-only) {
-         /*Display 'menu' link*/
+         /*Display the 'menu' link*/
             .show-menu {
                display:block;
             }
@@ -44,18 +50,18 @@ header {
             float: none;
             text-align: right;
 		      display: none;
-            background-color: $white;
+            // background-color: $white;
          }
       }
       li {
-         margin-left: 1em;
+         margin-left: 0.8em;
          float: left;
          cursor: pointer;
          @include media($for-phone-only) {
             float: none;
-            padding-bottom: 1em;
+            padding-bottom: 0.5em;
             &:first-of-type {
-               padding-top: 1em;
+               padding-top: 0.5em;
             }
          }
       }
