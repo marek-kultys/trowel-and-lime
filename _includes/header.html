@@ -8,7 +8,7 @@
    </div>
 </div>
 
-<div class="block">
+<div class="block menu-elements">
    <div class="header-tagline">
       <!-- This does not render with a yellow style on hover when below the phone-only breakpoint -->
       <h5><a href="/">The rare art of sgraffito</a></h5>
@@ -17,37 +17,22 @@
    <nav>
       <div class="header-menu">
          <label for="show-menu" class="show-menu">
-            <h5><a>Menu</a></h5>
+            <h5><a class="active-menu">Menu</a></h5>
          </label>
          <input type="checkbox" id="show-menu" role="button">
          <ul id="menu">
             <span class="mobile">
                <!-- Instead of disappearing the current page in the menu, all should be displayed with different styling for the current one to indicate that this page is current -->
-               {% if page.label != "home" %}
-                  <li><h5><a href="/">Home</a></h5></li>
-               {% endif %}
-               {% if page.label != "gallery" %}
-                  <li><h5><a href="/gallery">Gallery</a></h5></li>
-               {% endif %}
-               {% if page.label != "technique" %}
-                  <li><h5><a href="/technique">Technique</a></h5></li>
-               {% endif %}
-               {% if page.label != "offer" %}
-                  <li><h5><a href="/offer">Offer</a></h5></li>
-               {% endif %}
-               {% if page.label != "blog" %}
-                  <li><h5><a href="/blog">Blog</a></h5></li>
-               {% endif %}
-               {% if page.label != "contact" %}
-                  <li><h5><a href="/contact">Contact</a></h5></li>
-               {% endif %}
+               <li><h5><a {% if page.label == 'case-studies' %} class="current-page" {% endif %} href="/case-studies">Case studies</a></h5></li>
+               <li><h5><a {% if page.label == 'how-i-work' %} class="current-page" {% endif %} href="/how-i-work">How I work</a></h5></li>
+               <li><h5><a {% if page.label == 'contact' %} class="current-page" {% endif %} href="/contact">Contact</a></h5></li>
+               <li><h5><a {% if page.label == 'blog' %} class="current-page" {% endif %} href="/blog">Blog</a></h5></li>
             </span>
             <span class="desktop">
-               <li><h5><a href="/gallery">Gallery</a></h5></li>
-               <li><h5><a href="/technique">Technique</a></h5></li>
-               <li><h5><a href="/offer">Offer</a></h5></li>
-               <li><h5><a href="/blog">Blog</a></h5></li>
+               <li><h5><a href="/case-studies">Case studies</a></h5></li>
+               <li><h5><a href="/how-i-work">How I work</a></h5></li>
                <li><h5><a href="/contact">Contact</a></h5></li>
+               <li><h5><a href="/blog">Blog</a></h5></li>
             </span>
          </ul>
       </div>
