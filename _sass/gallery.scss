@@ -1,4 +1,11 @@
 .gallery {
+   .page-hero {
+      background-image: url("/img/banner-old-street-2.jpg");
+      background-size: cover;
+      background-position: 50% 0;
+      border-radius: $radius;
+   }
+
    .info {
       padding-top: 1em;
       padding-bottom: 0.33em;

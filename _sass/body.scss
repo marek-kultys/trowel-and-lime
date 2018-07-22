@@ -10,8 +10,9 @@ $margin-phone: 0.5;
 $grid-desktop: 8;
 $margin-desktop: 2;
 
-// Declare transition
+// Declare style elements
 $transition: 0.12s;
+$radius: 8px;
 
 // Declare colours
 $main: rgba(171, 199, 230, 1);
@@ -55,8 +56,14 @@ a {
    }
 }
 
-h1, h2, h3 {
+h1 {
    font-family: 'Playfair Display', serif;
+   font-weight: 700;
+   margin: 0px;
+}
+
+h2, h3 {
+   font-family: 'Rufina', serif;
    font-weight: 700;
    margin: 0px;
 }
