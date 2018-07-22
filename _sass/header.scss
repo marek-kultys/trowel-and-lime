@@ -3,10 +3,16 @@ header {
    background-color: $white;
    position: relative;
    z-index: 999;
-   padding-bottom: 0.5em;
+   padding-bottom: 1em;
 
    .header-name {
       padding-top: 0.5em;
+   }
+
+   .menu-elements {
+      h5 {
+         margin-top: 0.5em;
+      }
    }
 
    .header-tagline {
@@ -54,15 +60,31 @@ header {
          }
       }
       li {
-         margin-left: 0.8em;
          float: left;
          cursor: pointer;
          @include media($for-phone-only) {
             float: none;
-            padding-bottom: 0.5em;
-            &:first-of-type {
-               padding-top: 0.5em;
+            padding-top: 0.66em;
+            &:last-of-type {
+               padding-bottom: 0.66em;
             }
+         }
+         @include media($for-tablet-up) {
+            margin-left: 0.8em;
+         }
+      }
+
+      .current-page {
+         border-bottom: 1px dashed $black;
+         &:hover {
+            border-color: $yellow;
+         }
+      }
+
+      .active-menu {
+         &:hover {
+            color: $black;
+            border: none;
          }
       }
    }
