@@ -1,4 +1,5 @@
 main {
+   background-color: $main;
    width: 100%;
    min-height: calc(100vh - 70px - 180px); /* calculate: 100% vertical height - 70px approx. header height - 120px footer height */
    @include media($for-phone-only) {
@@ -8,7 +9,7 @@ main {
    section {
       @include outer-container(100%);
       display: block;
-      background-color: $white;
+      // background-color: $white;
    }
 
    .section-block {
