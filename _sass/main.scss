@@ -19,6 +19,17 @@ main {
       // border-radius: 8px;
    }
 
+   .page-hero {
+      background-size: cover;
+      background-position: 50% 0;
+      border-radius: $radius;
+      margin-bottom: 1em;
+      height: 12em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
    .no-padding-bottom {
       padding-bottom: 0;
    }
