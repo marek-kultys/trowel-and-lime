@@ -12,20 +12,13 @@ main {
       // background-color: $white;
    }
 
-   .section-block {
-      text-align: center;
-      padding: 2em 0em;
-      // margin-top: 2em;
-      // background-color: $yellow-trans;
-      // border-radius: 8px;
-   }
-
    .page-hero {
       background-size: cover;
       background-position: 50% 0;
-      border-radius: $radius;
+      // border-radius: $radius;
       margin-bottom: 1em;
-      height: 12em;
+      height: 30vh;
+      min-height: 12em;
       display: flex;
       align-items: center;
       justify-content: center;
