@@ -7,15 +7,15 @@ $for-desktop-up: new-breakpoint(min-width 992px);
 // Declare grid units
 $grid-phone: 11;
 $margin-phone: 0.5;
-$grid-desktop: 8;
-$margin-desktop: 2;
+$grid-desktop: 9;
+$margin-desktop: 1.5;
 
 // Declare style elements
-$transition: 0.12s;
+$transition: 0.33s;
 $radius: 8px;
 
 // Declare colours
-$main: rgba(248, 248, 246, 1);
+$main: rgba(246, 246, 244, 1);
 $white: rgba(255, 255, 255, 1);
 $white-hover: rgba(255, 255, 255, 0.66);
 $black: rgba(33, 33, 33, 1);
