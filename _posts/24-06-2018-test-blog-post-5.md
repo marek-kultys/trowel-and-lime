@@ -3,9 +3,14 @@ layout: blog-post
 author: my
 title: Trowel & Lime Test Blog Post 5
 published: true
+excerpt_separator: <!--more-->
 ---
 
+![My new sgraffito](/img/blog-tools.png)
+
 Aenean et massa pharetra, luctus tortor eget, imperdiet erat. Vivamus iaculis, nibh nec tempor dapibus, nunc lacus gravida magna, non euismod odio elit sit amet augue. Quisque condimentum auctor nisi vel sollicitudin. Proin eu pharetra nunc, at fringilla ex. Pellentesque porta lacinia magna.
+
+ <!--more-->
 
 Aenean et quam pharetra, mattis lectus quis, interdum leo. Vivamus tincidunt eget turpis a luctus. Donec sed pretium dolor. Etiam eget nunc vehicula, tempus ante vitae, sollicitudin risus. Nulla facilisi. Aenean congue, neque a interdum tincidunt, arcu erat blandit ligula, nec elementum nibh augue vitae turpis. Fusce mattis lacus sed nibh posuere, vitae suscipit eros iaculis. In hac habitasse platea dictumst.
 
