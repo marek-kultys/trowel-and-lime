@@ -19,9 +19,7 @@ $main: rgba(246, 246, 244, 1);
 $white: rgba(255, 255, 255, 1);
 $white-hover: rgba(255, 255, 255, 0.66);
 $black: rgba(33, 33, 33, 1);
-$grey: rgba(33, 33, 33, 0.25);
-$black-hover: rgba(33, 33, 33, 0.33);
-$hero-hover: rgba(33, 33, 33, 0.8);
+$black-trans: rgba(33, 33, 33, 0.5);
 $yellow: rgba(250, 199, 6, 1);
 $yellow-trans: rgba(250, 199, 6, 0.6);
 
@@ -56,29 +54,33 @@ a {
    }
 }
 
-h1 {
+h1, h2 {
    font-family: 'Playfair Display', serif;
    font-weight: 700;
    margin: 0px;
 }
 
-h2, h3 {
-   font-family: 'Rufina', serif;
-   font-weight: 700;
+p, h3, h4, h5 {
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 400;
    margin: 0px;
 }
 
-p, h4, h5, h6 {
+h6 {
    font-family: 'Open Sans', sans-serif;
    font-weight: 300;
    margin: 0px;
 }
 
 p { // body text
-   font-size: 1.2em;
-   line-height: 1.7em;
    color: $black;
    margin: 0.5em 0;
+   font-size: 1em;
+   line-height: 1.6em;
+   @include media($for-tablet-up) {
+      font-size: 1.2em;
+      line-height: 1.7em;
+   }
 }
 
 h1 { // logotype
@@ -87,19 +89,18 @@ h1 { // logotype
 }
 
 h2 { // page title, hero text
-   font-size: 1.6em;
+   color: $yellow;
+   font-size: 2em;
+   display: inline-block;
+   border-bottom: 1px solid $yellow;
+   padding-bottom: 12px;
+   margin-bottom: 12px;
    @include media($for-tablet-up) {
       font-size: 2.2em;
    }
    @include media($for-desktop-up) {
       font-size: 2.6em;
    }
-   color: $black;
-}
-
-h3 { // buttons
-   font-size: 1.6em; // alternatively 1.5em
-   color: $black;
 }
 
 h4 { // home page paragraphs, gallery title
@@ -109,16 +110,19 @@ h4 { // home page paragraphs, gallery title
    color: $black;
 }
 
-h5, h6 { // basic navbar and footer style
+h5 { // buttons
+   color: $black;
+   font-size: 1em;
+   @include media($for-tablet-up) {
+      font-size: 1.2em;
+   }
+}
+
+h6 { // basic navbar and footer style
    font-size: 1em;
    line-height: 1.5em;
    margin-top: 1em;
    color: $black;
-}
-
-.superscript {
-   position: relative;
-   bottom: 3px;
 }
 
 .block {

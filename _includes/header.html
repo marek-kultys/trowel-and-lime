@@ -11,28 +11,28 @@
 <div class="block menu-elements">
    <div class="header-tagline">
       <!-- This does not render with a yellow style on hover when below the phone-only breakpoint -->
-      <h5><a href="/">The unique art of sgraffito</a></h5>
+      <h6><a href="/">The unique art of sgraffito</a></h6>
    </div>
 
    <nav>
       <div class="header-menu">
          <label for="show-menu" class="show-menu">
-            <h5><a class="active-menu">Menu</a></h5>
+            <h6><a class="active-menu">Menu</a></h6>
          </label>
          <input type="checkbox" id="show-menu" role="button">
          <ul id="menu">
             <span class="mobile">
                <!-- Instead of disappearing the current page in the menu, all should be displayed with different styling for the current one to indicate that this page is current -->
-               <li><h5><a {% if page.label == 'case-studies' %} class="current-page" {% endif %} href="/case-studies">Case studies</a></h5></li>
-               <li><h5><a {% if page.label == 'how-we-work' %} class="current-page" {% endif %} href="/how-we-work">How we work</a></h5></li>
-               <li><h5><a {% if page.label == 'contact' %} class="current-page" {% endif %} href="/contact">Contact</a></h5></li>
-               <li><h5><a {% if page.label == 'blog' %} class="current-page" {% endif %} href="/blog">Blog</a></h5></li>
+               <li><h6><a {% if page.label == 'case-studies' %} class="current-page" {% endif %} href="/case-studies">Case studies</a></h6></li>
+               <li><h6><a {% if page.label == 'how-we-work' %} class="current-page" {% endif %} href="/how-we-work">How we work</a></h6></li>
+               <li><h6><a {% if page.label == 'contact' %} class="current-page" {% endif %} href="/contact">Contact</a></h6></li>
+               <li><h6><a {% if page.label == 'blog' %} class="current-page" {% endif %} href="/blog">Blog</a></h6></li>
             </span>
             <span class="desktop">
-               <li><h5><a href="/case-studies">Case studies</a></h5></li>
-               <li><h5><a href="/how-we-work">How we work</a></h5></li>
-               <li><h5><a href="/contact">Contact</a></h5></li>
-               <li><h5><a href="/blog">Blog</a></h5></li>
+               <li><h6><a href="/case-studies">Case studies</a></h6></li>
+               <li><h6><a href="/how-we-work">How we work</a></h6></li>
+               <li><h6><a href="/contact">Contact</a></h6></li>
+               <li><h6><a href="/blog">Blog</a></h6></li>
             </span>
          </ul>
       </div>
