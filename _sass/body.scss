@@ -74,8 +74,8 @@ h6 {
 
 p { // body text
    color: $black;
-   margin: 0.5em 0;
    font-size: 1em;
+   margin: 0.5em 0;
    line-height: 1.6em;
    @include media($for-tablet-up) {
       font-size: 1.2em;
@@ -83,12 +83,12 @@ p { // body text
    }
 }
 
-h1 { // logotype
-   font-size: 2.1em;
+h1 { // used for logotype
    color: $black;
+   font-size: 2.1em;
 }
 
-h2 { // page title, hero text
+h2 { // user for page title and section headers
    color: $yellow;
    font-size: 2em;
    display: inline-block;
@@ -104,13 +104,13 @@ h2 { // page title, hero text
 }
 
 h4 { // home page paragraphs, gallery title
+   color: $black;
    font-size: 1.5em;
    line-height: 1.6em;
    margin: 0.5em 0;
-   color: $black;
 }
 
-h5 { // buttons
+h5 { // used for buttons
    color: $black;
    font-size: 1em;
    @include media($for-tablet-up) {
@@ -118,11 +118,12 @@ h5 { // buttons
    }
 }
 
-h6 { // basic navbar and footer style
+h6 { // used for basic navbar and footer style
+   color: $black;
    font-size: 1em;
    line-height: 1.5em;
-   margin-top: 1em;
-   color: $black;
+   margin-top: 0.5em;
+   // letter-spacing: 0.2px;
 }
 
 .block {
