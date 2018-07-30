@@ -17,10 +17,8 @@
       border-radius: 20px;
       height: 40px;
       padding: 0px 16px 0px 16px;
-      // color: $hero-hover;
-      // border: 1px solid $hero-hover;
       color: $white;
-      background-color: $grey;
+      background-color: $black;
    }
 
    .table {
@@ -51,7 +49,7 @@
    }
 
    .table-header {
-      background-color: $grey;
+      background-color: $black;
       width: 100%;
       text-align: center;
       border-top-left-radius: 2px;
@@ -67,7 +65,7 @@
    }
 
    .table-cell {
-      background-color: $black-hover;
+      background-color: $black-trans;
       width: 100%;
       text-align: center;
       border-bottom-left-radius: 2px;
