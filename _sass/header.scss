@@ -9,28 +9,16 @@ header {
       padding-top: 0.5em;
    }
 
-   .menu-elements {
-      h6 {
-         margin-top: 0.25em;
-      }
-   }
-
    .header-tagline {
       float: left;
    }
 
    h6 { // additional navbar styles
-      font-weight: 300;
       position: relative;
-      bottom: 1px;
-      letter-spacing: 0.75px;
-   }
-
-   nav {
-      float: right;
    }
 
    .header-menu {
+      float: right;
       @include media($for-phone-only) {
          /*Display the 'menu' link*/
             .show-menu {
@@ -62,6 +50,7 @@ header {
 		      display: none;
          }
       }
+
       li {
          float: left;
          cursor: pointer;

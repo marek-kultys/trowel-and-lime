@@ -3,26 +3,27 @@ footer {
    background-color: $white;
    position: relative;
    z-index: 999;
-   padding-bottom: 1em;
-
-   h5 {
-      font-weight: 300;
-   }
-
-   a:hover {
-      cursor: pointer;
-   }
+   padding-bottom: 2em;
 
    .footer-unit {
       padding-top: 1.33em;
       @include span-columns(4);
       @include media($for-phone-only) {
-         @include span-columns(10);
-         @include shift(1);
+         @include span-columns(12);
       }
    }
+
    .footer-halfunit {
       @include span-columns(6);
+   }
+
+   .contacts {
+      a {
+         border-bottom: 1px dashed $black-trans;
+         &:hover {
+            border-color: $yellow;
+         }
+      }
    }
 
    ul {
