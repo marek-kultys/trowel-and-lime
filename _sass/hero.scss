@@ -1,4 +1,8 @@
-.home {
+.hero {
+   p, h5 {
+      font-weight: 400;
+   }
+
    .hero-container {
       @include outer-container(100%);
       width: 100vw;
@@ -37,12 +41,9 @@
       @include media($for-desktop-up) {
          padding: 1.2em 3.4em;
       }
-      h1 {
+      h2 {
          color: $yellow;
-         font-size: 2em;
-         @include media($for-tablet-up) {
-            font-size: 2.8em;
-         }
+         border-color: $yellow;
       }
       p {
          color: $white;
