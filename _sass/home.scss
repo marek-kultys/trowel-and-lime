@@ -1,0 +1,55 @@
+.home {
+
+   .hero {
+      p, h5 {
+         font-weight: 400;
+      }
+      
+      .hero-container {
+         @include outer-container(100%);
+         width: 100vw;
+         height: 90vh;
+         background-image: url("/img/banner-old-street-2.jpg");
+         background-size: cover;
+         background-position: 50% 0;
+      }
+
+      .hero-text-wrapper {
+         height: 100%;
+         @include span-columns(10.2);
+         @include shift(0.9);
+         display: flex;
+         @include media($for-tablet-up) {
+            @include span-columns(8);
+            @include shift(2);
+            display: flex;
+         }
+         @include media($for-desktop-up) {
+            @include span-columns(5);
+            @include shift(3.5);
+            display: flex;
+         }
+         align-items: center;
+         text-align: center;
+      }
+
+      .hero-text {
+         margin-bottom: 20vh;
+         padding: 0.6em 1em;
+         background-color: $black-trans;
+         @include media($for-tablet-up) {
+            padding: 1em 3em;
+         }
+         @include media($for-desktop-up) {
+            padding: 1.2em 3.4em;
+         }
+         h2 {
+            color: $yellow;
+            border-color: $yellow;
+         }
+         p {
+            color: $white;
+         }
+      }
+   }
+}
