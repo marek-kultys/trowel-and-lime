@@ -1,22 +1,9 @@
 main {
-   width: 100%;
-   min-height: calc(100vh - 70px - 180px); /* calculate: 100% vertical height - 70px approx. header height - 120px footer height */
-   @include media($for-phone-only) {
-      min-height: calc(100vh - 70px - 240px); /* adjust for footer height below medium break-point */
-   }
-
-
-
-   .statement {
-      text-align: center;
-      // border: 1px solid black;
-      @include span-columns(11);
-      @include shift(0.5);
-      @include media($for-desktop-up) {
-         @include span-columns(6);
-         @include shift(3);
-      }
-   }
+   // width: 100%;
+   // min-height: calc(100vh - 70px - 180px); /* calculate: 100% vertical height - 70px approx. header height - 120px footer height */
+   // @include media($for-phone-only) {
+   //    min-height: calc(100vh - 70px - 240px); /* adjust for footer height below medium break-point */
+   // }
 
    .button {
       background-color: $yellow;
@@ -32,15 +19,22 @@ main {
       }
    }
 
+   .text-center {
+      text-align: center;
+   }
+
+   .flex-center {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+   }
+
    .page-hero {
       background-size: cover;
       background-position: 50% 0;
       margin-bottom: 1em;
       height: 30vh;
       min-height: 12em;
-      display: flex;
-      align-items: center;
-      justify-content: center;
    }
 
    .no-padding-bottom {
@@ -51,12 +45,79 @@ main {
       padding-top: 2em;
    }
 
-   .margin-top {
-      margin-top: 3em;
+   .less-margin-top {
+      margin-top: 2em;
+   }
+
+   .margin-bottom {
+      margin-bottom: 3em;
       @include media($for-desktop-up) {
-         margin-top: 4em;
+         margin-bottom: 4em;
       }
    }
+
+   .colour-banner {
+      background-color: $yellow;
+
+      .video-wrapper {
+         height: auto;
+         position: relative;
+         top: -2.4em;
+         overflow: hidden;
+      }
+
+      .video-media {
+         height: auto; /* Could also use width: 100%; */
+         width: 100%;
+         object-fit: cover;
+         @include media($for-phone-only) {
+            position: relative;
+            width: 120%;
+            left: -10%;
+         }
+      }
+
+      .contact-wrapper {
+         margin-top: 2em;
+         margin-bottom: 2em;
+         @include span-columns(12);
+
+         h2 {
+            color: $black;
+            border-color: $black;
+         }
+         h5 {
+            font-weight: 400;
+            color: $white;
+         }
+         .button {
+            background-color: $black;
+            border-color: $black;
+            &:hover {
+               background-color: $black-trans;
+            }
+         }
+      }
+   }
+
+   .four-grid-flushed {
+      img {
+         width: 100%;
+         height: auto;
+         display: block;
+      }
+   }
+
+
+
+
+   // ABOVE ARE ITEMS IN USE, BELOW ITEMS ARE NOT IN USE
+
+
+
+
+
+
 
    .paragraph {
       text-align: left;

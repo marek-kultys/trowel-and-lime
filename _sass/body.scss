@@ -19,7 +19,7 @@ $main: rgba(246, 246, 244, 1);
 $white: rgba(255, 255, 255, 1);
 $white-hover: rgba(255, 255, 255, 0.66);
 $black: rgba(33, 33, 33, 1);
-$black-trans: rgba(33, 33, 33, 0.5);
+$black-trans: rgba(33, 33, 33, 0.6);
 $grey: rgba(213, 213, 211, 1);
 $yellow: rgba(250, 199, 6, 1);
 $yellow-trans: rgba(250, 199, 6, 0.6);
@@ -122,18 +122,77 @@ h6 { // used for basic navbar and footer style
 }
 
 section {
-   @include outer-container(100%);
    background-color: $main;
-   padding: 5em 0em;
-   // border: 1px solid orange;
+   padding: 4em 0em;
+   &:last-of-type {
+      padding-bottom: 0em;
+   }
+   // border: 1px dotted yellow;
+}
+
+
+
+// GRIDS
+.container {
+   @include outer-container(100%);
+   // border: 1px dotted blue;
 }
 
 .block {
+   // border: 1px solid red;
    @include span-columns($grid-phone);
    @include shift($margin-phone);
    @include media($for-tablet-up) {
       @include span-columns($grid-desktop);
       @include shift($margin-desktop);
    }
+}
+
+.middle-grid {
+   // border: 1px dotted grey;
+   @include span-columns(11);
+   @include shift(0.5);
+   @include media($for-tablet-up) {
+      @include span-columns(9);
+      @include shift(1.5);
+   }
+   @include media($for-desktop-up) {
+      @include span-columns(6);
+      @include shift(3);
+   }
+}
+
+.three-grid {
    // border: 1px solid red;
+   @include span-columns(9);
+   @include shift(1.5);
+   @include media($for-tablet-up) {
+      @include span-columns(4);
+      @include shift(0);
+   }
+}
+
+.four-grid-flushed {
+   padding: none;
+   @include span-columns(6, block-collapse);
+   width: 50% !important;
+   @include media($for-tablet-up) {
+      @include span-columns(3, block-collapse);
+      width: 25% !important;
+   }
+}
+
+
+
+// SELECTIVE DISPLAY
+.not-on-phone-size {
+   @include media($for-phone-only) {
+      display: none !important;
+   }
+}
+
+.not-on-above-phone-size {
+   @include media($for-tablet-up) {
+      display: none !important;
+   }
 }
