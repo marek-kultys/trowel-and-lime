@@ -1,20 +1,4 @@
 <div class="block">
-   <div id="sitemap" class="footer-unit">
-      <div class="footer-halfunit">
-         <ul id="sitemap-home">
-            <li><h6><a href="/">{{ site.data.sgraffito.name }}:</a></h6></li>
-         </ul>
-      </div>
-      <div class="footer-halfunit">
-         <ul>
-            <li><h6><a href="/case-studies">Case studies</a></h6></li>
-            <li><h6><a href="/how-we-work">How we work</a></h6></li>
-            <li><h6><a href="/contact">Contact</a></h6></li>
-            <li><h6><a href="/blog">Blog</a></h6></li>
-         </ul>
-      </div>
-   </div>
-
    <div id="links" class="footer-unit contacts">
       <ul>
          <li><h6>Email: <a href="mailto:{{ site.data.sgraffito.email }}">{{ site.data.sgraffito.email }}</a></h6></li>
@@ -29,5 +13,21 @@
          <li><h6>{{ site.data.sgraffito.address.city }} {{ site.data.sgraffito.address.studio.postcode }}</h6></li>
          <li><h6>All content &copy; {{ 'now' | date: "%Y" }} {{ site.data.sgraffito.author }}</h6></li>
       </ul>
+   </div>
+
+   <div id="sitemap" class="footer-unit not-on-phone-size">
+      <div class="footer-halfunit">
+         <ul id="sitemap-home">
+            <li><h6><a href="/">{{ site.data.sgraffito.name }}:</a></h6></li>
+         </ul>
+      </div>
+      <div class="footer-halfunit">
+         <ul>
+            <li><h6><a href="/case-studies">Case studies</a></h6></li>
+            <li><h6><a href="/how-we-work">How we work</a></h6></li>
+            <li><h6><a href="/contact">Contact</a></h6></li>
+            <li><h6><a href="/blog">Blog</a></h6></li>
+         </ul>
+      </div>
    </div>
 </div>
