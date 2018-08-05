@@ -2,11 +2,12 @@
 
    .hero {
       p, h5 {
-         font-weight: 400;
+         font-weight: 300;
       }
-      
+
       .hero-container {
          @include outer-container(100%);
+         // border: 1px dotted cyan;
          width: 100vw;
          height: 90vh;
          background-image: url("/img/banner-old-street-2.jpg");
@@ -41,7 +42,7 @@
             padding: 1em 3em;
          }
          @include media($for-desktop-up) {
-            padding: 1.2em 3.4em;
+            padding: 1.2em 3.6em;
          }
          h2 {
             color: $yellow;
