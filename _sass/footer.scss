@@ -1,8 +1,10 @@
 footer {
    @include outer-container(100%);
+   // border: 1px dotted cyan;
    background-color: $white;
    position: relative;
    z-index: 999;
+   padding-top: 1em;
    padding-bottom: 2em;
 
    .footer-unit {
@@ -39,12 +41,6 @@ footer {
       @include media($for-phone-only) {
          margin: 0;
          float: none;
-      }
-   }
-
-   #sitemap {
-      @include media($for-phone-only) {
-         display: none;
       }
    }
 
