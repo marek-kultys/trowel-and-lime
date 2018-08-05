@@ -172,7 +172,7 @@ section {
    }
 }
 
-.four-grid-flushed {
+.four-grid-mosaic {
    padding: none;
    @include span-columns(6, block-collapse);
    width: 50% !important;
