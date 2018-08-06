@@ -6,13 +6,7 @@
       }
 
       .hero-container {
-         @include outer-container(100%);
-         // border: 1px dotted cyan;
-         width: 100vw;
-         height: 90vh;
          background-image: url("/img/banner-old-street-2.jpg");
-         background-size: cover;
-         background-position: 50% 0;
       }
 
       .hero-text-wrapper {
