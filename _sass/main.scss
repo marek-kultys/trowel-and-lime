@@ -72,8 +72,8 @@ main {
          object-fit: cover;
          @include media($for-phone-only) {
             position: relative;
-            width: 120%;
-            left: -10%;
+            width: 113%;
+            left: -5%;
          }
       }
 
