@@ -15,7 +15,7 @@ $transition: 0.33s;
 $radius: 8px;
 
 // Declare colours
-$main: rgba(246, 246, 244, 1);
+$main: rgba(244, 244, 242, 1);
 $white: rgba(255, 255, 255, 1);
 $white-hover: rgba(255, 255, 255, 0.66);
 $black: rgba(33, 33, 33, 1);
@@ -122,7 +122,7 @@ h6 { // used for basic navbar and footer style
 }
 
 section {
-   background-color: $main;
+   // background-color: $main;
    padding: 4em 0em;
    &:last-of-type {
       padding-bottom: 0em;
@@ -135,11 +135,11 @@ section {
 // GRIDS
 .container {
    @include outer-container(100%);
-   // border: 1px dotted blue;
+   // border: 1px solid orange;
 }
 
 .block {
-   // border: 1px solid red;
+   // border: 1px solid black;
    @include span-columns($grid-phone);
    @include shift($margin-phone);
    @include media($for-tablet-up) {
@@ -149,7 +149,7 @@ section {
 }
 
 .middle-grid {
-   // border: 1px dotted grey;
+   // border: 1px solid blue;
    @include span-columns(11);
    @include shift(0.5);
    @include media($for-tablet-up) {
