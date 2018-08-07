@@ -52,7 +52,11 @@ main {
    }
 
    .no-padding-bottom {
-      padding-bottom: 0;
+      padding-bottom: 0em;
+   }
+
+   .no-margin-bottom {
+      margin-bottom: 0em;
    }
 
    .less-padding-top {
@@ -72,44 +76,44 @@ main {
 
    .colour-banner {
       background-color: $yellow;
+   }
 
-      .video-wrapper {
-         height: auto;
+   .video-wrapper {
+      height: auto;
+      position: relative;
+      top: -2.4em;
+      overflow: hidden;
+   }
+
+   .video-media {
+      height: auto; /* Could also use width: 100%; */
+      width: 100%;
+      object-fit: cover;
+      @include media($for-phone-only) {
          position: relative;
-         top: -2.4em;
-         overflow: hidden;
+         width: 113%;
+         left: -5%;
       }
+   }
 
-      .video-media {
-         height: auto; /* Could also use width: 100%; */
-         width: 100%;
-         object-fit: cover;
-         @include media($for-phone-only) {
-            position: relative;
-            width: 113%;
-            left: -5%;
-         }
+   .contact-wrapper {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      @include span-columns(12);
+
+      h2 {
+         color: $black;
+         border-color: $black;
       }
-
-      .contact-wrapper {
-         margin-top: 2em;
-         margin-bottom: 2em;
-         @include span-columns(12);
-
-         h2 {
-            color: $black;
-            border-color: $black;
-         }
-         h5 {
-            font-weight: 400;
-            color: $white;
-         }
-         .button {
-            background-color: $black;
-            border-color: $black;
-            &:hover {
-               background-color: $black-trans;
-            }
+      h5 {
+         font-weight: 400;
+         color: $white;
+      }
+      .button {
+         background-color: $black;
+         border-color: $black;
+         &:hover {
+            background-color: $black-trans;
          }
       }
    }
