@@ -1,5 +1,4 @@
 .contact {
-   // -webkit-appearance: none;
    background-color: $main;
 
    section {
@@ -16,7 +15,7 @@
          height: auto;
          margin-top: 5em;
          margin-bottom: 6em;
-         padding: 0.6em 1em 3.6em 1em;
+         padding: 0.6em 1em 3em 1em;
          @include media($for-tablet-up) {
             padding-top: 1em;
             padding-left: 3em;
@@ -30,7 +29,6 @@
       }
 
       .title-container {
-         // border: 1px dotted white;
          text-align: center;
          h2 {
             color: $black;
@@ -39,10 +37,20 @@
       }
 
       .text-container {
-         // border: 1px dotted white;
-         margin-top: 2em;
+         margin-top: 0.66em;
          p {
             color: $black;
+         }
+         a {
+            border-bottom: 1px dashed $black;
+            &:link, &:active, &:visited, &:hover {
+               color: $black !important;
+               border-color: $black;
+            }
+
+            // @include media($for-phone-only) {
+            //
+            // }
          }
       }
 
@@ -58,14 +66,7 @@
 
 
 
-
-
-
-
-
-
-
-// FORM STYLES
+   // FORM STYLES
 
    form {
       p {
@@ -117,7 +118,6 @@
          &:hover {
             background-color: $black-trans;
          }
-         margin-bottom: 3.66em;
          cursor: pointer;
          -webkit-appearance: none;
       }
