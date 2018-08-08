@@ -11,7 +11,7 @@ $grid-desktop: 9;
 $margin-desktop: 1.5;
 
 // Declare style elements
-$transition: 0.33s;
+$transition: 0.2s;
 $radius: 3px;
 $height: 52px;
 
@@ -114,7 +114,7 @@ h5 { // used for buttons
    }
 }
 
-h6 { // used for basic navbar and footer style
+h6 { // used for navbar and footer links, and blog post name and date details
    color: $black;
    font-size: 1em;
    line-height: 1.5em;
@@ -122,25 +122,18 @@ h6 { // used for basic navbar and footer style
    // letter-spacing: 0.2px;
 }
 
-section {
-   // background-color: $main;
-   padding: 4em 0em;
-   &:last-of-type {
-      padding-bottom: 0em;
-   }
-   // border: 1px dotted yellow;
-}
-
 
 
 // GRIDS
+section {
+   padding: 0em;
+}
+
 .container {
    @include outer-container(100%);
-   // border: 1px solid orange;
 }
 
 .block {
-   // border: 1px solid black;
    @include span-columns($grid-phone);
    @include shift($margin-phone);
    @include media($for-tablet-up) {
@@ -150,7 +143,6 @@ section {
 }
 
 .middle-grid {
-   // border: 1px solid blue;
    @include span-columns(11);
    @include shift(0.5);
    @include media($for-tablet-up) {
@@ -164,7 +156,6 @@ section {
 }
 
 .three-grid {
-   // border: 1px solid red;
    @include span-columns(9);
    @include shift(1.5);
    @include media($for-tablet-up) {
@@ -196,4 +187,23 @@ section {
    @include media($for-tablet-up) {
       display: none !important;
    }
+}
+
+
+
+// GLOBAL STYLES
+.underlined-link {
+   border-bottom: 1px dashed $black;
+}
+
+.unmarked-link {
+   &:hover {
+      color: $black;
+      border: none;
+   }
+}
+
+.inactive-link {
+   border: none;
+   color: $grey;
 }
