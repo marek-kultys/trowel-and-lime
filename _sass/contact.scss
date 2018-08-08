@@ -1,31 +1,8 @@
 .contact {
-   background-color: $main;
-
-   section {
-      padding: 0em;
-   }
 
    .hero {
       .hero-container {
          background-image: url("/img/banner-summer-meadow-2.jpg");
-      }
-
-      .inside-container {
-         background-color: $yellow;
-         height: auto;
-         margin-top: 5em;
-         margin-bottom: 6em;
-         padding: 0.6em 1em 3em 1em;
-         @include media($for-tablet-up) {
-            padding-top: 1em;
-            padding-left: 3em;
-            padding-right: 3em;
-         }
-         @include media($for-desktop-up) {
-            padding-top: 1.2em;
-            padding-left: 3.6em;
-            padding-right: 3.6em;
-         }
       }
 
       .title-container {
@@ -40,17 +17,6 @@
          margin-top: 0.66em;
          p {
             color: $black;
-         }
-         a {
-            border-bottom: 1px dashed $black;
-            &:link, &:active, &:visited, &:hover {
-               color: $black !important;
-               border-color: $black;
-            }
-
-            // @include media($for-phone-only) {
-            //
-            // }
          }
       }
 
