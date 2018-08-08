@@ -1,5 +1,11 @@
 - id: my
-  name: Melania Yerka
-  position: Founder
-  email: mela.yerka@gmail.com
-  category: current
+   name: Melania Yerka
+   position: Founder
+   email: mela.yerka@gmail.com
+   category: current
+
+- id: mk
+   name: Marek Kultys
+   position: Assistant
+   email: marek.kultys@gmail.com
+   category: current
