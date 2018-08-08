@@ -1,16 +1,33 @@
 {% if paginator.total_pages > 1 %}
 	<div class="pagination">
 
-		{% if paginator.next_page %}
-			<div style="float:left;"><a class="page-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Older Posts</a></div>
-		{% else %}
-			<div style="float:left;"><span class="page-prev-inactive">&laquo; Older Posts</span></div>
-		{% endif %}
+		<div class="posts-link older">
+			{% if paginator.next_page %}
+				<p>
+					<a class="page-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+						← Older posts
+					</a>
+				</p>
+			{% else %}
+				<p class="inactive-link">
+					← Older posts
+				</p>
+			{% endif %}
+		</div>
 
-		{% if paginator.previous_page %}
-			<a class="page-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Newer Posts &raquo;</a>
-		{% else %}
-			<div style="float:right;"><span class="page-prev-inactive">Newer Posts &raquo;</span></div>
-		{% endif %}
-	</div><!-- #pagination -->
+		<div class="posts-link newer">
+			{% if paginator.previous_page %}
+				<p>
+					<a class="page-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+						Newer posts →
+					</a>
+				</p>
+			{% else %}
+				<p class="inactive-link">
+					Newer posts →
+				</p>
+			{% endif %}
+		</div>
+
+	</div>
 {% endif %}

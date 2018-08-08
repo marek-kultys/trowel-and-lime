@@ -1,9 +1,48 @@
 .blog {
-   .page-hero {
-      background-image: url("/img/banner-summer-meadow-2.jpg");
+
+   .hero {
+      .hero-container {
+         background-image: url("/img/render_shovel_S.jpg");
+      }
+
+      .page-container {
+         background-color: $white;
+      }
+
+      .title-container {
+         text-align: center;
+         h2 {
+            color: $black;
+            border-color: $black;
+         }
+      }
    }
 
-   .blog-post {
+   .single-post {
+      padding: 4.8em 0em;
+      border-bottom: 1px solid $yellow;
+      &:last-of-type {
+         border-bottom: none;
+      }
+      img {
+         width: 100%;
+      }
+   }
 
+   .metadata {
+      margin: 1em 0em 1.5em 0em;
+   }
+
+   .pagination {
+      @include outer-container(100%);
+      .posts-link {
+         @include span-columns(6);
+      }
+      .older {
+         text-align: left;
+      }
+      .newer {
+         text-align: right;
+      }
    }
 }

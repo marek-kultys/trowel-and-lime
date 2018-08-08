@@ -1,6 +1,5 @@
 header {
    @include outer-container(100%);
-   // border: 1px dotted cyan;
    background-color: $white;
    position: relative;
    z-index: 999;
@@ -64,20 +63,6 @@ header {
          }
          @include media($for-tablet-up) {
             margin-left: 0.8em;
-         }
-      }
-
-      .current-page {
-         border-bottom: 1px dashed $black;
-         &:hover {
-            border-color: $yellow;
-         }
-      }
-
-      .active-menu {
-         &:hover {
-            color: $black;
-            border: none;
          }
       }
    }

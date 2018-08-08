@@ -1,5 +1,12 @@
 .home {
 
+   section {
+      padding: 4em 0em;
+      &:last-of-type {
+         padding-bottom: 0em;
+      }
+   }
+
    .hero {
       p, h5 {
          font-weight: 300;
