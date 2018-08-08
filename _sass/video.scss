@@ -13,7 +13,7 @@
       z-index: 999;
       text-align: center;
       @include span-columns(8);
-      @include media ($medium) {
+      @include media ($for-phone-only) {
          @include span-columns(11);
       }
       p {
