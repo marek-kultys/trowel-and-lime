@@ -1,10 +1,10 @@
 <div class="block">
    <div class="header-name">
-      <a href="/">
-         <h1>
+      <h1>
+         <a href="/" class="unmarked-link">
             Trowel & Lime
-         </h1>
-      </a>
+         </a>
+      </h1>
    </div>
 </div>
 
@@ -17,16 +17,16 @@
    <nav>
       <div class="header-menu">
          <label for="show-menu" class="show-menu">
-            <h6><a class="active-menu">Menu</a></h6>
+            <h6><a class="unmarked-link">Menu</a></h6>
          </label>
          <input type="checkbox" id="show-menu" role="button">
          <ul id="menu">
             <span class="mobile">
                <!-- Instead of disappearing the current page in the menu, all should be displayed with different styling for the current one to indicate that this page is current -->
-               <li><h6><a {% if page.label == 'case-studies' %} class="current-page" {% endif %} href="/case-studies">Case studies</a></h6></li>
-               <li><h6><a {% if page.label == 'how-we-work' %} class="current-page" {% endif %} href="/how-we-work">How we work</a></h6></li>
-               <li><h6><a {% if page.label == 'contact' %} class="current-page" {% endif %} href="/contact">Contact</a></h6></li>
-               <li><h6><a {% if page.label == 'blog' %} class="current-page" {% endif %} href="/blog">Blog</a></h6></li>
+               <li><h6><a {% if page.label == 'case-studies' %} class="underlined-link" {% endif %} href="/case-studies">Case studies</a></h6></li>
+               <li><h6><a {% if page.label == 'how-we-work' %} class="underlined-link" {% endif %} href="/how-we-work">How we work</a></h6></li>
+               <li><h6><a {% if page.label == 'contact' %} class="underlined-link" {% endif %} href="/contact">Contact</a></h6></li>
+               <li><h6><a {% if page.label == 'blog' %} class="underlined-link" {% endif %} href="/blog">Blog</a></h6></li>
             </span>
             <span class="desktop">
                <li><h6><a href="/case-studies">Case studies</a></h6></li>
