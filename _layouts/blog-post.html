@@ -6,23 +6,23 @@ title: Trowel & Lime | Blog Post
 <div class="blog">
 
 	<section>
-	<!-- Post Styling -->
+		<!-- Post Styling -->
 		<div class="blog-head">
 			<h1 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
 			<h6 class="metadata">{% include byline.html post=page %}</h6>
 		</div><!-- #blog-head -->
 
-		<span>
-		  {% for tag in page.tags %}
-			 {% capture tag_name %}{{ tag }}{% endcapture %}
-			 <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-		  {% endfor %}
+		<span class="tags">
+			{% for tag in page.tags %}
+				{% capture tag_name %}{{ tag }}{% endcapture %}
+				<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+			{% endfor %}
 		</span>
 
 		<div class="blog-content">
 			{{ content }}
 		</div>
-	<!-- #blog-post -->
+		<!-- #blog-post -->
 	</section>
 
 </div><!-- #blog -->
