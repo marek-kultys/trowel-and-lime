@@ -20,8 +20,9 @@ label: blog
 								<h6 class="metadata">
 									{% include byline.html post=post %}
 								</h6>
-
-								{{ post.excerpt }}
+								<span class="excerpt">
+									{{ post.excerpt }}
+								</span>
 								<p><a href="{{ post.url }}" class="underlined-link">Continue reading</a></p>
 							</div>
 						{% endfor %}

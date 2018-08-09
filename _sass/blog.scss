@@ -27,6 +27,14 @@
       img {
          width: 100%;
       }
+      .excerpt {
+         a {
+            border-bottom: 1px dashed $black;
+            &:hover {
+               border-color: $yellow;
+            }
+         }
+      }
    }
 
    .metadata {
