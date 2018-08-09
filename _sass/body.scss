@@ -196,6 +196,14 @@ section {
    border-bottom: 1px dashed $black;
 }
 
+.all-black-link {
+   border-bottom: 1px dashed $black;
+   &:hover {
+      color: $black;
+      border-color: $black;
+   }
+}
+
 .unmarked-link {
    &:hover {
       color: $black;
