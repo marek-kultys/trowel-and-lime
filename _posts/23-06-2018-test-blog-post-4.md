@@ -2,7 +2,9 @@
 layout: blog-post
 author: my
 title: Trowel & Lime Test Blog Post 4
+tags: Mural London Project
 published: true
+excerpt_separator: <!--more-->
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet ex purus, vel ultricies risus volutpat non. Nulla sit amet sem in quam lobortis semper cursus non sem. Vivamus tincidunt, tortor sit amet aliquet finibus, tortor nulla pulvinar mi, ac tincidunt odio neque in tortor. Nullam placerat elit eu aliquam feugiat. Aliquam ullamcorper purus non tellus dapibus lacinia. Integer eleifend neque ac velit egestas, sit amet pulvinar dui porta. Vestibulum vel felis at tellus consectetur dignissim. Duis ullamcorper fermentum tellus. Quisque laoreet tempus lacinia.

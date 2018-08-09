@@ -2,6 +2,7 @@
 layout: blog-post
 author: my
 title: Trowel & Lime Test Blog Post 5
+tags: Sgraffito Mural Warsaw Other
 published: true
 excerpt_separator: <!--more-->
 ---

@@ -2,7 +2,9 @@
 layout: blog-post
 author: my
 title: Trowel & Lime Test Blog Post 2
+tags: Sgraffito Warsaw Examples
 published: true
+excerpt_separator: <!--more-->
 ---
 
 Aenean et massa pharetra, luctus tortor eget, imperdiet erat. Vivamus iaculis, nibh nec tempor dapibus, nunc lacus gravida magna, non euismod odio elit sit amet augue. Quisque condimentum auctor nisi vel sollicitudin. Proin eu pharetra nunc, at fringilla ex. Pellentesque porta lacinia magna. Aenean et quam pharetra, mattis lectus quis, interdum leo. Vivamus tincidunt eget turpis a luctus. Donec sed pretium dolor.

@@ -2,6 +2,7 @@
 layout: blog-post
 author: my
 title: Trowel & Lime Test Blog Post 3
+tags: Sgraffito London Examples
 published: true
 excerpt_separator: <!--more-->
 ---

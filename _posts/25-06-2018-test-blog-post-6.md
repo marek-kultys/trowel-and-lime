@@ -2,7 +2,9 @@
 layout: blog-post
 author: my
 title: Trowel & Lime Test Blog Post 6
+tags: London Other
 published: true
+excerpt_separator: <!--more-->
 ---
 
 Quisque nibh risus, sagittis non est eget, auctor tristique odio. Sed mollis mauris a orci egestas iaculis. Etiam ac mauris id neque feugiat dignissim. Donec laoreet sollicitudin tellus eget mollis. Pellentesque at hendrerit nisi. Quisque nibh nibh, interdum sagittis dictum sit amet, suscipit ut sapien. Vestibulum eu congue metus, ac egestas sapien. Nullam sit amet nisi vestibulum, porttitor odio nec, pellentesque sapien.
