@@ -9,6 +9,8 @@ excerpt_separator: <!--more-->
 
 ![My new sgraffito](/img/blog-tools.png)
 
+<h6>This is an image, but none of your business.</h6>
+
 Aenean et massa pharetra, luctus tortor eget, imperdiet erat. Vivamus iaculis, nibh nec tempor dapibus, nunc lacus gravida magna, non euismod odio elit sit amet augue. Quisque condimentum auctor nisi vel sollicitudin. Proin eu pharetra nunc, at fringilla ex. Pellentesque porta lacinia magna.
 
  <!--more-->
