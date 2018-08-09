@@ -3,26 +3,36 @@ layout: main
 title: Trowel & Lime | Blog Post
 ---
 
-<div class="blog">
+<article class="blog">
 
 	<section>
-		<!-- Post Styling -->
-		<div class="blog-head">
-			<h1 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-			<h6 class="metadata">{% include byline.html post=page %}</h6>
-		</div><!-- #blog-head -->
+		<div class="hero">
+			<div class="hero-container">
+				<div class="middle-grid page-container">
+					<div class="title-container">
+						<h1 class="text-left">{{ page.title }}</h1>
+					</div>
 
-		<span class="tags">
-			{% for tag in page.tags %}
-				{% capture tag_name %}{{ tag }}{% endcapture %}
-				<a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-			{% endfor %}
-		</span>
+					<h6 class="metadata">{% include byline.html post=page %}</h6>
 
-		<div class="blog-content">
-			{{ content }}
+					<div class="tags">
+						<h6>
+							{% for tag in page.tags %}
+								{% capture tag_name %}{{ tag }}{% endcapture %}
+								<a href="/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr></a>
+							{% endfor %}
+						</h6>
+					</div>
+
+					<div class="post">
+						<div class="post-text">
+							{{ content }}
+						</div>
+					</div>
+
+				</div>
+			</div>
 		</div>
-		<!-- #blog-post -->
 	</section>
 
-</div><!-- #blog -->
+</article>

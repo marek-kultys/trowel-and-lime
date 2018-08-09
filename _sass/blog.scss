@@ -11,54 +11,80 @@
 
       .title-container {
          text-align: center;
+         h1 {
+            margin: 1em 0em 0.5em 0em;
+         }
          h2 {
             color: $black;
             border-color: $black;
          }
       }
-   }
 
-   .single-post {
-      padding: 4.8em 0em;
-      border-bottom: 1px solid $yellow;
-      &:last-of-type {
-         border-bottom: none;
-      }
-      img {
-         width: 100%;
-      }
-      .excerpt {
-         a {
-            border-bottom: 1px dashed $black;
-            &:hover {
-               border-color: $yellow;
-            }
+      .post {
+         border-bottom: 1px solid $grey;
+         &:last-of-type {
+            border-bottom: none;
          }
          img {
-            display: block;
-            margin-top: 2em;
+            width: 100%;
+         }
+         .post-text {
+            a {
+               border-bottom: 1px dashed $black;
+               &:hover {
+                  border-color: $yellow;
+               }
+            }
+            img {
+               display: block;
+               margin-top: 2em;
+            }
+            h6 {
+               color: $grey;
+               margin-bottom: 1.5em;
+            }
+         }
+      }
+
+      .post-margin {
+         padding: 4.8em 0em;
+      }
+
+      .metadata {
+         margin: 1em 0em 1.5em 0em;
+      }
+
+      .tags {
+         margin-bottom: 3em;
+         padding-bottom: 3em;
+         border-bottom: 1px solid $grey;
+         a {
+            margin-right: 1em;
+            padding: 0.25em 1em;
+            border: none;
+            background-color: $grey;
+            border-radius: 10px;
+            &:hover {
+               background-color: $yellow;
+               color: $white;
+            }
          }
          h6 {
-            color: $grey;
-            margin-bottom: 1.5em;
+            margin: 0em;
          }
       }
-   }
 
-   .metadata {
-      margin: 1em 0em 1.5em 0em;
-   }
-
-   .pagination {
-      @include outer-container(100%);
-      .posts-link {
-         @include span-columns(6);
-      }
-      .older {
-         text-align: left;
-      }
-      .newer {
-         text-align: right;
+      .pagination {
+         @include outer-container(100%);
+         .posts-link {
+            @include span-columns(6);
+         }
+         .older {
+            text-align: left;
+         }
+         .newer {
+            text-align: right;
+         }
       }
    }
 }
