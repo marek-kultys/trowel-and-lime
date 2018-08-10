@@ -83,6 +83,10 @@ main {
       margin-top: 2em;
    }
 
+   .less-margin-bottom {
+      margin-bottom: 2.5em;
+   }
+
    .margin-bottom {
       margin-bottom: 3em;
       @include media($for-desktop-up) {

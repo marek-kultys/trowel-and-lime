@@ -21,9 +21,9 @@
       }
 
       .blogpost {
-         border-bottom: 1px solid $grey;
-         &:last-of-type {
-            border-bottom: none;
+         border-top: 1px solid $grey;
+         &:first-of-type {
+            border-top: none;
          }
          img {
             width: 100%;
@@ -47,7 +47,7 @@
       }
 
       .blogpost-margin {
-         padding: 4.8em 0em;
+         padding: 4em 0em;
       }
 
       .metadata {
@@ -55,9 +55,6 @@
       }
 
       .tags {
-         margin-bottom: 3em;
-         padding-bottom: 3em;
-         border-bottom: 1px solid $grey;
          a {
             margin-right: 1em;
             padding: 0.25em 1em;
@@ -71,6 +68,19 @@
          }
          h6 {
             margin: 0em;
+         }
+      }
+
+      .list-of-tags {
+         margin-bottom: 1em;
+         &:last-of-type {
+            margin-bottom: 0em;
+            h6 {
+               margin-bottom: 0.5em;
+            }
+         }
+         p {
+            margin-bottom: 0.5em;
          }
       }
 
