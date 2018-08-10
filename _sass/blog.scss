@@ -20,7 +20,7 @@
          }
       }
 
-      .post {
+      .blogpost {
          border-bottom: 1px solid $grey;
          &:last-of-type {
             border-bottom: none;
@@ -28,7 +28,7 @@
          img {
             width: 100%;
          }
-         .post-text {
+         .blogpost-text {
             a {
                border-bottom: 1px dashed $black;
                &:hover {
@@ -46,7 +46,7 @@
          }
       }
 
-      .post-margin {
+      .blogpost-margin {
          padding: 4.8em 0em;
       }
 
@@ -85,6 +85,10 @@
          .newer {
             text-align: right;
          }
+      }
+
+      .grey {
+         color: $grey;
       }
    }
 }
