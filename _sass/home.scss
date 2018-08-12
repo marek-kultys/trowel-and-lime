@@ -1,7 +1,7 @@
 .home {
 
    section {
-      padding: 4em 0em;
+      padding: 4.8em 0em;
       &:last-of-type {
          padding-bottom: 0em;
       }
@@ -51,6 +51,31 @@
          }
          p {
             color: $white;
+         }
+      }
+   }
+
+   .trio-border {
+      border-bottom: 1px solid $grey;
+      padding-bottom: 1.5em;
+   }
+
+   .examples-work {
+      img {
+         width: 100%;
+         display: block;
+      }
+      a {
+         display: block;
+         cursor: pointer;
+         &:hover {
+            border: none;
+         }
+      }
+      p {
+         margin-top: 1.5em;
+         &:hover {
+            color: $yellow;
          }
       }
    }
