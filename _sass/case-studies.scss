@@ -1,7 +1,36 @@
 .case-studies {
-   .page-hero {
-      background-image: url("/img/banner-old-street-2.jpg");
+
+   .hero {
+      .hero-container {
+         background-image: url("/img/banner-summer-meadow-1.jpg");
+         max-height: 66vh;
+      }
+
+      .title-container {
+         text-align: center;
+         h2 {
+            color: $black;
+            border-color: $black;
+         }
+      }
+
+      .text-container {
+         margin-top: 0.66em;
+         p {
+            color: $black;
+         }
+      }
+
+      .form-container {
+         border-top: 1px solid $black;
+         padding-top: 2em;
+         .inline-comment {
+            font-size: 75%;
+            color: $black-trans;
+         }
+      }
    }
+
 
    .info {
       padding-top: 1em;
@@ -30,8 +59,7 @@
    }
 
    .divider {
-      margin-bottom: 2em;
-      border-bottom: 1px solid $black;
+      border-bottom: 1px solid $grey;
       width: 100%;
    }
 
@@ -45,7 +73,7 @@
       img {
          display: block;
          width: 100%;
-         margin-bottom: 2em;
+         margin-bottom: 2.2em;
       }
    }
 }
