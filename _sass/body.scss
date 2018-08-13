@@ -84,7 +84,7 @@ h1 { // used for logotype
    font-size: 2.1em;
 }
 
-h2 { // used for page titles and statement headers (must locally override colour if not grey)
+h2 { // used for page titles and home page paragraphs (must locally override colour if not grey)
    color: $grey;
    font-size: 2em;
    display: inline-block;
@@ -99,9 +99,9 @@ h2 { // used for page titles and statement headers (must locally override colour
    }
 }
 
-h4 { // home page paragraphs, gallery title
+h4 { // gallery titles
    color: $black;
-   font-size: 1.5em;
+   font-size: 2em;
    line-height: 1.6em;
    margin: 0.5em 0;
 }
