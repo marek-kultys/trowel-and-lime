@@ -142,13 +142,16 @@ section {
    }
 }
 
-.middle-grid {
+.full-grid {
    @include span-columns(11);
    @include shift(0.5);
    @include media($for-tablet-up) {
       @include span-columns(9);
       @include shift(1.5);
    }
+}
+
+.middle-grid {
    @include media($for-desktop-up) {
       @include span-columns(6);
       @include shift(3);
