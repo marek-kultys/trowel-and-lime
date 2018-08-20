@@ -24,7 +24,7 @@
       }
 
       .divider {
-         border-bottom: 1px solid $white-hover;
+         border-bottom: 1px solid $white-trans;
          margin: 3em 2em;
       }
    }
@@ -40,11 +40,11 @@
    }
 
    a {
-      border-bottom: 1px solid $white-hover;
+      border-bottom: 1px solid $white-trans;
       padding: 1px;
       &:hover {
          color: $black;
-         background-color: $white-hover;
+         background-color: $white-trans;
          border: none;
          padding: 1px;
          border-radius: 1px
