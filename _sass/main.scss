@@ -6,7 +6,7 @@ main {
       .hero-container {
          @include outer-container(100%);
          width: 100vw;
-         height: 90vh;
+         min-height: 90vh;
          background-size: cover;
          background-position: 50% 0;
       }

@@ -2,51 +2,65 @@
 
    .hero {
       .hero-container {
-         background-image: url("/img/banner-summer-meadow-1.jpg");
-         max-height: 66vh;
+         overflow: auto;
+         height: auto;
+      }
+      #old-street-forest {
+         background-image: url("/img/banner-old-street-2.jpg");
+      }
+      #summer-meadow {
+         background-image: url("/img/banner-summer-meadow-3.jpg");
+      }
+      #white-forest {
+         background-image: url("/img/banner-white-forest-3.jpg");
+      }
+      #bathroom-pond {
+         background-image: url("/img/banner-bathroom-pond-1.jpg");
       }
 
-      .title-container {
-         text-align: center;
-         h2 {
-            color: $black;
-            border-color: $black;
+      .page-container {
+         background-color: $white-trans;
+      }
+
+      .case-study {
+         @include outer-container(100%);
+      }
+      .case-study-unit {
+         @include span-columns(12);
+         @include media($for-desktop-up) {
+            @include span-columns(6);
          }
       }
 
-      .text-container {
-         margin-top: 0.66em;
-         p {
-            color: $black;
+      .gallery-info {
+         text-align: left;
+         ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            p {
+               color: $black;
+            }
+            .metadata-item {
+               font-weight: 600;
+               color: $black-trans;
+               font-size: 80%;
+               margin-right: 0.75em;
+            }
          }
-      }
-
-      .form-container {
-         border-top: 1px solid $black;
-         padding-top: 2em;
-         .inline-comment {
-            font-size: 75%;
+         h4 {
+            color: $black;
+            margin-top: 0.75em;
+            margin-bottom: 0.25em;
+         }
+         h6 {
             color: $black-trans;
          }
+         .highlight {
+            background-color: $white;
+            padding: 1px 10px 2px 10px;
+         }
       }
-   }
-
-   .gallery-info {
-      text-align: left;
-      margin: 0em 0em 2em 0em;
-      ul {
-         list-style: none;
-         padding: 0;
-         margin: 0
-      }
-      p {
-         margin-top: 0.33em;
-         margin-bottom: 0.33em;
-      }
-   }
-
-   .divider {
-      border-bottom: 1px solid $grey;
    }
 
 
