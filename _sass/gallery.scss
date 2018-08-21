@@ -38,15 +38,9 @@
             list-style: none;
             padding: 0;
             margin: 0;
-            p {
-               color: $black;
-            }
-            .metadata-item {
-               font-weight: 600;
-               color: $black-trans;
-               font-size: 80%;
-               margin-right: 0.75em;
-            }
+         }
+         p {
+            color: $black;
          }
          h4 {
             color: $black;
@@ -55,6 +49,12 @@
          }
          h6 {
             color: $black-trans;
+         }
+         .metadata-item {
+            font-weight: 600;
+            color: $black-trans;
+            font-size: 80%;
+            margin-right: 0.75em;
          }
          .highlight {
             background-color: $white;
