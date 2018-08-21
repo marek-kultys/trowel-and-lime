@@ -6,7 +6,7 @@ main {
       .hero-container {
          @include outer-container(100%);
          width: 100vw;
-         min-height: 90vh;
+         height: 90vh;
          background-size: cover;
          background-position: 50% 0;
       }
@@ -57,7 +57,7 @@ main {
       font-size: 80%;
       margin-right: 0.75em;
    }
-   
+
    .highlight {
       background-color: $white;
       padding: 1px 10px 2px 10px;
