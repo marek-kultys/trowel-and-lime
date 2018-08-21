@@ -1,11 +1,11 @@
 .home {
 
-   section {
-      padding: 4.8em 0em;
-      &:last-of-type {
-         padding-bottom: 0em;
-      }
-   }
+   // section {
+   //    padding: 4.8em 0em;
+   //    &:last-of-type {
+   //       padding-bottom: 0em;
+   //    }
+   // }
 
    .hero {
       p, h5 {
@@ -18,8 +18,8 @@
 
       .hero-text-wrapper {
          height: 100%;
-         @include span-columns(10.2);
-         @include shift(0.9);
+         @include span-columns(10);
+         @include shift(1);
          display: flex;
          @include media($for-tablet-up) {
             @include span-columns(8);
