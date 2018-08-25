@@ -1,11 +1,14 @@
 .home {
 
-   // section {
-   //    padding: 4.8em 0em;
-   //    &:last-of-type {
-   //       padding-bottom: 0em;
-   //    }
-   // }
+   section {
+      padding: 4.2em 0em;
+      &:first-of-type {
+         padding-top: 0em;
+      }
+      &:last-of-type {
+         padding-bottom: 0em;
+      }
+   }
 
    .hero {
       p, h5 {
