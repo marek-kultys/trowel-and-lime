@@ -58,6 +58,14 @@
 
 
 // IMAGES
+   .gallery-block {
+      margin-bottom: 9.6em;
+   }
+
+   .gallery-block-last {
+      margin-bottom: 6em;
+   }
+
    .gallery-photos {
       @include span-columns(6);
       @include media($for-phone-only) {
