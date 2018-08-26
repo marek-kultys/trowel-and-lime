@@ -78,11 +78,11 @@ The above code creates a link like this: [Link to this blog post](/blog/2018/08/
 
 Embedding images in the a blog post works in a similar way to embedding links. The difference is that before the square brackets you need to add an exclamation mark (`!`) to indicate that the source of the associated URL needs to be embedded. Here is an example:
 
-`![Embedded image](/img/studio-4.jpg/)`
+`![Embedded image](/img/studio-3.jpg/)`
 
 The above code will embed this image:
 
-![Embedded image](/img/studio-4.jpg/)
+![Embedded image](/img/studio-3.jpg/)
 
 
 # Excerpt separator
