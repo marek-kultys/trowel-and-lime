@@ -2,11 +2,11 @@ footer {
    @include outer-container(100%);
    background-color: $white;
    z-index: 999;
-   padding-top: 2em;
+   padding-top: 1.5em;
    padding-bottom: 4.8em;
 
    .footer-unit {
-      padding-top: 1.33em;
+      padding-top: 2em;
       @include span-columns(4);
       @include media($for-phone-only) {
          @include span-columns(12);
