@@ -3,6 +3,7 @@
 $for-phone-only: new-breakpoint(max-width 767px);
 $for-tablet-up: new-breakpoint(min-width 768px);
 $for-desktop-up: new-breakpoint(min-width 992px);
+$for-below-desktop: new-breakpoint(max-width 991px);
 
 // Declare grid units
 $grid-phone: 11;
