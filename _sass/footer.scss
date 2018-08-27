@@ -32,8 +32,14 @@ footer {
       }
    }
 
-   #sitemap-home {
-      text-align: right;
+   .socials {
+      margin-top: 1em;
+      color: $black-trans;
+      li {
+         font-size: 1.6em;
+         float: left;
+         margin-right: 1em;
+      }
    }
 }
 
