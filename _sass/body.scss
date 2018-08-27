@@ -202,20 +202,25 @@ section {
 
 
 // SELECTIVE DISPLAY
+// For image matrix in home page
 .not-on-phone-size {
    @include media($for-phone-only) {
       display: none !important;
    }
 }
-
-.not-on-above-phone-size {
+.not-above-phone-size {
    @include media($for-tablet-up) {
       display: none !important;
    }
 }
-
+// For elements in footer
 .not-below-desktop-size {
    @include media($for-below-desktop) {
+      display: none !important;
+   }
+}
+.not-above-desktop-size {
+   @include media($for-desktop-up) {
       display: none !important;
    }
 }
