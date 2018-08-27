@@ -122,6 +122,24 @@ h6 { // used for navbar and footer links, blog post metadata, and blog post imag
    // letter-spacing: 0.2px;
 }
 
+sup {
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+}
+
+.metadata-item {
+   font-weight: 600;
+   color: $black-trans;
+   font-size: 80%;
+   margin-right: 0.75em;
+}
+
+.highlight {
+   background-color: $white;
+   padding: 1px 10px 2px 10px;
+}
+
 ::selection {
   background: $yellow;
 }
