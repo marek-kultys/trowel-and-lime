@@ -215,6 +215,12 @@ section {
    }
 }
 
+.not-below-desktop-size {
+   @include media($for-below-desktop) {
+      display: none !important;
+   }
+}
+
 
 
 // GLOBAL STYLES
