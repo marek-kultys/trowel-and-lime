@@ -247,3 +247,31 @@ section {
    border: none;
    color: $grey;
 }
+
+.no-hover-border {
+   &:hover {
+      border: none;
+   }
+}
+
+
+
+
+// ALIGNMENTS
+.text-center {
+   text-align: center;
+}
+
+.text-left {
+   text-align: left;
+}
+
+.text-right {
+   text-align: right;
+}
+
+.flex-center {
+   display: flex !important;
+   align-items: center;
+   justify-content: center;
+}
