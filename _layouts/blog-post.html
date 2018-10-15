@@ -22,7 +22,7 @@ title: Trowel & Lime | Blog Post
 						<h6>
 							{% for tag in page.tags %}
 								{% capture tag_name %}{{ tag }}{% endcapture %}
-								<a href="/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr></a>
+								<a href="/tag/{{ tag_name }}"><span class="nowrap">{{ tag_name }}</span></a>
 							{% endfor %}
 						</h6>
 					</div>
