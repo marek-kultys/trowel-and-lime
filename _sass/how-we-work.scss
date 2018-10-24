@@ -1,86 +1,9 @@
 .how-we-work {
-   .page-hero {
-      background-image: url("/img/banner-white-forest-3.jpg");
-   }
 
-   h3 {
-      margin-top: 1.66em;
-   }
-
-   .small-padding-top {
-      padding-top: 1em;
-   }
-
-   .numeral {
-      font-size: 2em !important;
-      display: inline-block;
-      border-radius: 20px;
-      height: 40px;
-      padding: 0px 16px 0px 16px;
-      color: $white;
-      background-color: $black;
-   }
-
-   .table {
-      margin-top: 2em;
-      margin-bottom: 5em;
-      @include span-columns(6);
-      @include shift(3);
-      @include media($for-desktop-up) {
-         @include span-columns(8);
-         @include shift(2);
-      }
-      @include media($for-tablet-up) {
-         @include span-columns(10);
-         @include shift(1);
-      }
-      @include media($for-phone-only) {
-         margin-bottom: 3em;
+   .hero {
+      .hero-container {
+         background-image: url("/img/large-studio-2.jpg");
       }
    }
 
-   .table-unit {
-      @include span-columns(6);
-      @include omega(2n);
-      @include media($for-phone-only) {
-         @include span-columns(12);
-         @include omega(1n);
-      }
-   }
-
-   .table-header {
-      background-color: $black;
-      width: 100%;
-      text-align: center;
-      border-top-left-radius: 2px;
-      border-top-right-radius: 2px;
-      border-bottom: 1px solid $white;
-      h3 {
-         margin-top: 0em;
-         padding: 0.66em 0 0.5em 0;
-         @include media($for-tablet-up) {
-            font-size: 1.4em;
-         }
-      }
-   }
-
-   .table-cell {
-      background-color: $black-trans;
-      width: 100%;
-      text-align: center;
-      border-bottom-left-radius: 2px;
-      border-bottom-right-radius: 2px;
-      @include media($for-phone-only) {
-         margin-bottom: 2em;
-      }
-      p {
-         margin: 0em;
-         padding: 1em;
-      }
-   }
-
-   //IMAGES
-   #offer-hero {
-      background-image: url("/img/banner-bathroom-pond-1.jpg");
-   }
 }
