@@ -4,6 +4,20 @@
       .hero-container {
          background-image: url("/img/large-studio-2.jpg");
       }
+
+      .page-container {
+         background-color: $main;
+      }
+
+      .case-study {
+         @include outer-container(100%);
+      }
+      .case-study-unit {
+         @include span-columns(12);
+         @include media($for-desktop-up) {
+            @include span-columns(6);
+         }
+      }
    }
 
 }
