@@ -3,7 +3,7 @@ layout: blog-post
 author: mk
 title: Writing a blog post — user's guide
 hero: studio-3.jpg
-tags: Sgraffito Tag Examples
+tags: Sgraffito Examples
 published: true
 excerpt_separator: <!--more-->
 ---
