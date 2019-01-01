@@ -14,7 +14,7 @@ Markdown is a simple notation system used for formatting text. To format text, a
 
 <!--more-->
 
-All paragraph text in your blog posts is set by default in Open Sans, weight 300.
+Most paragraph text in your blog posts is set by default in Raleway, weight 300.
 
 
 # Headings

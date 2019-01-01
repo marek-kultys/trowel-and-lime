@@ -64,7 +64,7 @@ h1, h2 {
 }
 
 p, h5, h6, ol {
-   font-family: 'Open Sans', sans-serif;
+   font-family: 'Raleway', sans-serif;
    font-weight: 300;
    margin: 0px;
 }
@@ -110,6 +110,8 @@ h4 { // gallery titles
 h5 { // used for buttons
    color: $black;
    font-size: 1em;
+   position: relative;
+   top: 4px;
    @include media($for-tablet-up) {
       font-size: 1.2em;
    }
@@ -120,7 +122,7 @@ h6 { // used for navbar and footer links, blog post metadata, and blog post imag
    font-size: 1em;
    line-height: 1.5em;
    margin-top: 0.5em;
-   // letter-spacing: 0.2px;
+   letter-spacing: 0.2px;
 }
 
 sup {

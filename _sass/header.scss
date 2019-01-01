@@ -5,6 +5,7 @@ header {
    z-index: 999;
    padding-bottom: 1em;
 
+
    .header-name {
       padding-top: 0.5em;
    }
@@ -15,6 +16,7 @@ header {
 
    h6 { // additional navbar styles
       position: relative;
+      font-weight: 400;
    }
 
    .header-menu {
