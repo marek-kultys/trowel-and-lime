@@ -71,11 +71,11 @@ p, h5, h6, ol {
 
 p { // body text
    color: $black;
-   font-size: 1em;
+   font-size: 1.1em;
    margin: 0.5em 0 0.75em 0;
    line-height: 1.6em;
    @include media($for-tablet-up) {
-      font-size: 1.2em;
+      font-size: 1.25em;
       line-height: 1.7em;
    }
 }
