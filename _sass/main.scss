@@ -99,6 +99,9 @@ main {
       position: relative;
       top: -2.4em;
       overflow: hidden;
+      img {
+         width: 100%;
+      }
    }
 
    .video-media {
