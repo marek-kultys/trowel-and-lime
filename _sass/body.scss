@@ -175,8 +175,8 @@ section {
 
 .middle-grid {
    @include media($for-desktop-up) {
-      @include span-columns(6);
-      @include shift(3);
+      @include span-columns(7);
+      @include shift(2.5);
    }
 }
 
