@@ -192,13 +192,12 @@ section {
    }
 }
 
-.four-grid-mosaic {
+.grid-mosaic {
    padding: none;
    @include span-columns(6, block-collapse);
    width: 50% !important;
    @include media($for-tablet-up) {
-      @include span-columns(3, block-collapse);
-      width: 25% !important;
+      @include span-columns(4, block-collapse);
    }
 }
 
