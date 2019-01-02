@@ -14,6 +14,7 @@ main {
 
    .page-container {
       background-color: $yellow;
+      box-shadow: $soft-shadow;
       height: auto;
       margin-top: 5em;
       margin-bottom: 6em;
@@ -42,6 +43,7 @@ main {
       &:hover {
          background-color: $yellow-trans;
          border: 1px solid $yellow;
+         box-shadow: $soft-shadow;
       }
    }
 
@@ -96,11 +98,14 @@ main {
 
    .video-wrapper {
       height: auto;
+      overflow: hidden;
       position: relative;
       top: -2.4em;
-      overflow: hidden;
+      padding-bottom: 0px;
+      box-shadow: $soft-shadow;
       img {
          width: 100%;
+         vertical-align: middle; // removes odd 3px margin below the image that behaves like a character of text
       }
    }
 

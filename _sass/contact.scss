@@ -95,7 +95,7 @@
       }
 
       input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
-         box-shadow: 2px 2px 0 $black-trans;
+         box-shadow: $hard-shadow;
       }
       ::-webkit-input-placeholder {
          font-weight: 300;
