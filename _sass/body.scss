@@ -94,8 +94,8 @@ h2 { // used for page titles and home page paragraphs (must locally override col
    font-size: 2em;
    display: inline-block;
    border-bottom: 1px solid $grey;
-   padding-bottom: 12px;
-   margin-bottom: 12px;
+   padding-bottom: 6px;
+   margin-bottom: 18px;
    @include media($for-tablet-up) {
       font-size: 2.2em;
    }
