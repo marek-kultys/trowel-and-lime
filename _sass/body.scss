@@ -198,6 +198,7 @@ section {
    width: 50% !important;
    @include media($for-tablet-up) {
       @include span-columns(4, block-collapse);
+      width: 33.3333333333% !important;
    }
 }
 
