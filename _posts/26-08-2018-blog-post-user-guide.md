@@ -3,7 +3,7 @@ layout: blog-post
 author: mk
 title: Writing a blog post — user's guide
 hero: large-studio-2.jpg
-tags: Sgraffito Examples
+tags: Sgraffito Tag Examples
 published: true
 excerpt_separator: <!--more-->
 ---
@@ -76,13 +76,32 @@ The above code creates a link like this: [Link to this blog post](/blog/2018/08/
 
 # Images
 
-Embedding images in the a blog post works in a similar way to embedding links. The difference is that before the square brackets you need to add an exclamation mark (`!`) to indicate that the source of the associated URL needs to be embedded. Here is an example:
+Embedding images in the a blog post works in a similar way to embedding links. The difference is that before the square brackets you need to add an exclamation mark (`!`) to indicate that the source of the associated URL needs to be embedded. All images should be stored in the `/blog/img` directory. Here's an example:
 
-`![Embedded image](/img/large-studio-2.jpg/)`
+`![Embedded image](/blog/img/large-studio-2.jpg/)`
 
 The above code will embed this image:
 
-![Embedded image](/img/large-studio-2.jpg/)
+![Embedded image](/blog/img/large-studio-2.jpg/)
+
+<h6>I use only mineral pigments.</h6>
+
+In order to include image captions, you need to use the H6 tag immediately below the line of code that embeds the image. Remember to use both the opening tag (`<h6>`) and the closing tag (`</h6>`).
+
+Here's how the above caption would look in code:
+
+`<h6>I use only mineral pigments.</h6>`
+
+
+# Hero image
+
+Every blog post can have a unique hero image used as a banner underneath the text in the top of the page. In this blog post, the hero image shows many jars with pigments in various colours.
+
+In order to set your own hero image, add the address path of the desired image in the front matter in the very top of the blog post document under the `hero` parameter.
+
+For example, this blog article uses the following parameter in the front matter: `hero: large-studio-2.jpg`.
+
+All images should be stored in the `/blog/img` directory.
 
 
 # Excerpt separator
@@ -116,7 +135,7 @@ You can work on drafting blog posts and — when the moment is right — decide
 
 # Tags
 
-You can tag your blog posts. This one, for example, is tagged with three tags:
+You can tag your blog posts. This one, for example, is tagged with two tags:
 
 `Sgraffito`, `Tag` and  `Examples`
 
@@ -126,9 +145,9 @@ That's why you need to be thoughtful about how you tag your blog posts. Make sur
 
 In order to introduce a new tag, you need to create a new markdown document in your [tag directory](/tag). For example, if you were to add a new `Tag` tag, you would need to duplicate the `sgraffito.md` file and modify two parameters in its front matter:
 
-1. Change `title: "Sgraffiyo Tags"` to `title: "Tag Tags"`
+1. Change `title: "Sgraffito Tags"` to `title: "Tag Tags"`
 
-2. Change `tag: Sgraffio` to `tag: Tag`
+2. Change `tag: Sgraffito` to `tag: Tag`
 
 Rename the new document to `tag.md` and save it. It should now appear as a new [Tag tags page](/tag/Tags).
 
