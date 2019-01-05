@@ -63,6 +63,15 @@
       margin-bottom: 6em;
    }
 
+   .gallery-panorama {
+      @include span-columns(12);
+      img {
+         display: block;
+         width: 100%;
+         margin-bottom: 2.2em;
+      }
+   }
+
    .gallery-photos {
       @include span-columns(6);
       @include media($for-phone-only) {
