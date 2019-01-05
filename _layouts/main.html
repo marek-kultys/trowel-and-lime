@@ -7,7 +7,8 @@
     	{% include head.html %}
 	</head>
 
-	<body>
+
+	<body {% if page.label == "home" %} onload="randombg()" {% endif %}>
 		<header>
 			{% include header.html %}
 		</header>
