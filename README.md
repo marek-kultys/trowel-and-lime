@@ -1,1 +1,6 @@
-# website for mela yerka's mural and sgraffito business
+# Trowel & Lime — The Rare Art of Sgraffito
+
+### Potential redundancies:
+
+.gallery.gallery
+.gallery.info

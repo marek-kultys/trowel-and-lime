@@ -1,54 +1,93 @@
 .gallery {
-   .section-block {
-      @include span-columns(8);
-      @include shift(2);
-      @include media($large) {
-         @include span-columns(10);
-         @include shift(1);
+
+   .hero {
+      .hero-container {
+         overflow: auto;
+         height: auto;
+      }
+      #the-old-forest {
+         background-image: url("/img/banner-old-street-3.jpg");
+      }
+      #summer-meadow {
+         background-image: url("/img/banner-summer-meadow-4.jpg");
+      }
+      #the-white-forest {
+         background-image: url("/img/banner-white-forest-4.jpg");
+      }
+      #bathroom-pond {
+         background-image: url("/img/banner-bathroom-pond-2.jpg");
+      }
+
+      .page-container {
+         background-color: $white-trans;
+      }
+
+      .case-study {
+         @include outer-container(100%);
+      }
+      .case-study-unit {
+         @include span-columns(12);
+         @include media($for-desktop-up) {
+            @include span-columns(6);
+         }
+      }
+
+      .gallery-info {
+         text-align: left;
+         ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+         }
+         p {
+            color: $black;
+         }
+         h4 {
+            color: $black;
+            margin-top: 0.75em;
+            margin-bottom: 0.75em;
+            .underline {
+               border-bottom: 1px solid $black;
+            }
+         }
       }
    }
 
-   .info {
-      padding-top: 1em;
-      padding-bottom: 0.33em;
-   }
-
-   .gallery {
-      padding-top: 0.33em;
-      padding-bottom: 0.33em;
-      &:last-of-type {
-         margin-bottom: 4em;
-      }
-   }
-
-   .gallery-info {
-      text-align: left;
-      margin: 0;
-      ul {
-         list-style: none;
-         padding: 0;
-      }
-      p {
-         margin-top: 0.33em;
-         margin-bottom: 0.33em;
-      }
-   }
-
-   .divider {
-      margin-bottom: 2em;
-      border-bottom: 1px solid $hero-hover;
-      width: 100%;
+   .metadata-item {
+      font-size: 80%;
    }
 
 
 // IMAGES
+   .gallery-block {
+      margin-bottom: 9.6em;
+   }
+
+   .gallery-block-last {
+      margin-bottom: 6em;
+   }
+
+   .gallery-panorama {
+      @include span-columns(12);
+      img {
+         display: block;
+         width: 100%;
+         margin-bottom: 2.2em;
+      }
+   }
+
    .gallery-photos {
       @include span-columns(6);
-      @include media($medium) {
+      @include media($for-phone-only) {
          @include span-columns(12);
       }
       img {
          display: block;
+         width: 100%;
+         margin-bottom: 2.2em;
+         &:last-of-type {
+            margin-bottom: 0em;
+         }
       }
    }
 }

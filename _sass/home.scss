@@ -1,0 +1,86 @@
+.home {
+
+   section {
+      padding: 4.2em 0em;
+      &:first-of-type {
+         padding-top: 0em;
+      }
+      &:last-of-type {
+         padding-bottom: 0em;
+      }
+   }
+
+   .hero {
+      p, h5 {
+         font-weight: 300;
+      }
+
+      #random {
+         background-image: url("/img/banner-old-street-7.png");
+      }
+
+      .hero-text-wrapper {
+         height: 100%;
+         @include span-columns(10);
+         @include shift(1);
+         display: flex;
+         @include media($for-tablet-up) {
+            @include span-columns(8);
+            @include shift(2);
+            display: flex;
+         }
+         @include media($for-desktop-up) {
+            @include span-columns(6);
+            @include shift(3);
+            display: flex;
+         }
+         align-items: center;
+         text-align: center;
+      }
+
+      .hero-text {
+         margin-bottom: 20vh;
+         padding: 0.6em 1em;
+         background-color: $black-trans;
+         box-shadow: $soft-shadow;
+         @include media($for-tablet-up) {
+            padding: 1em 3em;
+         }
+         @include media($for-desktop-up) {
+            padding: 1.2em 3.6em;
+         }
+         h2 {
+            color: $yellow;
+            border-color: $yellow;
+         }
+         p {
+            color: $white;
+         }
+      }
+   }
+
+   .trio-border {
+      border-bottom: 1px solid $grey;
+   }
+
+   .examples-work {
+      padding-bottom: 3em;
+      img {
+         width: 100%;
+         display: block;
+      }
+      a {
+         display: block;
+         cursor: pointer;
+         &:hover {
+            border: none;
+         }
+      }
+      p {
+         margin-top: 1.5em;
+         &:hover {
+            color: $yellow;
+         }
+      }
+   }
+}

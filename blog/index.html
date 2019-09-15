@@ -1,0 +1,39 @@
+---
+layout: main
+title: Trowel & Lime | Blog
+label: blog
+---
+<article class="blog">
+
+	<section>
+		<div class="hero">
+			<div class="hero-container">
+				<div class="full-grid middle-grid page-container">
+					<div class="title-container">
+						<h2>Trowel & Lime Blog</h2>
+					</div>
+
+					<div>
+						{% for post in paginator.posts %}
+							<div class="blogpost blogpost-margin">
+								<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+								<h6 class="metadata">
+									{% include byline.html post=post %}
+								</h6>
+								<span class="blogpost-text">
+									{{ post.excerpt }}
+								</span>
+								<p><a href="{{ post.url }}" class="underlined-link">Continue reading</a></p>
+							</div>
+						{% endfor %}
+					</div>
+
+					{% include paginate.html %}
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+</article>
+

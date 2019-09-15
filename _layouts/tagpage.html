@@ -1,0 +1,38 @@
+---
+layout: main
+title: Trowel & Lime | Tags
+---
+
+<article class="blog">
+
+	<section>
+		<div class="hero">
+			<div class="hero-container">
+				<div class="full-grid middle-grid page-container">
+
+					<!-- <h6><a href="/blog">‹ Back to Blog</a></h6> -->
+
+					<div class="title-container small-margin-bottom">
+						<h1 class="text-left"><span class="grey">Trowel & Lime:</span> {{ page.tag }}</h1>
+					</div>
+
+               <div class="blogpost small-padding-top">
+                  <div class="blogpost-text">
+                     {% for post in site.tags[page.tag] %}
+                        <div class="list-of-tags">
+                           <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+                           <h6>Posted on {{ post.date | date_to_string }}</h6>
+                           <!-- <h6>{{ post.description }}</h6> -->
+                        </div>
+                     {% endfor %}
+                  </div>
+               </div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+</article>
+
+

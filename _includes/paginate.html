@@ -1,0 +1,33 @@
+{% if paginator.total_pages > 1 %}
+	<div class="pagination">
+
+		<div class="posts-link older">
+			{% if paginator.next_page %}
+				<p>
+					<a class="page-next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+						← Older posts
+					</a>
+				</p>
+			{% else %}
+				<p class="inactive-link">
+					← Older posts
+				</p>
+			{% endif %}
+		</div>
+
+		<div class="posts-link newer">
+			{% if paginator.previous_page %}
+				<p>
+					<a class="page-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+						Newer posts →
+					</a>
+				</p>
+			{% else %}
+				<p class="inactive-link">
+					Newer posts →
+				</p>
+			{% endif %}
+		</div>
+
+	</div>
+{% endif %}

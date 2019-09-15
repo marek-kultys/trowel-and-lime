@@ -1,23 +1,35 @@
 // VARIABLES
 // Declare breakpoints
-$small: new-breakpoint(max-width 480px);
-$medium: new-breakpoint(max-width 768px);
-$large: new-breakpoint(max-width 1000px);
-$wide: new-breakpoint(max-width 1230px);
-$full: new-breakpoint(min-width 1231px);
+$for-phone-only: new-breakpoint(max-width 767px);
+$for-tablet-up: new-breakpoint(min-width 768px);
+$for-desktop-up: new-breakpoint(min-width 992px);
+$for-below-desktop: new-breakpoint(max-width 991px);
 
-// Declare transition
+// Declare grid units
+$grid-phone: 11;
+$margin-phone: 0.5;
+$grid-desktop: 9;
+$margin-desktop: 1.5;
+
+// Declare style elements
 $transition: 0.2s;
+$radius: 3px;
+$height: 52px;
 
 // Declare colours
-$main: rgba(171, 199, 230, 1);
+$main: rgba(244, 244, 242, 1);
 $white: rgba(255, 255, 255, 1);
-$white-hover: rgba(255, 255, 255, 0.66);
+$white-trans: rgba(255, 255, 255, 0.75);
 $black: rgba(33, 33, 33, 1);
-$grey: rgba(33, 33, 33, 0.25);
-$black-hover: rgba(33, 33, 33, 0.1);
-$hero-hover: rgba(33, 33, 33, 0.8);
+$black-trans: rgba(33, 33, 33, 0.6);
+$grey: rgba(213, 213, 211, 1);
+$yellow: rgba(250, 199, 6, 1);
+$yellow-trans: rgba(250, 199, 6, 0.6);
+$ochre: rgba(197, 61, 12, 1);
 
+// Declare other styles
+$hard-shadow: 2px 2px 0 $black-trans;
+$soft-shadow: 0 2px 28px -8px $black-trans;
 
 
 // GLOBALS
@@ -32,7 +44,7 @@ html {
 
 body {
    margin: 0px;
-   background-color: $black;
+   background-color: $white;
    min-height: 100%;
 }
 
@@ -44,81 +56,236 @@ a {
    text-decoration: none;
    &:hover {
       transition: $transition;
-      color: $white-hover;
+      color: $yellow;
+      border-bottom: 1px dashed $yellow;
    }
 }
 
-h1, h2, h3 {
-   font-family: 'Scope One', serif;
-   font-weight: 400;
+h1, h2 {
+   font-family: 'Playfair Display', serif;
+   font-weight: 700;
    margin: 0px;
 }
 
-p, h4, h5, h6 {
-   font-family: 'Roboto', sans-serif;;
+p, h5, h6, ol {
+   font-family: 'Raleway', sans-serif;
    font-weight: 300;
    margin: 0px;
 }
 
 p { // body text
-   font-size: 1.2em;
-   line-height: 1.7em;
    color: $black;
-   margin: 0.5em 0;
-}
-
-h1 { // logotype
-   font-size: 2.6em;
-   color: $white;
-}
-
-h2 { // page title, hero text
-   font-size: 2.2em;
-   @include media($full) {
-      font-size: 3em;
+   font-size: 1.1em;
+   margin: 0.5em 0 0.75em 0;
+   line-height: 1.6em;
+   @include media($for-tablet-up) {
+      font-size: 1.25em;
+      line-height: 1.7em;
    }
-   @include media($wide) {
+}
+
+h1 { // used for logotype
+   color: $black;
+   font-size: 2.1em;
+}
+
+h2 { // used for page titles and home page paragraphs (must locally override colour if not grey)
+   color: $grey;
+   font-size: 2em;
+   display: inline-block;
+   border-bottom: 1px solid $grey;
+   padding-bottom: 6px;
+   margin-bottom: 18px;
+   @include media($for-tablet-up) {
+      font-size: 2.2em;
+   }
+   @include media($for-desktop-up) {
       font-size: 2.6em;
    }
-   @include media($large) {
-      font-size: 1.9em;
-   }
-   @include media($medium) {
-      font-size: 1.6em;
-   }
-   color: $black;
 }
 
-h3 { // buttons
-   // margin-top: 1px;
-   font-size: 1.6em; // alternatively 1.5em
+h4 { // gallery titles
    color: $black;
-}
-
-h4 { // home page paragraphs, gallery title
-   font-size: 1.5em;
+   font-size: 2em;
    line-height: 1.6em;
    margin: 0.5em 0;
+}
+
+h5 { // used for buttons
    color: $black;
-}
-
-h5 { // navbar menu
-   font-size: 1.2em;
-   padding-bottom: 0.66em;
+   font-size: 1em;
    position: relative;
-   bottom: 1px;
-   letter-spacing: 1px;
-   // color: $white;
+   top: 4px;
+   @include media($for-tablet-up) {
+      font-size: 1.2em;
+   }
 }
 
-h6 { // footer
+h6 { // used for navbar and footer links, blog post metadata, and blog post image subtitles
+   color: $black;
    font-size: 1em;
    line-height: 1.5em;
-   margin: 0.5em 0;
-   color: $white;
+   margin-top: 0.5em;
+   letter-spacing: 0.2px;
 }
 
-.superscript {
+sup {
+   vertical-align: baseline;
    position: relative;
-   bottom: 3px;
+   top: -0.4em;
+}
+
+.metadata-item {
+   font-weight: 600;
+   color: $black-trans;
+   margin-right: 0.75em;
+}
+
+.highlight {
+   background-color: $white;
+   padding: 1px 10px 2px 10px;
+}
+
+::selection {
+  background: $yellow;
+}
+
+
+
+// GRIDS
+section {
+   padding: 0em;
+}
+
+.container {
+   @include outer-container(100%);
+}
+
+.block {
+   @include span-columns($grid-phone);
+   @include shift($margin-phone);
+   @include media($for-tablet-up) {
+      @include span-columns($grid-desktop);
+      @include shift($margin-desktop);
+   }
+}
+
+.full-grid {
+   @include span-columns(11);
+   @include shift(0.5);
+   @include media($for-tablet-up) {
+      @include span-columns(9);
+      @include shift(1.5);
+   }
+}
+
+.middle-grid {
+   @include media($for-desktop-up) {
+      @include span-columns(7);
+      @include shift(2.5);
+   }
+}
+
+.three-grid {
+   @include span-columns(10);
+   @include shift(1);
+   @include media($for-tablet-up) {
+      @include span-columns(4);
+      @include shift(0);
+   }
+}
+
+.grid-mosaic {
+   padding: none;
+   @include span-columns(6, block-collapse);
+   width: 50% !important;
+   @include media($for-tablet-up) {
+      @include span-columns(4, block-collapse);
+      width: 33.3333333333% !important;
+   }
+}
+
+
+
+// SELECTIVE DISPLAY
+// For image matrix in home page
+.not-on-phone-size {
+   @include media($for-phone-only) {
+      display: none !important;
+   }
+}
+.not-above-phone-size {
+   @include media($for-tablet-up) {
+      display: none !important;
+   }
+}
+// For elements in footer
+.not-below-desktop-size {
+   @include media($for-below-desktop) {
+      display: none !important;
+   }
+}
+.not-above-desktop-size {
+   @include media($for-desktop-up) {
+      display: none !important;
+   }
+}
+
+
+
+// GLOBAL STYLES
+.underlined-link {
+   border-bottom: 1px dashed $black;
+}
+
+.all-black-link {
+   border-bottom: 1px dashed $black;
+   &:hover {
+      color: $black;
+      border-color: $black;
+   }
+}
+
+.unmarked-link {
+   &:hover {
+      color: $black;
+      border: none;
+   }
+}
+
+.inactive-link {
+   border: none;
+   color: $grey;
+}
+
+.no-hover-border {
+   &:hover {
+      border: none;
+   }
+}
+
+.nowrap {
+   white-space: nowrap;
+}
+
+
+
+
+// ALIGNMENTS
+.text-center {
+   text-align: center;
+}
+
+.text-left {
+   text-align: left;
+}
+
+.text-right {
+   text-align: right;
+}
+
+.flex-center {
+   display: flex !important;
+   align-items: center;
+   justify-content: center;
 }

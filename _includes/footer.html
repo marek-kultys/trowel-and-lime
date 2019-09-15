@@ -1,31 +1,52 @@
-<div id="links" class="footer-unit">
-   <ul>
-      <li><h6>Email: <a href="mailto:{{ site.data.sgraffito.email }}">{{ site.data.sgraffito.email }}</a></h6></li>
-      <li><h6>Twitter: <a href="http://twitter.com/{{ site.data.sgraffito.twitter }}">@{{ site.data.sgraffito.twitter }}</a></h6></li>
-      <li><h6>Facebook: <a href="http://facebook.com/{{ site.data.sgraffito.facebook }}">{{ site.data.sgraffito.facebook }}</a></h6></li>
-   </ul>
-</div>
+<div class="block">
+   <span id="sitemap">
+      <div class="footer-unit not-below-desktop-size">
+         <div class="footer-halfunit">
+            <ul class="text-right">
+               <li><h6 class="metadata-item"><a href="/">{{ site.data.sgraffito.name }}</a></h6></li>
+            </ul>
+         </div>
+         <div class="footer-halfunit">
+            <ul>
+               <li><h6><a href="/gallery">Gallery</a></h6></li>
+               <li><h6><a href="/how-we-work">How we work</a></h6></li>
+               <li><h6><a href="/contact">Contact</a></h6></li>
+               <!-- <li><h6><a href="/blog">Blog</a></h6></li> -->
+            </ul>
+         </div>
+      </div>
 
-<div class="footer-unit">
-   <ul>
-      <li><h6>{{ site.data.sgraffito.address }}</h6></li>
-      <li><h6>All content &copy; {{ 'now' | date: "%Y" }} {{ site.data.sgraffito.author }}</h6></li>
-   </ul>
-</div>
+      <div class="footer-unit not-above-desktop-size">
+         <ul>
+            <li><h6 class="metadata-item"><a href="/">{{ site.data.sgraffito.name }}</a></h6></li>
+            <li><h6><a href="/gallery">Gallery</a></h6></li>
+            <li><h6><a href="/how-we-work">How we work</a></h6></li>
+            <li><h6><a href="/contact">Contact</a></h6></li>
+            <!-- <li><h6><a href="/blog">Blog</a></h6></li> -->
+         </ul>
+      </div>
+   </span>
 
-<div id="sitemap">
-   <div class="footer-halfunit">
-      <ul id="sitemap-home">
-         <li><h6><a href="/">{{ site.data.sgraffito.name }}:</a></h6></li>
+   <div id="contact-us" class="footer-unit">
+      <ul>
+         <li><h6><span class="metadata-item">Get in touch</span></h6></li>
+         <li><h6><span class="metadata-item"></span><a href="mailto:{{ site.data.sgraffito.email }}" class="underlined-link"><span class="nowrap">{{ site.data.sgraffito.email }}</span></a></h6></li>
+         <li><h6><span class="metadata-item"></span><a href="tel:{{ site.data.sgraffito.telephone }}" class="underlined-link"><span class="nowrap">{{ site.data.sgraffito.telephone }}</span></a></h6></li>
       </ul>
    </div>
-   <div class="footer-halfunit">
+
+   <div id="social-media" class="footer-unit">
       <ul>
-         <li><h6><a href="/gallery">Gallery</a></h6></li>
-         <li><h6><a href="/technique">Technique</a></h6></li>
-         <li><h6><a href="/offer">Offer</a></h6></li>
-         <li><h6><a href="/artist">Artist</a></h6></li>
-         <li><h6><a href="/contact">Contact</a></h6></li>
+         <li><h6><span class="metadata-item">Follow us</span></h6></li>
+         <li><a href="http://instagram.com/{{ site.data.sgraffito.twitter }}" class="no-hover-border"><span class="icon icon-instagram"></span></a></li>
+         <li><a href="http://pinterest.com/{{ site.data.sgraffito.twitter }}" class="no-hover-border"><span class="icon icon-pinterest"></span></a></li>
+         <!-- <li><a href="http://facebook.com/{{ site.data.sgraffito.twitter }}" class="no-hover-border"><span class="icon icon-facebook"></span></a></li> -->
       </ul>
+   </div>
+</div>
+
+<div class="block">
+   <div class="copyright text-center">
+      <h6>All content &copy;{{ 'now' | date: "%Y" }}<span class="icon-trowelandlime logo"></span>{{ site.data.sgraffito.name }}</h6>
    </div>
 </div>

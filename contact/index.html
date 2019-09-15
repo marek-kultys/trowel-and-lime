@@ -1,76 +1,62 @@
 ---
 layout: main
-title: Sgraffito | Contact
+title: Trowel & Lime | Contact
 label: contact
 ---
 <article class="contact">
 
    <section>
-      <div class="section-block no-padding-bottom">
-         <h2>Contact Form</h2>
-      </div>
-   </section>
-
-   <section>
-      <div class="section-block less-padding-top">
-         <p>If you want to know more, please get in touch. I will respond shortly.</p>
-      </div>
-   </section>
-
-   <section>
-      <div class="form-container">
-         <form action="https://formspree.io/mrklts@onet.eu" method="POST">
-
-            <p>Name *</p>
-            <div class="form-unit">
-               <input type="text" name="name-and-surname" placeholder="Your name and surname" required>
-            </div>
-
-            <p>Company Name</p>
-            <div class="form-unit">
-               <input type="text" name="company-name" placeholder="Name of your company">
-            </div>
-
-            <p>Email *</p>
-            <div class="form-unit">
-               <input type="email" name="email-address" placeholder="Your email address" required>
-            </div>
-
-            <p>Phone Number</p>
-            <div class="form-unit">
-               <input type="tel" name="telephone-number" placeholder="Your mobile or landline">
-            </div>
-
-            <p>Type of Service</p>
-            <h6>To find out more about the two types of service, please see the <a class="body-text-link" href="/offer">Offer page</a>.</h6>
-            <div class="radios">
-               <div class="form-unit radio-row">
-                  <input type="radio" id="radio1" name="type-of-service" value="Design and Make">
-                  <label for="radio1"><span></span><p>Design &amp; Make</p></label>
+      <div class="hero">
+         <div class="hero-container">
+            <div class="full-grid middle-grid page-container">
+               <div class="title-container">
+                  <h2>Contact us</h2>
                </div>
-               <div class="form-unit radio-row">
-                  <input type="radio" id="radio2" name="type-of-service" value="Make Only">
-                  <label for="radio2"><span></span><p>Make Only</p></label>
+               <div class="text-container">
+                  <p>Are you starting a new interior design project? Do you have an idea for a mural art piece? Would you like to learn more about sgraffito?</p>
+                  <p>We'd love to hear from you! Get in touch using the form below.</p>
+                  <p>You can also <span class="nowrap"><a href="mailto:{{ site.data.sgraffito.email }}" class="all-black-link">email</a></span> or <span class="nowrap"><a href="tel:{{ site.data.sgraffito.telephone }}" class="all-black-link">call us</a></span>.</p>
+               </div>
+               <div class="form-container small-margin-top">
+                  <form action="https://formspree.io/mrklts@onet.eu" method="POST">
+                     <p>Name <span class="inline-comment">(required)</span></p>
+                     <div class="form-unit short-form">
+                        <input type="text" name="name-and-surname" placeholder="Your name and surname" required>
+                     </div>
+
+                     <p>Company</p>
+                     <div class="form-unit short-form">
+                        <input type="text" name="company-name" placeholder="Name of your company">
+                     </div>
+
+                     <p>Email <span class="inline-comment">(required)</span></p>
+                     <div class="form-unit short-form">
+                        <input type="email" name="email-address" placeholder="Your email address" required>
+                     </div>
+
+                     <p>Phone number</p>
+                     <div class="form-unit short-form">
+                        <input type="tel" name="telephone-number" placeholder="Your mobile or landline">
+                     </div>
+
+                     <p>Message <span class="inline-comment">(required)</span></p>
+                     <div class="form-unit">
+                        <textarea name="project-details" placeholder="More about your project..."></textarea>
+                     </div>
+
+                     <!-- Line below is for the Submit button  -->
+                     <div class="form-unit text-center">
+                        <input type="submit" value="SEND" class="button">
+                     </div>
+
+                     <!-- Lines below are for form behaviour only  -->
+                     <input type="hidden" name="_next" value="/contact/thank-you" />
+                     <input type="hidden" name="_subject" value="Trowel & Lime Enquiry" />
+                     <input type="text" name="_gotcha" style="display:none" />
+                  </form>
                </div>
             </div>
-
-            <p>Project Details</p>
-            <h6>Please explain your project in more detail: location, type of the site, type and size of the wall, your timeframe, requirements, etc.</h6>
-            <div class="form-unit">
-               <textarea name="project-details" placeholder="More about your project..."></textarea>
-            </div>
-
-            <!-- Line below is for the Submit button  -->
-            <div class="form-unit">
-               <input type="submit" value="Send" class="button regular-button">
-            </div>
-
-            <!-- Lines below are for form behaviour only  -->
-            <input type="hidden" name="_next" value="/contact/thank-you" />
-            <input type="hidden" name="_subject" value="Sgraffito enquiry" />
-            <input type="hidden" name="_subject" value="Sgraffito enquiry" />
-            <input type="text" name="_gotcha" style="display:none" />
-         </form>
+         </div>
       </div>
    </section>
 

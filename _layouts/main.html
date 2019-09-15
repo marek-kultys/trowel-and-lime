@@ -7,9 +7,16 @@
     	{% include head.html %}
 	</head>
 
-	<body>
+
+	<body {% if page.label == "home" %} onload="randombg()" {% endif %}>
+		<header>
+			{% include header.html %}
+		</header>
 		<main>
       	{{ content }}
 		</main>
+		<footer>
+			{% include footer.html %}
+		</footer>
 	</body>
 </html>

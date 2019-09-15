@@ -1,59 +1,64 @@
 footer {
-   @include outer-container;
-   height: 240px;
-   padding-top: 0.66em;
-   background-color: $black;
-   @include media($wide) {
-      margin-left: 30px;
-      margin-right: 15px;
-   }
-   @include media($medium) {
-      height: 320px;
-   }
-   h6 {
-      color: $white;
-   }
-   a:hover {
-      color: $white-hover;
-      cursor: pointer;
-   }
+   @include outer-container(100%);
+   background-color: $white;
+   z-index: 999;
+   padding-top: 1.5em;
+   padding-bottom: 3.33em;
 
    .footer-unit {
-      padding-top: 1.33em;
+      padding-top: 2.4em;
       @include span-columns(4);
-      @include media($medium) {
+      @include media($for-phone-only) {
          @include span-columns(12);
       }
    }
+
    .footer-halfunit {
-      padding-top: 1.33em;
-      @include span-columns(2);
+      @include span-columns(6);
+      width: auto;
    }
 
    ul {
       margin: 0 0 0.33em 0;
       padding: 0px;
       list-style: none;
-      @include media($medium) {
+      @include media($for-phone-only) {
          float: none;
       }
    }
    li {
-      // margin-right: 2em;
-      @include media($medium) {
+      @include media($for-phone-only) {
          margin: 0;
          float: none;
       }
    }
 
-   #sitemap {
-      @include media($medium) {
-         display: none;
+   #social-media {
+      color: $black-trans;
+      li {
+         .icon {
+            font-size: 1.66em;
+            float: left;
+            margin-right: 1.33em;
+            margin-top: 0.5em
+         }
       }
    }
 
-   #sitemap-home {
-      text-align: right;
+   #contact-us {
+      .metadata-item{
+         margin-right: 0px;
+      }
+   }
+
+   .copyright {
+      margin-top: 4.8em;
+      .logo {
+         font-size: 1.8em;
+         margin-left: 0.1em;
+         position: relative;
+         top: 0.15em;
+      }
    }
 }
 

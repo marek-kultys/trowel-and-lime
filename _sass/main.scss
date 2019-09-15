@@ -1,272 +1,153 @@
 main {
-   width: 100%;
-   min-height: calc(100vh - 70px - 180px); /* calculate: 100% vertical height - 70px approx. header height - 120px footer height */
-   @include media($medium) {
-      min-height: calc(100vh - 70px - 240px); /* adjust for footer height below medium break-point */
-   }
+   overflow: auto;
+   background-color: $main;
 
-   section {
-      @include outer-container(100%);
-      display: block;
-      background-color: $white;
-   }
-
-   .section-block {
-      text-align: center;
-      padding: 4em 0em;
-      @include span-columns(6);
-      @include shift(3);
-      @include media($wide) {
-         @include span-columns(8);
-         @include shift(2);
-      }
-      @include media($medium) {
-         @include span-columns(10);
-         @include shift(1);
-      }
-   }
-
-   .no-padding-bottom {
-      padding-bottom: 0;
-   }
-
-   .less-padding-top {
-      padding-top: 2em;
-   }
-
-   .paragraph {
-      text-align: left;
-      padding-top: 2em;
-   }
-
-   .quote {
-      text-align: center;
-      p {
-         margin-top: 2em;
-         margin-bottom: 0.5em;
-      }
-   }
-
-   .block-image {
-      background-size: cover;
-      padding-bottom: 0px;
-      background-position: center 50%; // crops image top and bottom and keeps full width to fit in a horizontal frame
-      background-repeat: no-repeat;
-      height: 60vh;
-      min-height: 400px;
-      @include media($medium) {
+   .hero {
+      .hero-container {
+         @include outer-container(100%);
+         width: 100vw;
+         height: 90vh;
          background-size: cover;
-         background-position: center 0px; // crops image left and right and keeps full height to fit in a vertical frame
+         background-position: 50% 0;
       }
    }
 
-   .hero-container {
-      padding-top: 3em;
-      @include span-columns(8);
-      @include shift(2);
-      @include media($large) {
-         @include span-columns(10);
-         @include shift(1);
+   .page-container {
+      background-color: $yellow;
+      box-shadow: $soft-shadow;
+      height: auto;
+      margin-top: 5em;
+      margin-bottom: 6em;
+      padding: 0.6em 1em 3em 1em;
+      @include media($for-tablet-up) {
+         padding-top: 1em;
+         padding-left: 3em;
+         padding-right: 3em;
       }
-      @include media($full) {
-         @include span-columns(6);
-         @include shift(3);
+      @include media($for-desktop-up) {
+         padding-top: 1.2em;
+         padding-left: 3.6em;
+         padding-right: 3.6em;
       }
-   }
-
-   .hero-text {
-      text-align: center;
    }
 
    .button {
-      background-color: $white;
-      max-width: 280px;
-      border: 1px solid $black;
-      margin: 2em auto;
-      display: block;
+      background-color: $yellow;
+      border: 1px solid $yellow;
+      border-radius: $radius;
+      height: $height;
       cursor: pointer;
-      text-align: center;
+      display: inline-block;
+      margin: 1em auto;
+      padding: 10px 24px;
       &:hover {
-         background-color: $black-hover;
-      }
-      h3 {
-         color: $black;
-      }
-   }
-
-   .hero-button {
-      height: 52px;
-      border-radius: 26px;
-      h3 {
-         padding-top: 8px;
+         background-color: $yellow-trans;
+         border: 1px solid $yellow;
+         box-shadow: $soft-shadow;
       }
    }
 
-   .regular-button {
-      height: 48px;
-      border-radius: 24px;
-      h3 {
-         padding-top: 6px;
-      }
-   }
-
-   .close-button {
-      z-index: 99;
-      position: relative;
-      top: 64px;
-      height: 40px;
-      width: 120px;
-      margin: 0 auto 0 auto;
-      background-color: $white-hover;
-      h3 {
-         padding-top: 2px;
-      }
-   }
-
-   .body-text-link {
-      color: inherit;
-      border-bottom: 1px dotted $black;
-      &:hover {
-         opacity: 0.5;
-      }
-   }
-
-   .view-image {
-      a {
-         position: relative;
-         width: 100%;
-         height: auto;
-         display: block;
-         cursor: pointer;
-      }
-      a img {
-         width: 100%;
-         margin-bottom: 1.33em;
-         display: block;
-      }
-      a:after {
-         content:'\A';
-         position: absolute;
-         width: 100%; height: 100%;
-         top: 0; left: 0;
-         background: $black-hover;
-         opacity: 0;
-         transition: $transition;
-      }
-      a:hover:after {
-         opacity: 1;
-      }
-   }
-
-
-// Round badge
-   .badge {
-      margin-top: 3em;
-      margin-bottom: 2em;
-      margin-left: auto;
-      margin-right: auto;
-      height: 230px;
-      width: 230px;
-      padding: 0px;
-      border-radius: 50%;
-      border: 1px solid $black;
+   .page-hero {
       background-size: cover;
-      @include media($wide) {
-         height: 190px;
-         width: 190px;
-      }
-      @include media($large) {
-         height: 210px;
-         width: 210px;
-      }
-      @include media($medium) {
-         height: 190px;
-         width: 190px;
-      }
-      @include media($small) {
-         height: 210px;
-         width: 210px;
+      background-position: 50% 0;
+      margin-bottom: 1em;
+      height: 30vh;
+      min-height: 12em;
+   }
+
+   .no-padding-bottom {
+      padding-bottom: 0em;
+   }
+
+   .no-margin-bottom {
+      margin-bottom: 0em;
+   }
+
+   .small-padding-top {
+      padding-top: 2em;
+   }
+
+   .small-margin-top {
+      margin-top: 2em;
+   }
+
+   .small-margin-bottom {
+      margin-bottom: 2.5em;
+   }
+
+   .margin-bottom {
+      margin-bottom: 3em;
+      @include media($for-desktop-up) {
+         margin-bottom: 4em;
       }
    }
 
+   .colour-banner {
+      background-color: $yellow;
+   }
 
-// MODAL
-// Based on code by Kasper Mikiewicz
-   .modal {
-      $modal-padding: 3em;
-      $modal-background: #66dd11;
-
-      label {
-      }
-
-      input[type="checkbox"] {
-         display: none;
-      }
-
-      .modal-open {
-         overflow: hidden;
-      }
-
-      .modal-window { // overlay
-         @include position(fixed, 0px 0px 0px 0px);
-         background: $hero-hover;
-         opacity: 0;
-         visibility: hidden;
-         z-index: 90;
-      }
-
-      .modal-inner {
-         margin: auto;
-         // margin-top: 5vh;
-         // margin-bottom: 15vh;
-      }
-
-      .enlarged-img {
-         margin-left: auto;
-         margin-right: auto;
-         max-width: 100vw;
-         max-height: 80vh;
-         border: 1px solid $black;
-         border-radius: 2px;
-         @include media ($medium) {
-            border-left: none;
-            border-right: none;
-            border-radius: 0px;
+   .black-link {
+      a {
+         border-bottom: 1px dashed $black;
+         &:link, &:active, &:visited, &:hover {
+            color: $black !important;
+            border-color: $black;
          }
       }
+   }
 
-      .modal-state:checked + .modal-window {
-         opacity: 1;
-         visibility: visible;
-         height: 100%;
+   .video-wrapper {
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      top: -2.4em;
+      padding-bottom: 0px;
+      box-shadow: $soft-shadow;
+      img {
+         width: 100%;
+         vertical-align: middle; // removes odd 3px margin below the image that behaves like a character of text
       }
+   }
 
-      .modal-state:checked + .modal-window .modal-inner {
-         top: 0;
+   .video-media {
+      height: auto; /* Could also use width: 100%; */
+      width: 100%;
+      object-fit: cover;
+      @include media($for-phone-only) {
+         position: relative;
+         width: 113%;
+         left: -5%;
       }
    }
 
+   .contact-wrapper {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      @include span-columns(12);
 
-
-
-   // IMAGES
-   #home-hero-image {
-      background-image: url("/img/banner-white-forest-3.jpg");
+      h2 {
+         color: $black;
+         border-color: $black;
+      }
+      h5 {
+         font-weight: 400;
+         color: $white;
+      }
+      .button {
+         background-color: $black;
+         border-color: $black;
+         &:hover {
+            background-color: $black-trans;
+         }
+      }
    }
 
-   #home-banner-1 {
-      background-image: url("/img/banner-summer-meadow-1.jpg");
-   }
-
-   #home-banner-2 {
-      background-image: url("/img/banner-bathroom-pond-1.jpg");
-   }
-
-   #home-banner-3 {
-      background-image: url("/img/banner-white-forest-1.jpg");
-   }
-
-   #home-banner-4 {
-      background-image: url("/img/banner-summer-meadow-2.jpg");
+   .grid-mosaic {
+      img {
+         width: 100%;
+         object-fit: cover;
+         height: auto;
+         display: block;
+      }
    }
 }

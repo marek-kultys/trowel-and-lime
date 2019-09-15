@@ -3,8 +3,8 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="title" content="Trowel & Lime">
-      <meta name="description" content="Trowel & Lime: Design and make of the traditional <nobr>mural art — Sgraffito. By Mela Yerka. London, UK">
-      <meta name="author" content="Mela Yerka">
+      <meta name="description" content="Trowel & Lime creates art that brings unique character into peoples’ spaces. We specialise in sgraffito mural.">
+      <meta name="author" content="Trowel & Lime">
       <!-- <meta name="format-detection" content="telephone=no"> -->
 
       <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -20,10 +20,15 @@
       <!-- Custom styles for this template -->
       <link href="/css/styles.css" rel="stylesheet">
 
+      <!-- Include collecttags.html to execute site.tags -->
+      {% if site.tags != "" %}
+         {% include collecttags.html %}
+      {% endif %}
+
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
 
-      <!-- <script type="text/javascript" src="/js/scripts.min.js"></script> -->
+      <script type="text/javascript" src="/js/random-image.js"></script>

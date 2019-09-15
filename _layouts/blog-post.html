@@ -1,0 +1,43 @@
+---
+layout: main
+title: Trowel & Lime | Blog Post
+---
+
+<article class="blog">
+
+	<section>
+		<div class="hero">
+			<div class="hero-container" {% if page.hero %} style="background-image: url('/blog/img/{{ page.hero }}');" {% endif %}>
+				<div class="full-grid middle-grid page-container">
+
+					<!-- <h6><a href="/blog">‹ Back to Blog</a></h6> -->
+
+					<div class="title-container">
+						<h1 class="text-left">{{ page.title }}</h1>
+					</div>
+
+					<h6 class="metadata">{% include byline.html post=page %}</h6>
+
+					<div class="tags small-margin-bottom">
+						<h6>
+							{% for tag in page.tags %}
+								{% capture tag_name %}{{ tag }}{% endcapture %}
+								<a href="/tag/{{ tag_name }}"><span class="nowrap">{{ tag_name }}</span></a>
+							{% endfor %}
+						</h6>
+					</div>
+
+					<div class="blogpost small-padding-top">
+						<div class="blogpost-text">
+							<span class="markdown">
+								{{ content }}
+							</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+</article>

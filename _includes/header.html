@@ -1,43 +1,40 @@
-<div class="header-name">
-   <h1>
-      <a href="/">Sgraffito</a>
-   </h1>
+<div class="block">
+   <div class="header-name">
+      <h1>
+         <a href="/" class="unmarked-link">
+            Trowel & Lime
+         </a>
+      </h1>
+   </div>
 </div>
 
-<nav class="header-menu">
-   <label for="show-menu" class="show-menu">
-      <h5>
-         <a>Menu</a>
-      </h5>
-   </label>
-   <input type="checkbox" id="show-menu" role="button">
-   <ul id="menu">
-      <span class="mobile">
-         {% if page.label != "home" %}
-            <li><a href="/"><h5>Home</h5></a></li>
-         {% endif %}
-         {% if page.label != "gallery" %}
-            <li><a href="/gallery"><h5>Gallery</h5></a></li>
-         {% endif %}
-         {% if page.label != "technique" %}
-            <li><a href="/technique"><h5>Technique</h5></a></li>
-         {% endif %}
-         {% if page.label != "offer" %}
-            <li><a href="/offer"><h5>Offer</h5></a></li>
-         {% endif %}
-         {% if page.label != "artist" %}
-            <li><a href="/artist"><h5>Artist</h5></a></li>
-         {% endif %}
-         {% if page.label != "contact" %}
-            <li><a href="/contact"><h5>Contact</h5></a></li>
-         {% endif %}
-      </span>
-      <span class="desktop">
-         <li><a href="/gallery"><h5>Gallery</h5></a></li>
-         <li><a href="/technique"><h5>Technique</h5></a></li>
-         <li><a href="/offer"><h5>Offer</h5></a></li>
-         <li><a href="/artist"><h5>Artist</h5></a></li>
-         <li><a href="/contact"><h5>Contact</h5></a></li>
-      </span>
-   </ul>
-</nav>
+<div class="block menu-elements">
+   <div class="header-tagline">
+      <!-- This does not render with a yellow style on hover when below the phone-only breakpoint -->
+      <h6><a href="/">The unique art of sgraffito</a></h6>
+   </div>
+
+   <nav>
+      <div class="header-menu">
+         <label for="show-menu" class="show-menu">
+            <h6><a class="unmarked-link">Menu</a></h6>
+         </label>
+         <input type="checkbox" id="show-menu" role="button">
+         <ul id="menu">
+            <span class="mobile">
+               <!-- Instead of disappearing the current page in the menu, all should be displayed with different styling for the current one to indicate that this page is current -->
+               <li><h6><a {% if page.label == 'gallery' %} class="underlined-link" {% endif %} href="/gallery">Gallery</a></h6></li>
+               <li><h6><a {% if page.label == 'how-we-work' %} class="underlined-link" {% endif %} href="/how-we-work">How we work</a></h6></li>
+               <li><h6><a {% if page.label == 'contact' %} class="underlined-link" {% endif %} href="/contact">Contact</a></h6></li>
+               <!-- <li><h6><a {% if page.label == 'blog' %} class="underlined-link" {% endif %} href="/blog">Blog</a></h6></li> -->
+            </span>
+            <span class="desktop">
+               <li><h6><a href="/gallery">Gallery</a></h6></li>
+               <li><h6><a href="/how-we-work">How we work</a></h6></li>
+               <li><h6><a href="/contact">Contact</a></h6></li>
+               <!-- <li><h6><a href="/blog">Blog</a></h6></li> -->
+            </span>
+         </ul>
+      </div>
+   </nav>
+</div>

@@ -1,0 +1,60 @@
+.how-we-work {
+
+   .hero {
+      .hero-container {
+         background-image: url("/img/large-studio-4.jpg");
+      }
+
+      .title-container {
+         text-align: center;
+         h2 {
+            color: $black;
+            border-color: $black;
+         }
+      }
+
+      .text-container {
+         img {
+            width: 100%;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+         }
+      }
+
+      .badge {
+         width: 54px;
+         text-align: center;
+         margin: 0 auto;
+         h4 {
+            border-radius: 50%;
+            width: 54px;
+            height: 54px;
+            background: $yellow;
+            color: $white;
+            // border: 1px solid $black;
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+         }
+      }
+
+      .page-container {
+         background-color: $main;
+      }
+
+      .case-study {
+         @include outer-container(100%);
+      }
+      .case-study-unit {
+         @include span-columns(12);
+         @include media($for-desktop-up) {
+            @include span-columns(6);
+         }
+      }
+
+      .metadata-item {
+         text-align: center;
+         margin-right: 0px;
+      }
+   }
+}
