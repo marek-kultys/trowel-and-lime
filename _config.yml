@@ -1,8 +1,9 @@
 exclude: [README.md]
 gems: [jekyll-paginate]
 host: 0.0.0.0
+url: "http://trowel-and-lime.github.io"
 
-source:      .
+source: .
 destination: ./_site
 
 paginate: 5
