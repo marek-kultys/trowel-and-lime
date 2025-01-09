@@ -29,9 +29,9 @@
                <!-- <li><h6><a {% if page.label == 'blog' %} class="underlined-link" {% endif %} href="/blog">Blog</a></h6></li> -->
             </span>
             <span class="desktop">
-               <li><h6><a href="/gallery">Gallery</a></h6></li>
-               <li><h6><a href="/how-we-work">How we work</a></h6></li>
-               <li><h6><a href="/contact">Contact</a></h6></li>
+               <li><h6><a {% if page.label == 'gallery' %} class="underlined-link" {% endif %} href="/gallery">Gallery</a></h6></li>
+               <li><h6><a {% if page.label == 'how-we-work' %} class="underlined-link" {% endif %} href="/how-we-work">How we work</a></h6></li>
+               <li><h6><a {% if page.label == 'contact' %} class="underlined-link" {% endif %} href="/contact">Contact</a></h6></li>
                <!-- <li><h6><a href="/blog">Blog</a></h6></li> -->
             </span>
          </ul>
