@@ -4,20 +4,20 @@ author: Mela Yerka
 
 address:
    studio:
-      flat: Studio 8
-      street: 42/44 Copperfield Rd
-      postcode: E3 4RR
+      house: 64 St Johns Court
+      street: Beaumont Avenue
+      postcode: AL1 4TR
    home:
-      flat: Flat 3
-      street: 224 Stepney Way
-      postcode: E1 3EZ
-   city: London
+      house: 64 St Johns Court
+      street: Beaumont Avenue
+      postcode: AL1 4TR
+   city: St Albans
    country: United Kingdom
-   what3words: fade.silk.spell
+   what3words: trials.bells.scrap
 
 telephone: (+44) 797 229 6732
 url: trowelandlime.com
-email: trowelandlime@gmail.com
+email: mela.yerka@gmail.com
 twitter: trowel-and-lime
 facebook: trowel-and-lime
 instagram: trowel-and-lime
