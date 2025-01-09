@@ -1,5 +1,5 @@
 exclude: [README.md]
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 host: 0.0.0.0
 url: "http://trowelandlime.github.io"
 
