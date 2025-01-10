@@ -1,4 +1,7 @@
 // VARIABLES
+// Declare base path
+$baseurl: "/trowel-and-lime";
+
 // Declare breakpoints
 $for-phone-only: new-breakpoint(max-width 767px);
 $for-tablet-up: new-breakpoint(min-width 768px);

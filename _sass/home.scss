@@ -16,7 +16,7 @@
       }
 
       #random {
-         background-image: url("{{ site.baseurl }}/img/banner-old-street-7a.jpg");
+         background-image: url("#{$baseurl}/img/banner-old-street-7a.jpg");
       }
 
       .hero-text-wrapper {

@@ -2,7 +2,6 @@ exclude: [README.md]
 host: 0.0.0.0
 baseurl: "/trowel-and-lime"
 url: "https://marekkultys.com"
-relative_permalinks: true
 
 destination: ./_site
 
