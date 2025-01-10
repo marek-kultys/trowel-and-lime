@@ -10,7 +10,7 @@ title: Trowel & Lime | Blog Post
 			<div class="hero-container" {% if page.hero %} style="background-image: url('/blog/img/{{ page.hero }}');" {% endif %}>
 				<div class="full-grid middle-grid page-container">
 
-					<!-- <h6><a href="/blog">‹ Back to Blog</a></h6> -->
+					<!-- <h6><a href="{{ site.baseurl }}/blog">‹ Back to Blog</a></h6> -->
 
 					<div class="title-container">
 						<h1 class="text-left">{{ page.title }}</h1>
@@ -22,7 +22,7 @@ title: Trowel & Lime | Blog Post
 						<h6>
 							{% for tag in page.tags %}
 								{% capture tag_name %}{{ tag }}{% endcapture %}
-								<a href="/tag/{{ tag_name }}"><span class="nowrap">{{ tag_name }}</span></a>
+								<a href="{{ site.baseurl }}/tag/{{ tag_name }}"><span class="nowrap">{{ tag_name }}</span></a>
 							{% endfor %}
 						</h6>
 					</div>

@@ -1,7 +1,7 @@
 <div class="block">
    <div class="header-name">
       <h1>
-         <a href="/" class="unmarked-link">
+         <a href="{{ site.baseurl }}/" class="unmarked-link">
             Trowel & Lime
          </a>
       </h1>
@@ -11,7 +11,7 @@
 <div class="block menu-elements">
    <div class="header-tagline">
       <!-- This does not render with a yellow style on hover when below the phone-only breakpoint -->
-      <h6><a href="/">The unique art of sgraffito</a></h6>
+      <h6><a href="{{ site.baseurl }}/">The unique art of sgraffito</a></h6>
    </div>
 
    <nav>
@@ -23,16 +23,16 @@
          <ul id="menu">
             <span class="mobile">
                <!-- Instead of disappearing the current page in the menu, all should be displayed with different styling for the current one to indicate that this page is current -->
-               <li><h6><a {% if page.label == 'gallery' %} class="underlined-link" {% endif %} href="/gallery">Gallery</a></h6></li>
-               <li><h6><a {% if page.label == 'how-we-work' %} class="underlined-link" {% endif %} href="/how-we-work">How we work</a></h6></li>
-               <li><h6><a {% if page.label == 'contact' %} class="underlined-link" {% endif %} href="/contact">Contact</a></h6></li>
-               <!-- <li><h6><a {% if page.label == 'blog' %} class="underlined-link" {% endif %} href="/blog">Blog</a></h6></li> -->
+               <li><h6><a {% if page.label == 'gallery' %} class="underlined-link" {% endif %} href="{{ site.baseurl }}/gallery">Gallery</a></h6></li>
+               <li><h6><a {% if page.label == 'how-we-work' %} class="underlined-link" {% endif %} href="{{ site.baseurl }}/how-we-work">How we work</a></h6></li>
+               <li><h6><a {% if page.label == 'contact' %} class="underlined-link" {% endif %} href="{{ site.baseurl }}/contact">Contact</a></h6></li>
+               <!-- <li><h6><a {% if page.label == 'blog' %} class="underlined-link" {% endif %} href="{{ site.baseurl }}/blog">Blog</a></h6></li> -->
             </span>
             <span class="desktop">
-               <li><h6><a {% if page.label == 'gallery' %} class="underlined-link" {% endif %} href="/gallery">Gallery</a></h6></li>
-               <li><h6><a {% if page.label == 'how-we-work' %} class="underlined-link" {% endif %} href="/how-we-work">How we work</a></h6></li>
-               <li><h6><a {% if page.label == 'contact' %} class="underlined-link" {% endif %} href="/contact">Contact</a></h6></li>
-               <!-- <li><h6><a href="/blog">Blog</a></h6></li> -->
+               <li><h6><a {% if page.label == 'gallery' %} class="underlined-link" {% endif %} href="{{ site.baseurl }}/gallery">Gallery</a></h6></li>
+               <li><h6><a {% if page.label == 'how-we-work' %} class="underlined-link" {% endif %} href="{{ site.baseurl }}/how-we-work">How we work</a></h6></li>
+               <li><h6><a {% if page.label == 'contact' %} class="underlined-link" {% endif %} href="{{ site.baseurl }}/contact">Contact</a></h6></li>
+               <!-- <li><h6><a href="{{ site.baseurl }}/blog">Blog</a></h6></li> -->
             </span>
          </ul>
       </div>

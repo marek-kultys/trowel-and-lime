@@ -6,16 +6,16 @@
          height: auto;
       }
       #the-old-forest {
-         background-image: url("/img/banner-old-street-3.jpg");
+         background-image: url("#{$baseurl}/img/banner-old-street-3.jpg");
       }
       #summer-meadow {
-         background-image: url("/img/banner-summer-meadow-4.jpg");
+         background-image: url("#{$baseurl}/img/banner-summer-meadow-4.jpg");
       }
       #the-white-forest {
-         background-image: url("/img/banner-white-forest-4.jpg");
+         background-image: url("#{$baseurl}/img/banner-white-forest-4.jpg");
       }
       #bathroom-pond {
-         background-image: url("/img/banner-bathroom-pond-2.jpg");
+         background-image: url("#{$baseurl}/img/banner-bathroom-pond-2.jpg");
       }
 
       .page-container {
