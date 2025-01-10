@@ -1,6 +1,7 @@
 exclude: [README.md]
 host: 0.0.0.0
-url: "https://trowel-and-lime.github.io"
+baseurl: "/trowel-and-lime"
+url: "https://marekkultys.com"
 
 destination: ./_site
 
