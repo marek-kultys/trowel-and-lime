@@ -2,7 +2,7 @@
 
    .hero {
       .hero-container {
-         background-image: url("/img/large-studio-4.jpg");
+         background-image: url("{{ site.baseurl }}/img/large-studio-4.jpg");
       }
 
       .title-container {
