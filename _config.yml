@@ -1,6 +1,6 @@
 exclude: [README.md]
 host: 0.0.0.0
-baseurl: "/trowel-and-lime"
+baseurl: ""
 url: "https://marekkultys.com"
 
 destination: ./_site
