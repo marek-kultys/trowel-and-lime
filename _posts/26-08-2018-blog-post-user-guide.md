@@ -160,7 +160,7 @@ Remember that in order to publish a new blog post publicly on the Internet, it m
 
 2. Pushed to master in the GitHub [sgraffito_v1 repository](https://github.com/marek-kultys/sgraffito_v1)
 
-3. The contents of the `_site` folder in the repository master branch must be uploaded to the host server on [klatka.pl](https://klatka.pl/)
+3. The contents of the `_site` folder in the repository master branch must be uploaded to the host server on GitHub pages
 
 4. Verify the changes on the [Trowel & Lime website](http://trowelandlime.com)
 
