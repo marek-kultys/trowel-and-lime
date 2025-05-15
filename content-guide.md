@@ -1,19 +1,15 @@
-# Content style guide for Trowel and Lime
-
-
-##### version 1, May 2025
+# Apply this guidance to files in this repository
 
 
 ### Scope of this guidance
-Do not apply this guide to URLs, email addresses, liquid tags, HTML tags, CSS tags, CSS class names, or any other element of code. 
+Do not apply this guide to URLs, email addresses, liquid tags, HTML tags, CSS tags, CSS class names, Jekyll front matter or any other element of code. 
 Apply the guide only to elements of written content.
 Do not add new content.
 Do not move content.
-Do not edit content beyond what is necessary to adhere to this guide.
 
 
 ### UK English
-Use UK English vocabulary and UK English spelling only.
+Use UK English vocabulary and UK English spelling only:
 - write `visualisation` not `visualization`
 - write `centre` not `center`
 - write `colous` not `color`
@@ -33,19 +29,19 @@ For titles of the works of art and murals use title case (where the first letter
 
 
 ### Labels
-For labels and metadata items in a list use all capitalisation:
+For labels and metadata items in a list (except for when it is in Jekyll front matter) use all capitalisation:
 - write `LOCATION` not `Location`
 - write `YEAR` not `year`
-**EXCEPTION** Do not apply this rule to labels in Jekyll front matter.
 
 
 ### Units
-Use metrics units as specified by the International System of Units (SI) as primary units of measure. 
-- write `2 square metres` not `2 square meters`
+Use metrics units as specified by the International System of Units (SI) as primary units of measure:
 - write `10 kg` not `20 pounds`
 - write `30 sq metres` not `30 sq m`
+- write `1.2 sq metres` not `1.2 m2`
+- write `2.4 sq metres` not `2.4 square metres`
 
-**EXCEPTION** When describing the size of murals, the measure can be provided in metric units (square metres) as primary unit of measure and in imperial units (square feet) as secondary unit of measure. Write secondary unit of measure in brackets.
+**EXCEPTION** When describing the size of murals, the measure can be provided in metric units (square metres) as primary unit of measure and in imperial units (square feet) as secondary unit of measure. Write secondary unit of measure in brackets:
 - write `3 sq metres (32 sq feet)` not `32 sq feet (3 sq metres)` 
 
 For units of time, use whole words:
@@ -61,6 +57,12 @@ Do not use ampersand unless it is only in the name Trowel & Lime:
 - write `Get in touch and tell us about your idea.` not `Get in touch & tell us about your idea.`
 
 
+### General guidance
+Apply same rules to every instance in the document. 
+
+
 ---
 
 ##### End of guide
+
+##### version 1, May 2025
